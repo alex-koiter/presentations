@@ -1,0 +1,175 @@
+---
+title: Reproducibility
+output:
+  xaringan::moon_reader:
+    css: styles.css
+    seal: false
+    self-contained: false
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-AMS_SVG"
+    nature:
+      beforeInit: "macros.js"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+      
+---
+class: title-slide, nobar
+background-image: url(`r "./figs/environmental-data-science-r4ds-general.png"`)
+background-size: 100%
+<div class = "caption" style = "position: absolute; bottom: 3%; right: 5%">Artwork by @allison_horst</div>
+
+```{r setup, include = FALSE}
+library(tidyverse)
+library(lubridate)
+library(scales)
+
+knitr::opts_chunk$set(fig.width = 6, fig.asp = 0.5, out.width = "100%", dpi = 250, fig.align = "center",
+                      echo = FALSE, message = FALSE,
+                      cache = TRUE)
+```
+
+
+# PCAG 2021
+### Importance of reproducible data analysis in physical geography
+
+.footer[
+Alex Koiter & Steffi LaZerte
+]
+
+
+
+
+---
+# Introduction
+
+## Reproducibility
+- The data analysis can be successfully reproduced
+
+## Replicability
+- A separate investigator conducted an independent study and came to the same conclusion as the original study
+
+
+---
+background-image: url(`r "./figs/repro.jpeg"`)
+background-size: 60%
+background-position: bottom 15px center
+# Reproducibility
+
+- Less about ensuring the correctness of the results
+- More about being transparent and understanding exactly what was done
+    - This is especially important in large and complex datasets
+
+## A study can be reproducible and still be wrong
+<div class = "caption" style = "position: absolute; bottom: 3%; right: 5%">Artwork by @allison_horst</div>
+
+---
+# Computational reproducibility
+## Important because:
+- Allows us to evaluate the data, analyses, and models on which conclusions are drawn
+- Allows you to revisit your own work (e.g., incorporate a suggestion)
+
+## It is difficult to reproduce because:
+- Data is not made available
+- Method sections of papers often do not provide enough detail
+- Use of graphical programs (clicks and drop down menus)
+- Not making code available (R, Python, Matlab)
+
+---
+# Working with large data sets
+## Data aquisition 
+- Documenting getting/downloading/importing data sets
+    - Always maintain the original data (unmodified)
+    
+---
+background-image: url(`r "./figs/unruly_data.jpg"`)
+background-size: 60%
+background-position: bottom 155px right
+# Working with large data sets 
+## Data munging/wrangling   
+1. Formatting
+2. Merging
+3. Quality assurance
+    - NA's
+    - 0's
+    - Detection limits
+    - Outliers
+    - Typos/errors   
+    
+## Need to document every change you make
+## Easy with small data sets with and simple structure
+
+---
+background-image: url(`r "./figs/kmeans_1.jpg"`)
+background-size: 60%
+background-position: bottom 200px right 5px
+# Working with large data sets 
+## Data analysis
+- Analysis/figures
+    - Data used
+    - Analysis used (trial and error)
+    - Parameters
+    - Diagnostics
+    - Figure creation process
+    - Software versions
+
+## You will regret not keeping track of this when you write your final paper/report    
+<div class = "caption" style = "position: absolute; bottom: 3%; right: 5%">Artwork by @allison_horst</div>
+
+---
+background-image: url(`r "./figs/Ropen.png"`)
+background-size: 65%
+background-position: bottom 15px right
+# How can you achieve this?
+- Extensive notes (what you did and when)
+- Version control
+- Programmatically
+- Open Science/Data
+- Supplementary <br>materials
+<div class = "caption" style = "position: absolute; bottom: 3%; right: 5%">https://ropensci.org</div>
+---
+# Why is this not practiced?
+- Don't know how
+- Too busy 
+- It's internal work
+- Worried about being copied
+- Rigged the data
+
+
+---
+background-image: url(`r "./figs/code_hero.jpg"`)
+background-size: 45%
+background-position: bottom 5px right 5px
+# Why is this not practiced?
+- Don't know how - **learn! lots of support and tools available**
+- Too busy - **often faster in the long run**
+- It's internal work - **often a need to share**
+- Worried about being copied - **in practice low risk**
+- Rigged the data - **you have bigger problems**
+<div class = "caption" style = "position: absolute; bottom: 3%; right: 5%">Artwork by @allison_horst</div>
+
+---
+# Making science stronger
+- Peer review is difficult if we don't know how things were done
+- Mistakes happen
+    - Can only be fixed if found
+    - This is not a sign of weakness - hiding or not learning from them is
+- Reducing the need to reinvent the wheel for similar projects/analysis
+    - Easier to build upon previous work
+- Accessibility
+
+---
+background-image: url(`r "./figs/r_first_then.png"`)
+background-size: 45%
+background-position: bottom 15px center
+# What do we use?
+- R
+    - Programming language
+    - Free and open source
+    
+<div class = "caption" style = "position: absolute; bottom: 3%; right: 5%">Artwork by @allison_horst</div>
+
+---
+# Github
+## This presentation is reproducible and open!!
+
