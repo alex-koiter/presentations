@@ -202,6 +202,7 @@ class: space-list
   
 ## Sharing
 - Open Science!
+  - [GitHub](https://github.com), [GitLab](https://gitlab.com), etc.
   - [Open Science Framework](https://osf.io) (OSF)
 - Journal Supplementary materials
 
