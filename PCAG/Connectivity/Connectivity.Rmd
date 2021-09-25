@@ -100,7 +100,7 @@ background-size: cover
 
 ![:img right: 100px, bottom: 50px, 30%, Google Earth 2021, ](./figs/glacial_lake.png) 
 
-![:img left: 100px, bottom: 50px, 45%, Lobb, ](./figs/topsoil.jpg)
+![:img left: 100px, bottom: 50px, 40%, Lobb, ](./figs/topsoil.jpg)
 ---
 # River channel changes
 - Dams and reservoirs $\rightarrow$ Decreased connectivity
