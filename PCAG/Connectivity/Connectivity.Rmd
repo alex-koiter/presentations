@@ -1,0 +1,183 @@
+---
+title: PCAG 2021 Presentation
+output:
+  xaringan::moon_reader:
+    css: styles.css
+    seal: false
+    self-contained: false
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-AMS_SVG"
+    nature:
+      beforeInit: "macros.js"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+class: title-slide, nobar, center
+background-image:  url(`r "./figs/sediment_cropped.jpg"`)
+background-position: bottom 85px center
+background-size: cover
+
+.align-bottom-left[<img src = "./figs/twitter_black.jpg" style = "height: 40px; vertical-align:middle">  @Alex_Koiter <img src = "./figs/github.png" style = "height: 40px; vertical-align:middle; margin-left: 25px"> alex-koiter <img src = "./figs/web.png" style = "height: 40px; vertical-align:middle; margin-left: 25px"> alexkoiter.ca <img src = "./figs/email.svg" style = "height: 25px; vertical-align:middle; margin-left: 25px"> koitera@brandonu.ca]
+
+# Perspectives on Connectivity in Canadian Watersheds 
+
+.spacer[ ]
+
+.spacer[ ]
+
+.spacer[ ]
+
+.spacer[ ]
+
+
+## .center[Alex Koiter .small[Brandon University]]
+
+---
+# How it all started
+
+## CAG 2021
+- Workshop on watershed connectivity
+- Short presentations on recent and ongoing projects across Canada
+- Lots of Q and A and discussion following
+
+## Participants
+- Genevieve Ali, Faran Ali, Stephen Dery, Masoud Goharrokhi, Sirja Islam, Kristen Kieta, David Lobb, Merrin Macrae, Issac Noyes, Phil Owens, Ellen Petticrew, Kokulan Vivekananthan 
+
+---
+# How its going
+## Draft paper being written 
+- State of knowledge
+- Major themes
+- Implications
+
+## Consider this presentation an early test drive of a forthcoming publication
+![:img center, bottom: 100px, 60%, , ](./figs/journal.jpg) 
+---
+# What goes in must ...
+## The path from source to sink is rarely straightforward
+![:img center, bottom: 1px, 60%, , ](./figs/budget.gif) 
+<div class = "caption" style = "position: absolute; bottom: 3%; right: 1%">Lobb </div>
+
+---
+# Types of connectivity
+## Structural
+- Configuration of landscape elements
+    - Location, size, shape, number 
+
+## Functional
+- Linkage of landscape elements by a process(es)
+    - Flows of energy and materials
+
+## Changes
+- Alteration of the structure and function over time
+    - Function-structure feedback
+
+![:img right: 1px, bottom: 1px, 40%, , ](./figs/connect.png)     
+<div class = "caption" style = "position: absolute; bottom: 3%; right: 30%">Wainwright et al. 2011 </div>
+---
+# Scale
+## Degree of connectivity depends on the temporal and spatial scale of observation/interest
+![:img center, bottom: 1px, 60%, , ](./figs/connect2.png) 
+<div class = "caption" style = "position: absolute; bottom: 3%; right: 3%"> Fryirs 2011 </div>
+---
+# Land use change
+## Forestry
+- Reduced evapotranspiration $\rightarrow$ Increased connectivity
+- Increased LWD $\rightarrow$ Decreased connectivity
+- Increased landslides $\rightarrow$ ??
+
+![:img right: 100px, bottom: 1px, 30%, , ](./figs/LWD.jpg) 
+<div class = "caption" style = "position: absolute; bottom: 3%; right: 3%"> Booth et al. 1997 </div>
+![:img left: 100px, bottom: 1px, 40%, www.nbcnews.com, ](./figs/landslide.webp) 
+
+---
+# Land use change
+## Agriculture
+- Creation of surface and subsurface drains $\rightarrow$ Increased connectivity
+- Drainage of wetlands $\rightarrow$ Increased connectivity
+- Tillage ridges $\rightarrow$ Decreased connectivity
+
+![:img right: 100px, bottom: 50px, 30%, Google Earth 2021, ](./figs/glacial_lake.png) 
+
+![:img left: 100px, bottom: 50px, 45%, Lobb, ](./figs/topsoil.jpg)
+---
+# River channel changes
+- Dams and reservoirs $\rightarrow$ Decreased connectivity
+- Channelization in urban areas $\rightarrow$ Increased connectivity
+- Culverts $\rightarrow$ Depends on design and purpose
+
+![:img right: 50px, bottom: 50px, 40%, , ](./figs/hydropeaking.png) 
+<div class = "caption" style = "position: absolute; bottom: 3%; right: 3%"> Dery et al. 2021 </div>
+![:img left: 50px, bottom: 50px, 40%, Wikipedia:Brendanboshea, ](./figs/Culvert.jpg) 
+---
+# Climate change
+## Changes in precipitation and temperature
+- Change in precipitation types, frequency & intensities (magnitude and duration) $\rightarrow$ Complicated
+- Increased droughts resulting in the loss of the "fill and spill" of potholes $\rightarrow$ Decreased connectivity
+
+![:img center, bottom: 5px, 50%, , ](./figs/daily_normals_brandon_2020_2.png) 
+---
+# Climate change
+## Wildfire
+- Decreases in evapotranspiration and infiltration, and increase in soil hydrophobicity $\rightarrow$ Changes in the amount and timing of runoff and sediment and chemical fluxes
+
+## Cryosphere
+- Receding glaciers $\rightarrow$ Complicated
+    - River piracy $\rightarrow$ Reconfiguration in connectivity
+    - Faster rates of melting $\rightarrow$ Increased connectivity
+    - Smaller/disappearing glaciers $\rightarrow$ Decreased connectivity
+- Permafrost degradation $\rightarrow$  <br/>Shift from overland to subsurface flows   
+![:img right: 10px, bottom: 50px, 40%, earthobservatory.nasa.gov, ](./figs/glacier.jpg) 
+
+---
+# Regional challenges
+## Geography matters
+- Urban vs rural
+- Forested vs prairies
+- North vs south
+- Resource development
+- Climate change
+![:img right: 10px, bottom: 50px, 70%, , ](./figs/canada.png) 
+---
+# Impacts on water resources
+- Water security (access, quantity, quality)
+- Indigenous traditional territories
+- Power production and industrial development
+- Aquatic ecosystems
+
+![:img right: 200px, bottom: 5px, 80%, www.riotinto.com, ](./figs/riotinto.png) 
+![:img right: 10px, bottom: 200px, 40%, lakewinnipegfoundation.org, ](./figs/lakewinnipeg.jpg) 
+
+---
+# Addressing issues of connectivity
+## Mitigation
+- Limit fragmentation of landscapes and watersheds (roads, pipelines)
+- Limit the number of dams and structures and/or better design
+- Land management (cover cropping, riparian buffers) 
+- Multiple stressors $\rightarrow$ cumulative impacts
+![:img right: 10px, bottom: 15px, 45%, , ](./figs/roads.png) 
+---
+# Addressing issues of connectivity
+## Need to consider measures that are relevant to the specific landscape/region
+- Sometimes **increasing** connectivity is a good thing
+- Sometimes **decreasing** connectivity is a good thing
+- Sometimes increasing connectivity in some areas **and** decreasing it in others is a good thing 
+- Sometimes changing connectivity is both a **good and bad** thing
+![:img right: 100px, bottom: 15px, 45%, , ](./figs/dam.jpg) 
+
+![:img left: 100px, bottom: 15px, 27%, , ](./figs/beaver.png) 
+---
+# Thank You
+## Need to consider measures that are relevant to the specific landscape/region
+- Sometimes **increasing** connectivity is a good thing
+- Sometimes **decreasing** connectivity is a good thing
+- Sometimes increasing connectivity in some areas **and** decreasing it in others is a good thing 
+- Sometimes changing connectivity is both a **good and bad** thing
+
+
+![:box 50%, 60%, 30%](<strong>Thank You!</strong>)
+
+.align-bottom-left[<img src = "./figs/twitter_black.jpg" style = "height: 40px; vertical-align:middle">  @Alex_Koiter <img src = "./figs/github.png" style = "height: 40px; vertical-align:middle; margin-left: 25px"> alex-koiter <img src = "./figs/web.png" style = "height: 40px; vertical-align:middle; margin-left: 25px"> alexkoiter.ca <img src = "./figs/email.svg" style = "height: 25px; vertical-align:middle; margin-left: 25px"> koitera@brandonu.ca]
+
+
