@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Reproducibility</title>
+    <meta charset="utf-8" />
+    <script src="38_279_Reproducibility_2021_files/header-attrs-2.11/header-attrs.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="global_styles.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: title-slide, nobar
+
+
+
+
+![:img right: 8%, bottom: 0, 80%, Flow chart from data with mountains and rivers to data analysis to communication with presentations and computers and reports](./figs/environmental-data-science-r4ds-general.png)
+
+&lt;div style = "position: absolute; right:15px; bottom:45px; font-size: 75%"&gt;Artwork by &lt;a href = "https://twitter.com/allison_horst"&gt;Allison Horst&lt;/a&gt;&lt;/div&gt;
+
+&lt;div style = "position: absolute; right:15px; bottom:15px; line-height: 1; font-size: 50%;"&gt;
+Updated from Grolemund &amp; Wickham's classic R4DS schematic,&lt;br&gt;envisioned by Dr. Julia Lowndes for her 2019 useR! keynote talk
+&lt;/div&gt;
+
+### 38:279 Introduction to Geographic Research Methods
+# **Importance of reproducible data analysis in&lt;br&gt;physical geography**
+
+
+.footnote[
+### Alex Koiter &amp; Steffi LaZerte
+]
+
+---
+# Introductions
+## Who am I?
+
+## Who are you?
+- Preferred name
+- Experience with research and/or data
+- Interesting fact about yourself and/or something you are proud of having done or become
+
+---
+# Introduction
+
+## Reproducibility and Replicability
+
+##**Whats the difference?**
+
+
+
+---
+# Introduction
+
+## Reproducibility
+- The data analysis can be successfully reproduced
+
+## Replicability
+- A separate investigator conducted an independent study and came to the same conclusion as the original study
+
+
+---
+class: split-40
+
+# Reproducibility
+
+- Less about ensuring the correctness of the results
+- More about being transparent and understanding exactly what was done
+    - This is especially important in large and complex datasets
+
+![:spacer 50px]()
+
+![:img right: 0, bottom: 0, 60%, A judge’s desk labeled 'Reproducibility' with a witness stand right next to it. On the witness stand is a smiling and confident R Markdown document pointing at some lines of code on itself. A fuzzy monster lawyer in a polka-dot tie stands proudly saying 'Nothing further!' The judge (also a cute fuzzy monster) is smiling with their hands raised in celebration of reproducible work.](./figs/repro.jpeg)
+
+.footnote[Artwork by [Allison Horst](https://twitter.com/allison_horst)]
+
+
+
+.columnl[
+.center[
+## A study can be reproducible and still be wrong
+]
+]
+
+
+
+
+---
+# Computational reproducibility
+## Important because:
+- Allows us to evaluate the data, analyses, and models on which conclusions are drawn
+- Allows you to revisit your own work (e.g., incorporate a suggestion)
+
+## It is difficult to reproduce because:
+- Data is not made available
+- Method sections of papers often do not provide enough detail
+- Use of graphical programs (clicks and drop down menus)
+- Not making code available (R, Python, MATLAB)
+
+---
+# Working with large data sets
+## Data aquisition 
+- Documenting getting/downloading/importing data sets
+    - Always maintain the original data (unmodified)
+    
+---
+# Working with large data sets 
+## Data munging/wrangling   
+1. Formatting
+2. Merging
+3. Quality assurance
+    - NA's
+    - 0's
+    - Detection limits
+    - Outliers
+    - Typos/errors   
+    
+### Need to document every change you make
+### Easy with small data sets with and simple structure
+
+![:img right: 5px, bottom: 200px, 60%, A green pompom-looking monster in a yellow and red tank on the left and a pink monster riding a big blue letter R with a sword face down a large greenish-yellow blob monster labelled 'Unruly raw data'](./figs/unruly_data.jpg)
+
+.footnote[Artwork by [Allison Horst](https://twitter.com/allison_horst)]
+
+
+---
+class: split-40
+# Working with large data sets 
+## Data analysis
+- Analysis/figures
+    - Data used
+    - Analysis used (trial and error)
+    - Parameters
+    - Diagnostics
+    - Figure creation process
+    - Software versions
+
+
+![:img right: 5px, bottom: 110px, 60%, Text at the top reads 'K-means clustering: assign each observation to one of k clusters based on the nearest cluster centroid' below that are two headings. On the left the word 'Observations' is above 11 randomly scattered grey pompom monsters. On the right the phrase 'cluster centroids' is above three spiral monsters](./figs/kmeans_1.jpg)
+
+.footnote[Artwork by [Allison Horst](https://twitter.com/allison_horst)]
+
+
+![:spacer 10px]()
+.columnl[
+.center[
+## Hard to write papers if you&lt;br&gt;don't keep track of this!
+]]
+
+---
+# Why is this not practiced?
+
+## Take a few minutes to come up with a few reasons this is not always done
+---
+class: space-list
+
+# Why is this not practiced?
+
+- Don't know how
+- Too busy 
+- It's internal work
+- Worried about being copied
+- Rigged the data
+
+
+
+---
+class: space-list
+
+# Why is this not practiced?
+
+- Don't know how - **learn! lots of support and tools available**
+- Too busy - **often faster in the long run**
+- It's internal work - **often a need to share**
+- Worried about being copied - **in practice low risk**
+- Rigged the data - **you have bigger problems**
+
+
+![:img right: 5px, bottom: 5px, 45%, A person in a cape that reads 'code hero' who looks like they are flying through the air while typing on a computer while saying 'I’m doing a think all on my own!' The coder’s arms and legs have ropes attached to two hot air balloons lifting them up&amp;comma; with labels on the balloons including 'teachers'&amp;comma; 'bloggers'&amp;comma; 'friends'&amp;comma; 'developers'. Below the code hero&amp;comma; several people carry a trampoline with labels 'support' and 'community' that will catch them if they fall](./figs/code_hero.jpg)
+
+.footnote[Artwork by [Allison Horst](https://twitter.com/allison_horst)]
+
+
+---
+# How can you achieve this?
+
+## Keeping track
+- Extensive notes
+  - What, when, with what
+- Programmatically
+  - Scripts, R, Python, MATLAB, etc.
+- Version control
+  - git, [GitHub](https://github.com), [GitLab](https://gitlab.com)
+  
+## Sharing
+- Open Science!
+  - [GitHub](https://github.com), [GitLab](https://gitlab.com), etc.
+  - [Open Science Framework](https://osf.io) (OSF)
+- Journal Supplementary materials
+
+
+![:img right: 25px, bottom: 125px, 55%, Screenshot of rOpenSci home page with text reading 'About us rOpenSci fosters a culture that values open and reproducible research using shared data and reusable software', , https://ropensci.org](./figs/Ropen.png)
+
+
+---
+# What do we use?
+
+## R
+- Statistical programming language
+- Free and open source
+
+### Want to learn?
+
+  - [rOpenSci](https://ropensci.org) organization
+  - [R for Data Science](https://r4ds.had.co.nz/) online book
+  - [RStudio Primers](https://rstudio.cloud/learn/primers) interactive online exercises
+  - Attend classes or workshops 
+    - Like one of Steffi's [Introduction to R](https://steffilazerte.ca/BU2021) workshops&lt;br&gt;(shameless self-promotion)
+
+![:img right: 5px, bottom: 35px, 40%, A digital cartoon with two illustrations: the top shows the R-logo with a scary face&amp;comma; and a small scared little fuzzy monster holding up a white flag in surrender while under a dark stormcloud. The text above says 'at first I was like...' The lower cartoon is a friendly&amp;comma; smiling R-logo jumping up to give a happy fuzzy monster a high-five under a smiling sun and next to colorful flowers. The text above the bottom illustration reads 'but now it’s like...'](./figs/r_first_then.png)
+
+.footnote[Artwork by [Allison Horst](https://twitter.com/allison_horst)]
+
+
+---
+class: split-50
+
+# What do we use?
+
+## git &amp; GitHub
+
+.columnl[
+- **git** is a version control system
+  - keeps tracks of changes
+- [**GitHub**](https://github.com) is an online home for git projects
+  - allows collaboration and sharing
+- like R, tricky to learn, but oh so powerful!
+
+
+### Want to learn?
+
+- [Happy Git with R](https://happygitwithr.com/) online book
+]
+
+
+![:img right: 0, bottom: 10px, 48%, Screenshot of a GitHub repository called catcams for user steffilazerte, , This presentation is on &lt;a href='https://github.com/alex-koiter/presentations/tree/main/PCAG/Repro'&gt;GitHub!&lt;/a&gt;&lt;br&gt;(and is reproducible and open&amp;rpar;](./figs/github.png)
+
+---
+# What do we use?
+
+## [Open Science Framework](https://osf.io)
+
+![:img center, bottom: 10px, 70%, Screenshot of the OSF homepage reads 'The place to share your research. OSF is a free&amp;comma; open platform to support your research and enable collaboration.', https://osf.io](./figs/osf_home.png)
+
+
+---
+class: split-50
+# What do we use?
+
+## [Open Science Framework](https://osf.io)
+
+- Can integrate with GitHub, Dropbox, Zotero, etc.
+- Use as Dropbox-like storage and sharing
+    - Drag and drop!
+- Make parts private or public
+- Create DOIs for referencing in publications
+
+![:img right: 0, bottom: 0, 45%, Screenshot of the OSF homepage reads 'The place to share your research. OSF is a free&amp;comma; open platform to support your research and enable collaboration.'](./figs/osf_scripts.png)
+
+![:spacer 20px]()
+
+.columnl[
+.center[
+## Great way to get your feet wet!
+]]
+
+---
+# Making science stronger
+
+- Peer review is difficult if we don't know how things were done
+- Mistakes happen
+    - Can only be fixed if found
+    - This is not a sign of weakness - hiding or not learning from them is
+- Reducing the need to reinvent the wheel for similar projects/analysis
+    - Easier to build upon previous work
+- Accessibility
+
+--
+
+![:spacer 15px]()
+
+.center[
+### Thank you!
+]
+
+![:img right: 3%, bottom: 33%, 175px, Black text reads 'Brandon University' next to a shield with two open books above an inverted V with an oil lamp and three stalks of wheat](https://www.brandonu.ca/communications/files/Brandon-University-Horizontal-Logo-1-Colour-Black-RGB.png)
+
+![:img right: 3%, bottom: 17%, 300px, Black text and black mechanical gears in the upper right corner with the letters S and L. The text reads 'Dr. Steffi LaZerte' in big and in smaller letters below 'Analysis and Data Tools for Science'](https://steffilazerte.ca/images/logo_eg.png)
+
+
+
+
+.footnote[
+.small[
+
+&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;Twitter&lt;/title&gt;  &lt;path d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"&gt;&lt;/path&gt;&lt;/svg&gt; @Alex_Koiter&amp;nbsp;  | &lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;GitHub&lt;/title&gt;  &lt;path d="M256,32C132.3,32,32,134.9,32,261.7c0,101.5,64.2,187.5,153.2,217.9a17.56,17.56,0,0,0,3.8.4c8.3,0,11.5-6.1,11.5-11.4,0-5.5-.2-19.9-.3-39.1a102.4,102.4,0,0,1-22.6,2.7c-43.1,0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1,1.4-14.1h.1c22.5,2,34.3,23.8,34.3,23.8,11.2,19.6,26.2,25.1,39.6,25.1a63,63,0,0,0,25.6-6c2-14.8,7.8-24.9,14.2-30.7-49.7-5.8-102-25.5-102-113.5,0-25.1,8.7-45.6,23-61.6-2.3-5.8-10-29.2,2.2-60.8a18.64,18.64,0,0,1,5-.5c8.1,0,26.4,3.1,56.6,24.1a208.21,208.21,0,0,1,112.2,0c30.2-21,48.5-24.1,56.6-24.1a18.64,18.64,0,0,1,5,.5c12.2,31.6,4.5,55,2.2,60.8,14.3,16.1,23,36.6,23,61.6,0,88.2-52.4,107.6-102.3,113.3,8,7.1,15.2,21.1,15.2,42.5,0,30.7-.3,55.5-.3,63,0,5.4,3.1,11.5,11.4,11.5a19.35,19.35,0,0,0,4-.4C415.9,449.2,480,363.1,480,261.7,480,134.9,379.7,32,256,32Z"&gt;&lt;/path&gt;&lt;/svg&gt; alex-koiter&amp;nbsp;&amp;nbsp;   | &lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;World wide web&lt;/title&gt;  &lt;path d="M256,48C141.13,48,48,141.13,48,256s93.13,208,208,208,208-93.13,208-208S370.87,48,256,48Z" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"&gt;&lt;/path&gt;  &lt;path d="M256,48c-58.07,0-112.67,93.13-112.67,208S197.93,464,256,464s112.67-93.13,112.67-208S314.07,48,256,48Z" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"&gt;&lt;/path&gt;  &lt;path d="M117.33,117.33c38.24,27.15,86.38,43.34,138.67,43.34s100.43-16.19,138.67-43.34" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"&gt;&lt;/path&gt;  &lt;path d="M394.67,394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43,16.19-138.67,43.34" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"&gt;&lt;/path&gt;  &lt;line x1="256" y1="48" x2="256" y2="464" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"&gt;&lt;/line&gt;  &lt;line x1="464" y1="256" x2="48" y2="256" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"&gt;&lt;/line&gt;&lt;/svg&gt; alexkoiter.ca&lt;br&gt;&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;Twitter&lt;/title&gt;  &lt;path d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"&gt;&lt;/path&gt;&lt;/svg&gt; @steffilazerte | &lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;GitHub&lt;/title&gt;  &lt;path d="M256,32C132.3,32,32,134.9,32,261.7c0,101.5,64.2,187.5,153.2,217.9a17.56,17.56,0,0,0,3.8.4c8.3,0,11.5-6.1,11.5-11.4,0-5.5-.2-19.9-.3-39.1a102.4,102.4,0,0,1-22.6,2.7c-43.1,0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1,1.4-14.1h.1c22.5,2,34.3,23.8,34.3,23.8,11.2,19.6,26.2,25.1,39.6,25.1a63,63,0,0,0,25.6-6c2-14.8,7.8-24.9,14.2-30.7-49.7-5.8-102-25.5-102-113.5,0-25.1,8.7-45.6,23-61.6-2.3-5.8-10-29.2,2.2-60.8a18.64,18.64,0,0,1,5-.5c8.1,0,26.4,3.1,56.6,24.1a208.21,208.21,0,0,1,112.2,0c30.2-21,48.5-24.1,56.6-24.1a18.64,18.64,0,0,1,5,.5c12.2,31.6,4.5,55,2.2,60.8,14.3,16.1,23,36.6,23,61.6,0,88.2-52.4,107.6-102.3,113.3,8,7.1,15.2,21.1,15.2,42.5,0,30.7-.3,55.5-.3,63,0,5.4,3.1,11.5,11.4,11.5a19.35,19.35,0,0,0,4-.4C415.9,449.2,480,363.1,480,261.7,480,134.9,379.7,32,256,32Z"&gt;&lt;/path&gt;&lt;/svg&gt; steffilazerte | &lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;World wide web&lt;/title&gt;  &lt;path d="M256,48C141.13,48,48,141.13,48,256s93.13,208,208,208,208-93.13,208-208S370.87,48,256,48Z" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"&gt;&lt;/path&gt;  &lt;path d="M256,48c-58.07,0-112.67,93.13-112.67,208S197.93,464,256,464s112.67-93.13,112.67-208S314.07,48,256,48Z" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"&gt;&lt;/path&gt;  &lt;path d="M117.33,117.33c38.24,27.15,86.38,43.34,138.67,43.34s100.43-16.19,138.67-43.34" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"&gt;&lt;/path&gt;  &lt;path d="M394.67,394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43,16.19-138.67,43.34" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"&gt;&lt;/path&gt;  &lt;line x1="256" y1="48" x2="256" y2="464" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"&gt;&lt;/line&gt;  &lt;line x1="464" y1="256" x2="48" y2="256" style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"&gt;&lt;/line&gt;&lt;/svg&gt; steffilazerte.ca&lt;br&gt;
+Slides: &lt;https://github.com/alex-koiter/presentations&gt; ([PDF](https://raw.githubusercontent.com/alex-koiter/presentations/main/PCAG/Repro/Reproducibility.pdf))  
+Created with the R package [xaringan](https://github.com/yihui/xaringan), using [remark.js](https://remarkjs.com), [knitr](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com)&lt;br&gt;
+Icons from [Ionicons](https://ionic.io/ionicons); Compiled on 2021-11-25]]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-AMS_SVG';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

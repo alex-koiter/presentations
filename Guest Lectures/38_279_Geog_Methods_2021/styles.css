@@ -1,0 +1,24 @@
+/* ISBE: cavityuse presentation style-sheet */
+
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Source+Code+Pro:400,700');
+
+/* Declare main colours */
+:root {
+  --colour1: #1E6131;
+  --colour2: #AECCB7;
+  --t1: 150%;
+  --t1pad: 10px;
+  --t2: 10%;
+  --t2mar: 15px;
+  --t3: 100%;
+  --t3mar: 20px;
+  --head1: #123266;  /* heading bar behind header text */
+  --h1: #FFFFFF;
+  --h1-alt: #000000;
+  
+  --size: 25px;
+
+  --large: 200%; 
+  --med: 150%;
+  --small: 75%; /* how small is small? */
+}
