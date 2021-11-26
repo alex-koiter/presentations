@@ -74,7 +74,7 @@ Updated from Grolemund & Wickham's classic R4DS schematic,<br>envisioned by Dr. 
 
 ## Reproducibility and Replicability
 
-##**Whats the difference?**
+##**What's the difference?**
 
 
 
@@ -322,9 +322,11 @@ class: split-50
 ### Thank you!
 ]
 
-![:img right: 3%, bottom: 33%, 175px, Black text reads 'Brandon University' next to a shield with two open books above an inverted V with an oil lamp and three stalks of wheat](https://www.brandonu.ca/communications/files/Brandon-University-Horizontal-Logo-1-Colour-Black-RGB.png)
+![:img right: 0, bottom: 33%, 29%, QRcode](./figs/QRcode.png)
 
-![:img right: 3%, bottom: 17%, 300px, Black text and black mechanical gears in the upper right corner with the letters S and L. The text reads 'Dr. Steffi LaZerte' in big and in smaller letters below 'Analysis and Data Tools for Science'](https://steffilazerte.ca/images/logo_eg.png)
+![:img right: 3%, bottom: 30%, 175px, Black text reads 'Brandon University' next to a shield with two open books above an inverted V with an oil lamp and three stalks of wheat](https://www.brandonu.ca/communications/files/Brandon-University-Horizontal-Logo-1-Colour-Black-RGB.png)
+
+![:img right: 3%, bottom: 14%, 300px, Black text and black mechanical gears in the upper right corner with the letters S and L. The text reads 'Dr. Steffi LaZerte' in big and in smaller letters below 'Analysis and Data Tools for Science'](https://steffilazerte.ca/images/logo_eg.png)
 
 
 
@@ -333,6 +335,6 @@ class: split-50
 .small[
 
 `r icon2('logo-twitter', 'Twitter')` @Alex_Koiter&nbsp;  | `r icon2('logo-github', 'GitHub')` alex-koiter&nbsp;&nbsp;   | `r icon2('globe-outline', 'World wide web')` alexkoiter.ca<br>`r icon2('logo-twitter', 'Twitter')` @steffilazerte | `r icon2('logo-github', 'GitHub')` steffilazerte | `r icon2('globe-outline', 'World wide web')` steffilazerte.ca<br>
-Slides: <https://github.com/alex-koiter/presentations> ([PDF](https://raw.githubusercontent.com/alex-koiter/presentations/main/PCAG/Repro/Reproducibility.pdf))  
+Slides: <https://github.com/alex-koiter/presentations> ([PDF](https://raw.githubusercontent.com/alex-koiter/presentations/main/Guest%20Lectures/38_279_Geog_Methods_2021/38_279_Reproducibility_2021.pdf))  
 Created with the R package [xaringan](https://github.com/yihui/xaringan), using [remark.js](https://remarkjs.com), [knitr](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com)<br>
 Icons from [Ionicons](https://ionic.io/ionicons); Compiled on `r Sys.Date()`]]
