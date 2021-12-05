@@ -1,0 +1,463 @@
+---
+title: Riparian areas
+output:
+  xaringan::moon_reader:
+    css: [styles.css, global_styles.css]
+    seal: false
+    self-contained: false
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-AMS_SVG"
+    nature:
+      beforeInit: "macros.js"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      
+---
+class: title-slide, nobar
+
+```{r setup, include = FALSE}
+library(icons)
+library(stringr)
+library(glue)
+
+knitr::opts_chunk$set(fig.width = 6, fig.asp = 0.5, out.width = "100%", 
+                      dpi = 250, fig.align = "center",
+                      echo = FALSE, message = FALSE,
+                      cache = TRUE)
+
+# Use title as alt text for icons
+icon2 <- function(icon, title, icon_fun = ionicons) {
+  icon <- icon_fun(icon)
+  icon <- as.character(icon)
+  if(str_detect(icon, "<title>")) {
+    str_replace(icon, "<title></title>", glue("<title>{title}</title>")) %>%
+      icons:::add_class("icon")
+  } else {
+    str_replace(icon, 
+                "(http://www.w3.org/2000/svg\">\n )", 
+                glue("\\1<title>{title}</title>")) %>% 
+      icons:::add_class("icon")
+  }
+}
+
+```
+
+
+![:img right: 8%, bottom: 10%, 80%, Flow chart from data with mountains and rivers to data analysis to communication with presentations and computers and reports](./figs/Intro_riparian.jpg)
+
+
+### Manitoba Association of Watersheds
+# **Prairie Riparian Areas: Opportunities and Challenges for Production and Conservation**
+
+
+.footnote[
+### Alex Koiter
+]
+
+---
+# What is a riparian area?
+
+- Transitional zone between the aquatic part (the waterfilled basin of the lake or wetland) and the surrounding terrestrial (or upland) area  [(Cows and Fish 2009)](https://cowsandfish.org/wp-content/uploads/LakesandWetlandsRHAWorkbook2020.pdf)
+- "Wetter than dry” but “drier than wet” [(MB Ag)](https://www.manitoba.ca/water/groundwater/riparian_areas/index.html)
+- The strip of moisture-loving vegetation growing along the edge of a natural water body [(Hilliard & Reedyk 2020)](https://agriculture.canada.ca/en/agriculture-and-environment/soil-and-land/riparian-area-management)
+
+![:img center, bottom: 0, 50%, ](./figs/riparian_diagram.png)
+
+---
+# What is a riparian area?
+## Goes by many names
+- Vegetated buffer strip
+- Vegetated filter strip
+- Buffers
+- Riparian corridor
+- Grass buffer
+- Riparian forest
+
+![:img right: 8%, bottom: 2%, 60%, ](./figs/Riparian_strip.jpg)
+
+.footnote[[USDA](https://en.wikipedia.org/wiki/Riparian_zone#/media/File:Riparian_strip.jpg)]
+
+---
+# What does a riparian area look like?
+- Trees around a small retention dam
+
+![:img left: 8%, bottom: 2%, 40%, ](./figs/Pond_riparian.jpg)
+
+![:img right: 8%, bottom: 2%, 40%, ](./figs/pond_map.png)
+
+---
+# What does a riparian area look like?
+- Grasses around a small wetland
+
+![:img left: 8%, bottom: 2%, 40%, ](./figs/wetland_riparian.jpg)
+
+![:img right: 8%, bottom: 2%, 40%, ](./figs/wetland_riparian_map.png)
+
+---
+# What does a riparian area look like?
+- Trees along a stream
+
+![:img left: 8%, bottom: 2%, 40%, ](./figs/treed_stream.jpg)
+
+![:img right: 8%, bottom: 2%, 40%, ](./figs/tree_stream_map.png)
+
+---
+# What does a riparian area look like?
+- Do wet depressional areas have a riparian zone?
+
+![:img center, bottom: 2%, 70%, ](./figs/depressional_area.jpg)
+
+---
+# What does a riparian area look like?
+- Do ditches have a riparian zone?
+
+![:img center, bottom: 2%, 70%, ](./figs/ditch.jpg)
+
+---
+# Defining a riparian area
+## Where does (should) it start and end?
+- Historical observations
+- Too steep/wet to farm
+- Fence line
+- Vegetation types
+- Hydrology
+- Ecosystem function
+- Regulatory
+
+![:img right: 2%, bottom: 2%, 60%, ](./figs/delineation.jpg)
+
+.footnote[[Stutter et al. 2021](https://doi.org/10.1016/j.scitotenv.2020.143982)]
+
+---
+# Riparian functions
+## Recreation
+
+![:img center, bottom: 2%, 60%,, Lobb](./figs/Recreation.png)
+
+---
+# Riparian functions
+## Habitat
+- High plant and animal biodiversity
+- Important corridors in a very fragmented landscape
+
+![:img right: 7%, bottom: 8%, 20%, ](./figs/eggs.jpg)
+
+![:img left: 7%, bottom: 8%, 60%, ](./figs/corridor.png)
+
+---
+# Riparian functions
+## Channel characteristics
+- Changes in the vegetation resulted in changes in characteristics
+    - Treed vs grassed [(Satchithanantham et al. 2019)](https://www.facetsjournal.com/doi/10.1139/facets-2018-0036)
+    
+![:img center, bottom: 2%, 60%, ](./figs/channel charaterists.png)
+
+---
+# Riparian functions
+## Part of the farm
+- Riparian areas can account for 5 to 10% of the farm area
+    - Up to 25% in the prairie pothole region
+
+![:img center, bottom: 2%, 70%, ](./figs/potholes.png)
+
+---
+# Riparian functions
+## Part of the farm
+- Important source of forage, especially during drought
+
+![:img right: 7%, bottom: 8%, 30%, ](./figs/riparian grazing.png)
+
+![:img left: 7%, bottom: 8%, 40%, ](./figs/riparian_grazing2.png)
+
+.footnote[[AWES](https://www.awes-ab.ca/wp-content/uploads/2018/04/Grazing-Livestock-in-Riparian-Areas.pdf), [Cows and Fish Program](https://cowsandfish.org/wp-content/uploads/2017/04/greenzone3rd.pdf)]
+
+---
+# Riparian functions
+## Surface water managment
+- Often cited as an effective means of reducing the loading of nutrients to surface waters
+    - Nutrients, sediment, pathogens, and <br/>other pollutants are filtered by riparian <br/>soil and vegetation
+- Slow runoff $\rightarrow$ reducing peak flows
+
+![:img right: 5%, bottom: 8%, 21%, ](./figs/Buffer_man.png)
+
+![:img right: 28%, bottom: 8%, 25%, ](./figs/riparian_guide.png)
+
+.footnote[[Planning for the Protection of Riparian Areas](https://www.gov.mb.ca/mr/land_use_dev/pubs/riparian_area_guide.pdf), [Stewart et al. 2010](https://publications.gc.ca/site/eng/387724/publication.html)]
+
+---
+# Riparian functions
+## Surface water managment
+- Eutrophication and algae blooms <br/>on Lake Winnipeg
+    - Lots of public interest/pressure/outrage <br/>in improving water quality
+- Riparian areas are considered <br/>part of the solution    
+
+![:img right: 7%, bottom: 15%, 45%, ](./figs/algae.jpg)
+
+.footnote[[Lake Winnipeg Foundation](https://lakewinnipegfoundation.org/tags/eutrophication)]
+
+---
+# Riparian areas as filters
+## Experimental (lab and field)
+- Uniform flow of water
+- Newly established
+- Warm climate/temperature
+- Rainfall
+
+## Provides lots of good and <br/>important information but <br/>how well does it transfer to <br/>the prairie landscape?
+
+![:img right: 2%, bottom: 8%, 55%, ](./figs/experiment.png)
+
+.footnote[[Abu-Zreig et al. 2004](https://doi.org/10.1002/hyp.1400)]
+
+---
+# Riparian areas as filters
+## Uniform flow of water?
+- Lots of nice looking riparian areas in this section
+
+![:img center, bottom: 3%, 75%, ](./figs/STC.png)
+
+.footnote[[Habibiandehkordi et al. 2019](https://acsess.onlinelibrary.wiley.com/doi/full/10.2134/jeq2018.04.0129)]
+
+---
+# Riparian areas as filters
+## Uniform flow of water?
+- Only 1-2% of the length of the field-edge vegetation intercepts surface runoff
+    - Convergence in the landscape results in concentrated <br/>flow paths
+    - Most of the riparian areas are **NOT** filtering runoff
+    - Variable width may help improve filtering with out <br/>putting land out of production
+    
+![:img right: 10%, bottom: 3%, 35%, ](./figs/flow_paths.png)
+
+---
+# Riparian areas as filters
+## Warm climates and rainfall events
+- Information on the efficacy of riparian areas in other locations may not be the same here
+    - Snowmelt driven hydrology
+    - Most of the time riparian areas <br/>are **NOT** filtering runoff
+
+![:img right: 10%, bottom: 2%, 53%, ](./figs/cumu_flow.png)
+
+.footnote[Tobacco Creek Model Watershed]
+
+---
+# Riparian areas as filters
+## Typical prairie riparian area during the snowmelt period
+- Frozen soils and dead and dormant vegetation
+    - Filtering capacity is not not very good during the most critical period
+    
+![:img right: 10%, bottom: 2%, 50%, ](./figs/frozen1.jpg)
+
+![:img left: 10%, bottom: 2%, 28%, ](./figs/frozen2.jpg)
+
+---
+# Riparian areas as filters
+## Sediment and nutrient accumulation
+- Accumulation of soil at the edge of the field an within the riparian area
+    - Created a step (tillage erosion)
+
+![:img right: 10%, bottom: 2%, 75%, ](./figs/Elma_topo.png)
+
+.footnote[[Habibiandehkordi et al. 2019](https://acsess.onlinelibrary.wiley.com/doi/full/10.2134/jeq2018.04.0129)]
+
+---
+# Riparian areas as filters
+## Sediment and nutrient accumulation
+- Accumulation of nutrients at the edge of the <br/>field an within the riparian area
+    - Ability to retain nutrients <br/>declines over time
+
+![:img right: 10%, bottom: 0%, 40%, ](./figs/Elma_P.png)
+
+.footnote[[Habibiandehkordi et al. 2019](https://acsess.onlinelibrary.wiley.com/doi/full/10.2134/jeq2018.04.0129)]
+
+---
+
+# Riparian areas as filters
+## Assessing the filtering capabilities
+- Three sites across MB
+
+![:img center, bottom: 5%, 60%, ](./figs/setup.png)
+
+---
+# Riparian areas as filters and sources
+## Riparian areas can be a source of dissolved nutrients
+- Both the soil and vegetation can contribute
+
+![:img center, bottom: 5%, 70%, ](./figs/P_diff.png)
+
+.footnote[[Habibiandehkordi et al. 2017](https://link.springer.com/article/10.1007/s11356-017-9406-6)]
+
+---
+# Riparian areas as sources
+## Freeze-thaw
+- Freezing vegetation releases <br/>water soluble P
+- Many lab experiments use <br/>unrealistic temperatures
+    - Snow is a good insulator
+    
+![:img right: 5%, bottom: 5%, 58%, ](./figs/Freeze_Severity.png)
+
+.footnote[[Noyes et al. 2021](https://uwaterloo.ca/scholar/mmacrae/people/isaac-noyes)]
+
+---
+# Riparian areas as sources
+## Freeze-thaw
+- Different vegetation types have <br/>different potential to release P
+
+![:img right: 5%, bottom: 5%, 58%, ](./figs/Veg_type.png)
+
+.footnote[[Noyes et al. 2021](https://uwaterloo.ca/scholar/mmacrae/people/isaac-noyes)]
+
+---
+# Riparian areas as sources
+## Flooding
+- Prolonged flooding makes the <br/>soils anaerobic
+    - Can enhance P release <br/>from soils
+    
+![:img right: 5%, bottom: 4%, 62%, ](./figs/flooding.png)    
+
+.footnote[[Concepcion et al. 2020](https://acsess.onlinelibrary.wiley.com/doi/10.1002/jeq2.20179)]
+
+---
+# Riparian areas as filters
+## Riparian areas are the LAST line of defense
+- Manage soils and crops to reduce the <br/>runoff and nutrients leaving agricultural <br/>land
+    - Conservation tillage can increase <br/>dissolved P losses
+    
+![:img right: 5%, bottom: 6%, 50%, ](./figs/comparison.png)  
+
+.footnote[[Tiessen et al. 2010](https://doi.org/10.2134/jeq2009.0219)]
+
+---
+# Riparian areas as filters and sources
+## Riparian areas are the LAST line of defence
+- Manage soils and vegetation in the riparian area
+    - Harvest as a removal mechanism
+    - Terrain can be difficult for equipment
+- Riparian areas are more than just filters
+    - Habitat, stream stabilization etc.
+    
+![:img right: 5%, bottom: 8%, 50%, ](./figs/IMG_20190802_105642.jpg)   
+
+![:img left: 10%, bottom: 8%, 20%, ](./figs/IMG_20190531_133906.jpg) 
+
+---
+# Managing riparian areas
+## Cattle grazing
+- Fall grazing
+    - Drier soils (less compaction)
+    - Limit disturbance to active nests
+    - Extending the gazing season
+    - Remove vegetation prior to winter
+    
+![:img left: 4%, bottom: 8%, 35%, ](./figs/spade_soil.jpg) 
+
+![:img right: 4%, bottom: 8%, 50%, ](./figs/cow.jpg) 
+
+.footnote[[MBFI](https://www.mbfi.ca/)]
+
+---
+# Managing riparian areas
+## Cattle grazing
+- 4 treatments 
+    - Control (do nothing)
+    - Regular graze
+    - High graze
+    - Mow
+- Distribution of P
+    - Biomass
+    - Litter
+    - O horizon
+    - Mineral soil
+    
+![:img right: 1%, bottom: 8%, 65%, ](./figs/setup2.png) 
+
+.footnote[[Avila 2021](https://alexkoiter.ca/lab.html)]
+
+---
+# Managing riparian areas
+## Cattle grazing
+- Preliminary results
+
+![:img right: 2%, bottom: 8%, 65%, ](./figs/P plots.png) 
+
+![:img left: 2%, bottom: 8%, 25%, ](./figs/IMG4.jpg) 
+
+---
+# Whats next?
+## Challenges and opportunities
+- Addressing water quality and quantity before it gets to the riparian area
+    - Remember riparian areas are the last line of defense
+    - Practices that promote efficient use of water and nutrients should remain a priority
+    
+## Easier said than done!
+
+- Management practices to address one issue may have unintended consequences
+
+---
+# Whats next?
+## Challenges and opportunities    
+- The concepts of healthy soils and crops should be extended beyond the fence line
+    - Farm doesn't end at the field edge
+    - Need to balance other riparian functions
+
+![:img center, bottom: 2%, 70%, ](./figs/IMG_20190907_100932.jpg) 
+
+---
+# Whats next?
+## Challenges and opportunities
+- Need home-grown cold-climate research to support decision making
+
+![:img center, bottom: 8%, 70%, ](./figs/cold_climate.png) 
+
+.footnote[[Kieta et al. 2019](http://dx.doi.org/10.1139/er-2017-0077)]
+
+---
+# Whats next?
+## Challenges and opportunities
+- Cold climate and snowmelt driven hydrology <br/>in the prairies means we can't completely <br/>depend on riparian areas to improve <br/>water quality
+    - Other management options should be explored
+
+![:img right: 8%, bottom: 8%, 40%, ](./figs/dams.png) 
+
+.footnote[[Tiessen et al. 2011](https://doi.org/10.2489/jswc.66.3.158)]
+
+---
+# Whats next?
+## Challenges and opportunities
+- Cold climate and snowmelt driven hydrology <br/>in the prairies means we can't completely <br/>depend on riparian areas to improve <br/>water quality
+    - Other management options should be explored
+
+![:img right: 8%, bottom: 8%, 30%, ](./figs/dam_riparian.png) 
+
+.footnote[[Vanrobaeys et al. 2019](https://dx.doi.org/10.2134/jeq2018.12.0452)]
+
+---
+# Whats next?
+## Challenges and opportunities
+- Increases in the frequency of severe weather and flooding
+    - Are riparian areas designed and maintained to accommodate this?
+    - 
+
+![:img right: 4%, bottom: 8%, 60%, ](./figs/manitobafarm_flood.jpeg) 
+
+.footnote[[Toronto Star](https://www.thestar.com/news/insight/2011/05/21/flooding_used_to_bring_fertility_now_it_means_disaster.html)]
+
+---
+![:spacer 25px]()
+
+.center[
+### Thank you!
+]
+
+![:img right: 0, bottom: 33%, 29%, QRcode](./figs/QRcode.png)
+
+![:img right: 3%, bottom: 30%, 175px, Black text reads 'Brandon University' next to a shield with two open books above an inverted V with an oil lamp and three stalks of wheat](https://www.brandonu.ca/communications/files/Brandon-University-Horizontal-Logo-1-Colour-Black-RGB.png)
+
+
+.footnote[
+
+`r icon2('logo-twitter', 'Twitter')` @Alex_Koiter&nbsp;  | `r icon2('logo-github', 'GitHub')` alex-koiter&nbsp;&nbsp;   | `r icon2('globe-outline', 'World wide web')` alexkoiter.ca<br> <br>
+.small[
+Slides: <https://github.com/alex-koiter/presentations> ([PDF](https://raw.githubusercontent.com/alex-koiter/presentations/main/Guest%20Lectures/38_279_Geog_Methods_2021/38_279_Reproducibility_2021.pdf))  
+Created with the R package [xaringan](https://github.com/yihui/xaringan), using [remark.js](https://remarkjs.com), [knitr](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com)<br>
+Icons from [Ionicons](https://ionic.io/ionicons); Compiled on `r Sys.Date()`]]
