@@ -534,13 +534,14 @@ icon2 <- function(icon, title, icon_fun = ionicons) {
 
 ![:img right: 0, bottom: 33%, 29%, QRcode](./figs/QRcode.png)
 
-![:img right: 3%, bottom: 30%, 175px, Black text reads 'Brandon University' next to a shield with two open books above an inverted V with an oil lamp and three stalks of wheat](https://www.brandonu.ca/communications/files/Brandon-University-Horizontal-Logo-1-Colour-Black-RGB.png)
+
+![:img left: 3%, bottom: 30%, 175px, Black text reads 'Brandon University' next to a shield with two open books above an inverted V with an oil lamp and three stalks of wheat](https://www.brandonu.ca/communications/files/Brandon-University-Horizontal-Logo-1-Colour-Black-RGB.png)
 
 
 .footnote[
 
 `r icon2('logo-twitter', 'Twitter')` @Alex_Koiter&nbsp;  | `r icon2('logo-github', 'GitHub')` alex-koiter&nbsp;&nbsp;   | `r icon2('globe-outline', 'World wide web')` alexkoiter.ca<br> <br>
 .small[
-Slides: <https://github.com/alex-koiter/presentations> ([PDF](https://raw.githubusercontent.com/alex-koiter/presentations/main/Guest%20Lectures/38_279_Geog_Methods_2021/38_279_Reproducibility_2021.pdf))  
+Slides: <https://github.com/alex-koiter/presentations> ([PDF](https://raw.githubusercontent.com/alex-koiter/presentations/main/Manitoba%20Association%20of%20Watersheds/MAW_Koiter_2021.pdf))  
 Created with the R package [xaringan](https://github.com/yihui/xaringan), using [remark.js](https://remarkjs.com), [knitr](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com)<br>
 Icons from [Ionicons](https://ionic.io/ionicons); Compiled on `r Sys.Date()`]]
