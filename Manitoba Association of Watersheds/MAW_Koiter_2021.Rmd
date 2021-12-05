@@ -56,13 +56,39 @@ icon2 <- function(icon, title, icon_fun = ionicons) {
 ]
 
 ---
+# Thanks to
+
+.pull-left[ 
+- Collaborators & research groups
+    - David Lobb (U of M)
+    - Phil Owens (UNBC)
+    - Merrin Macrae (U of W)
+]
+
+.pull-right[ 
+- Funding 
+    - Lake Winnipeg Basin Stewardship Fund
+    - NSERC
+    - ECCC
+    - Ducks Unlimited Canada
+    - AAFC
+    - Deerwood and Soil and Water Management Association
+    - Manitoba Beef & Forage Initiatives
+]
+
+![:img left: 2%, bottom: 2%, 50%, Wittaker](./figs/collaboration.png)
+
+.footnote[[Dominic McKenzie](https://www.theguardian.com/commentisfree/2017/sep/30/we-hail-individual-geniuses-success-in-science-collaboration-nobel-prize)]
+---
 # What is a riparian area?
 
 - Transitional zone between the aquatic part (the waterfilled basin of the lake or wetland) and the surrounding terrestrial (or upland) area  [(Cows and Fish 2009)](https://cowsandfish.org/wp-content/uploads/LakesandWetlandsRHAWorkbook2020.pdf)
 - "Wetter than dry” but “drier than wet” [(MB Ag)](https://www.manitoba.ca/water/groundwater/riparian_areas/index.html)
 - The strip of moisture-loving vegetation growing along the edge of a natural water body [(Hilliard & Reedyk 2020)](https://agriculture.canada.ca/en/agriculture-and-environment/soil-and-land/riparian-area-management)
 
-![:img center, bottom: 0, 50%, ](./figs/riparian_diagram.png)
+![:img center, bottom: 0, 50%, Wittaker](./figs/riparian_diagram.png)
+
+
 
 ---
 # What is a riparian area?
@@ -242,6 +268,17 @@ icon2 <- function(icon, title, icon_fun = ionicons) {
 
 ---
 # Riparian areas as filters
+## Inter-annual variability
+- Lots of variability between years
+    - A few years can account for <br/>much of the total flow
+    - Riparian areas are more <br/>important in some years but <br/>less so in others
+
+![:img right: 2%, bottom: 2%, 60%, ](./figs/flow.png)
+
+.footnote[Tobacco Creek Model Watershed]
+
+---
+# Riparian areas as filters
 ## Typical prairie riparian area during the snowmelt period
 - Frozen soils and dead and dormant vegetation
     - Filtering capacity is not not very good during the most critical period
@@ -291,8 +328,7 @@ icon2 <- function(icon, title, icon_fun = ionicons) {
 # Riparian areas as sources
 ## Freeze-thaw
 - Freezing vegetation releases <br/>water soluble P
-- Many lab experiments use <br/>unrealistic temperatures
-    - Snow is a good insulator
+
     
 ![:img right: 5%, bottom: 5%, 58%, ](./figs/Freeze_Severity.png)
 
@@ -306,6 +342,17 @@ icon2 <- function(icon, title, icon_fun = ionicons) {
 ![:img right: 5%, bottom: 5%, 58%, ](./figs/Veg_type.png)
 
 .footnote[[Noyes et al. 2021](https://uwaterloo.ca/scholar/mmacrae/people/isaac-noyes)]
+
+---
+# Riparian areas as sources
+## Freeze-thaw
+- Many lab experiments use unrealistic temperatures
+    - Snow is a good insulator
+    
+![:img center, bottom: 2%, 58%, ](./figs/temperature.png)
+
+.footnote[[Noyes et al. 2021](https://uwaterloo.ca/scholar/mmacrae/people/isaac-noyes)]
+
 
 ---
 # Riparian areas as sources
@@ -435,15 +482,51 @@ icon2 <- function(icon, title, icon_fun = ionicons) {
 # Whats next?
 ## Challenges and opportunities
 - Increases in the frequency of severe weather and flooding
-    - Are riparian areas designed and maintained to accommodate this?
-    - 
+    - Are riparian areas designed <br/>and maintained to <br/>accommodate this?
+    - This is when we need riparian <br/>areas the most!
 
 ![:img right: 4%, bottom: 8%, 60%, ](./figs/manitobafarm_flood.jpeg) 
 
 .footnote[[Toronto Star](https://www.thestar.com/news/insight/2011/05/21/flooding_used_to_bring_fertility_now_it_means_disaster.html)]
 
+
 ---
-![:spacer 25px]()
+# Whats next?
+## Challenges and opportunities
+- Creative designs will likely take a team of people
+    - Producers
+    - Engineers
+    - Hydrologists
+    - Biogeochemists
+    - Pedologists
+    - Biologists
+    - Ecologists
+    - Economists
+    
+## Implemation requires financial and <br/>technical support
+    
+![:img right: 4%, bottom: 8%, 40%, ](./figs/meatballs.png) 
+
+.footnote[["spaghetti and meatballs"; Olson et al. 2007](http://dx.doi.org/10.1016/j.foreco.2007.03.053)]    
+---
+# Whats next?
+## Challenges and opportunities
+- If you have had good success, or challenges, with building, maintaining, and using riparian areas please come and chat with me
+- It's a great way for me to:
+    - Learn what others are doing (no need to reinvent the wheel, or make the same mistakes)
+    - Explore the questions and directions research should be addressing
+    - Make new collaborations
+    
+
+---
+![:spacer 20px]()
+
+## Take home messages
+- Multiple functions
+- Cold climate & snowmelt driven hydrology
+- Concentrated flows
+- Part of the farm
+
 
 .center[
 ### Thank you!
