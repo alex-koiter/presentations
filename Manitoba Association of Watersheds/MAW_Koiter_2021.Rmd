@@ -354,6 +354,8 @@ A big part of this is understanding and appreciating both the history and future
 
 ![:img center, bottom: 5%, 60%, ](./figs/setup.png)
 
+.footnote[[Habibiandehkordi et al. 2017](https://link.springer.com/article/10.1007/s11356-017-9406-6)]
+
 ---
 # Riparian areas as filters and sources
 ## Riparian areas can be a source of dissolved nutrients
@@ -415,7 +417,7 @@ A big part of this is understanding and appreciating both the history and future
 
 ---
 # Riparian areas as filters and sources
-## Riparian areas are the LAST line of defence
+## Other considerations
 - Manage soils and vegetation in the riparian area
     - Harvest as a removal mechanism
     - Terrain can be difficult for equipment
@@ -557,10 +559,8 @@ A big part of this is understanding and appreciating both the history and future
     
 
 ---
-![:spacer 20px]()
-
-## Take home messages
-- Multiple functions
+# Take home messages
+- Multiple functions (more than just a filter)
 - Cold climate & snowmelt driven hydrology
 - Concentrated flow paths
 - Part of the farm
