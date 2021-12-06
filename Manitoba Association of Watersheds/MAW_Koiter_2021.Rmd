@@ -56,6 +56,44 @@ icon2 <- function(icon, title, icon_fun = ionicons) {
 ]
 
 ---
+# Land and water acknowledgement
+
+![:spacer 20px]()
+
+.center[
+We are gathered here to talk about land and water in Manitoba and it is important to recognize the
+relationships between the landscape and humanity
+
+![:spacer 20px]()
+
+A big part of this is understanding and appreciating both the history and future of this relationship
+
+]
+
+![:spacer 20px]()
+
+> It is important for us to acknowledge that Brandon, and the surrounding area, are the traditional homelands of the Dakota, Anishinabek, Oji-Cree, Cree, Dene and Metis peoples
+
+
+???
+- A big part of this is understanding and appreciating both the history and future of this relationship
+- This provides valuable context when discussing stewardship and management of natural resources
+
+---
+# A little about me
+- Associate professor
+    - Brandon University, Department of Geography & Environment
+- Interested in watershed science
+    - Soil and water quality
+    - Hydrology
+    - Agriculture
+    - Geomorphology
+
+![:img right: 4%, bottom: 3%, 60%, ](./figs/alex_travels_9.png)
+
+![:img left: 4%, bottom: 4%, 22%, ](./figs/_IGP0443.JPG)
+
+---
 # Thanks to
 
 .pull-left[ 
@@ -79,6 +117,7 @@ icon2 <- function(icon, title, icon_fun = ionicons) {
 ![:img left: 2%, bottom: 2%, 50%, Wittaker](./figs/collaboration.png)
 
 .footnote[[Dominic McKenzie](https://www.theguardian.com/commentisfree/2017/sep/30/we-hail-individual-geniuses-success-in-science-collaboration-nobel-prize)]
+
 ---
 # What is a riparian area?
 
@@ -492,18 +531,17 @@ icon2 <- function(icon, title, icon_fun = ionicons) {
 
 ---
 # Whats next?
-## Challenges and opportunities
-- Creative designs will likely take a team of people
-    - Producers
-    - Engineers
-    - Hydrologists
-    - Biogeochemists
-    - Pedologists
-    - Biologists
-    - Ecologists
-    - Economists
-    
-## Implemation requires financial and <br/>technical support
+## Creative designs will likely take a team
+
+- Producers
+- Indigenous leaders and community
+- Engineers
+- Hydrologists
+- Biogeochemists
+- Pedologists
+- Biologists
+- Ecologists
+- Economists
     
 ![:img right: 4%, bottom: 8%, 40%, ](./figs/meatballs.png) 
 
@@ -524,7 +562,7 @@ icon2 <- function(icon, title, icon_fun = ionicons) {
 ## Take home messages
 - Multiple functions
 - Cold climate & snowmelt driven hydrology
-- Concentrated flows
+- Concentrated flow paths
 - Part of the farm
 
 
