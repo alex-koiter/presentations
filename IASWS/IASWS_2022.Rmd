@@ -226,6 +226,6 @@ background-position: bottom 5px center
 
 `r icon2('logo-twitter', 'Twitter')` @Alex_Koiter&nbsp;  | `r icon2('logo-github', 'GitHub')` alex-koiter&nbsp;&nbsp;   | `r icon2('globe-outline', 'World wide web')` alexkoiter.ca<br> <br>
 .small[
-Slides: <https://github.com/alex-koiter/presentations> ([PDF](https://raw.githubusercontent.com/alex-koiter/presentations/main/Manitoba%20Association%20of%20Watersheds/MAW_Koiter_2021.pdf))  
+Slides: <https://github.com/alex-koiter/presentations> ([PDF](https://raw.githubusercontent.com/alex-koiter/presentations/main/IASWS/IASWS_Koiter_2022_sm.pdf))  
 Created with the R package [xaringan](https://github.com/yihui/xaringan), using [remark.js](https://remarkjs.com), [knitr](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com)<br>
 Icons from [Ionicons](https://ionic.io/ionicons); Compiled on `r Sys.Date()`]]
