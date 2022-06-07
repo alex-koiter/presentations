@@ -12,9 +12,38 @@ output:
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
+
       
+                  
 ---
 class: title-slide, nobar, center
+```{r setup, include = FALSE}
+library(icons)
+library(stringr)
+library(glue)
+
+knitr::opts_chunk$set(fig.width = 6, fig.asp = 0.5, out.width = "100%", 
+                      dpi = 250, fig.align = "center",
+                      echo = FALSE, message = FALSE,
+                      cache = TRUE)
+
+# Use title as alt text for icons
+icon2 <- function(icon, title, icon_fun = ionicons) {
+  icon <- icon_fun(icon)
+  icon <- as.character(icon)
+  if(str_detect(icon, "<title>")) {
+    str_replace(icon, "<title></title>", glue("<title>{title}</title>")) %>%
+      icons:::add_class("icon")
+  } else {
+    str_replace(icon, 
+                "(http://www.w3.org/2000/svg\">\n )", 
+                glue("\\1<title>{title}</title>")) %>% 
+      icons:::add_class("icon")
+  }
+}
+
+```
+
 background-image:  url(`r "./figs/sediment_cropped.jpg"`)
 background-position: bottom 85px center
 background-size: cover
@@ -176,16 +205,27 @@ background-position: bottom 5px center
 ---
 # Thank You
 ## Changes in
-- Physiographic regions
-- Drainage
-- Scale of observation
+- Physiographic regions, drainage, scale of observation
+
 
 ## Impact
-- Water yield
-- Sediment yield
-- Sources of sediment
+- Water yield, sediment yield, sources of sediment
 
 
-![:box 50%, 40%, 30%](<strong>Thank You!</strong>)
+.center[
+### Thank you!
+]
 
-.align-bottom-left[<img src = "./figs/twitter_black.jpg" style = "height: 40px; vertical-align:middle">  @Alex_Koiter <img src = "./figs/github.png" style = "height: 40px; vertical-align:middle; margin-left: 25px"> alex-koiter <img src = "./figs/web.png" style = "height: 40px; vertical-align:middle; margin-left: 25px"> alexkoiter.ca <img src = "./figs/email.svg" style = "height: 25px; vertical-align:middle; margin-left: 25px"> koitera@brandonu.ca]
+![:img right: 0, bottom: 33%, 29%,](./figs/QRcode.png)
+
+
+![:img left: 3%, bottom: 30%, 175px,](https://www.brandonu.ca/communications/files/Brandon-University-Horizontal-Logo-1-Colour-Black-RGB.png)
+
+
+.footnote[
+
+`r icon2('logo-twitter', 'Twitter')` @Alex_Koiter&nbsp;  | `r icon2('logo-github', 'GitHub')` alex-koiter&nbsp;&nbsp;   | `r icon2('globe-outline', 'World wide web')` alexkoiter.ca<br> <br>
+.small[
+Slides: <https://github.com/alex-koiter/presentations> ([PDF](https://raw.githubusercontent.com/alex-koiter/presentations/main/Manitoba%20Association%20of%20Watersheds/MAW_Koiter_2021.pdf))  
+Created with the R package [xaringan](https://github.com/yihui/xaringan), using [remark.js](https://remarkjs.com), [knitr](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com)<br>
+Icons from [Ionicons](https://ionic.io/ionicons); Compiled on `r Sys.Date()`]]
