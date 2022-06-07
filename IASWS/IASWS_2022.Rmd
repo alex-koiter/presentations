@@ -1,0 +1,191 @@
+---
+title: Koiter IASWS 2022 Presentation
+output:
+  xaringan::moon_reader:
+    css: styles.css
+    seal: false
+    self-contained: false
+    mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-AMS_SVG"
+    nature:
+      beforeInit: "macros.js"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      
+---
+class: title-slide, nobar, center
+background-image:  url(`r "./figs/sediment_cropped.jpg"`)
+background-position: bottom 85px center
+background-size: cover
+
+.align-bottom-left[<img src = "./figs/twitter_black.jpg" style = "height: 40px; vertical-align:middle">  @Alex_Koiter <img src = "./figs/github.png" style = "height: 40px; vertical-align:middle; margin-left: 25px"> alex-koiter <img src = "./figs/web.png" style = "height: 40px; vertical-align:middle; margin-left: 25px"> alexkoiter.ca <img src = "./figs/email.svg" style = "height: 25px; vertical-align:middle; margin-left: 25px"> koitera@brandonu.ca]
+
+# The influence of land use and geomorphology on water and sediment dynamics in the Canadian Prairies
+
+
+.spacer[ ]
+
+.spacer[ ]
+
+
+
+
+## .center[Alex Koiter .small[Brandon University] <br> Masoud Goharrokhi .small[University of Manitoba] <br> David Lobb .small[University of Manitoba] <br> Phil Owens .small[University of Northern BC]]
+
+---
+background-image: url(`r "./figs/Steps.png"`)
+background-size: 75%
+background-position: bottom 5px center
+# Canadian Prairies
+
+---
+background-image: url(`r "./figs/TC_Land_use_map_IASWS.png"`)
+background-size: 75%
+background-position: bottom 5px center
+# Tobacco Creek Model Watershed
+.pull-left[
+- Nested watersheds: ~2km<sup>2</sup> to ~1000km<sup>2</sup>
+- Predominantly agricultural land use
+]
+
+
+---
+background-image: url(`r "./figs/TC_watershed_map_IASWS.png"`)
+background-size: 75%
+background-position: bottom 5px center
+# Tobacco Creek Model Watershed
+.pull-left[
+- Nested watersheds: ~2km<sup>2</sup> to ~1000km<sup>2</sup>
+- Predominantly agricultural land use
+]
+.pull-right[
+- Highly modified drainage network
+]
+
+---
+background-image: url(`r "./figs/TC_DEM_map_CAG2.png"`)
+background-size: 75%
+background-position: bottom 5px center
+# Tobacco Creek Model Watershed
+.pull-left[
+- Nested watersheds: ~2km<sup>2</sup> to ~1000km<sup>2</sup>
+- Predominantly agricultural land use
+]
+.pull-right[
+- Highly modified drainage network
+- Three distinct physiographic regions
+]
+---
+background-image: url(`r "./figs/topsoil.jpg"`), url(`r "./figs/dam.jpg"`)
+background-size: 50%, 42%
+background-position: bottom 50px right 20px, bottom 50px left 20px
+# Above the MB Escarpment
+.pull-left[
+- Undulating hills
+    - Glacial till
+    - Headwater storage dams
+    - Low-order streams
+]
+
+---
+background-image: url(`r "./figs/shale.png"`), url(`r "./figs/beaver.png"`)
+background-size: 40%, 30%
+background-position: bottom 50px right 2px, bottom 50px left 350px
+# MB Escarpment
+.pull-left[
+- Incised streams
+    - Rapid change in elevation
+    - Steep valley walls
+    - Low-strength shales
+    - Beaver dams
+]
+
+---
+background-image: url(`r "./figs/glacial_lake.png"`)
+background-size: 40%
+background-position: bottom 50px right 50px
+# Lowlands
+
+## Glacial Lake Agassiz
+.pull-left[
+- Low relief
+    - Meandering rivers and streams
+    - Provincial drains
+    - Municipal drains
+    - Lots of in-field surface drains
+
+## Complicates the normally simple concept of drainage area    
+]
+
+---
+background-image: url(`r "./figs/cumu_flow.png"`)
+background-size: 70%
+background-position: bottom 5px right 10px
+# Discharge
+## Annual
+- Spring snowmelt <br>dominated hydrology
+
+---
+background-image: url(`r "./figs/flow.png"`)
+background-size: 70%
+background-position: bottom 5px right 10px
+# Discharge
+## Inter-Annual
+
+- 2/6 years account for <br/>more than >75% of <br/>water
+
+---
+background-image: url(`r "./figs/Lag.png"`)
+background-size: 45%
+background-position: bottom 3px right 150px
+# Runoff
+## Lag Time
+- Gaining streams above and within <br/>MB escarpment
+- Losing streams below <br/>MB escarpment
+
+---
+background-image:  url(`r "./figs/annual_load_2.png"`)
+background-size:  70%
+background-position: bottom 10px right 10px
+# Sediment Load
+## Inter-Annual 
+- 2/6 years account for <br/>more than >80% of <br/>sediment moved
+---
+background-image: url(`r "./figs/Texture.png"`), url(`r "./figs/Load.png"`)
+background-size: 48%, 48%
+background-position:bottom 5px left 10px, bottom 5px right 10px
+# Grain-size
+
+
+---
+background-image:  url(`r "./figs/spec_yield_2.png"`)
+background-size:  70%
+background-position: bottom 10px right 10px
+# Specific Suspended Sediment Load
+## Decreases with <br/>increasing drainage <br/>area
+
+---
+background-image: url(`r "./figs/TC_fingerprint_results.png"`)
+background-size: 85%
+background-position: bottom 5px center
+# Sources of Sediment
+## Shift in sources of sediment
+- Colour fingerprints
+
+---
+# Thank You
+## Changes in
+- Physiographic regions
+- Drainage
+- Scale of observation
+
+## Impact
+- Water yield
+- Sediment yield
+- Sources of sediment
+
+
+![:box 50%, 40%, 30%](<strong>Thank You!</strong>)
+
+.align-bottom-left[<img src = "./figs/twitter_black.jpg" style = "height: 40px; vertical-align:middle">  @Alex_Koiter <img src = "./figs/github.png" style = "height: 40px; vertical-align:middle; margin-left: 25px"> alex-koiter <img src = "./figs/web.png" style = "height: 40px; vertical-align:middle; margin-left: 25px"> alexkoiter.ca <img src = "./figs/email.svg" style = "height: 25px; vertical-align:middle; margin-left: 25px"> koitera@brandonu.ca]
