@@ -1,6 +1,6 @@
 
 
-pagedown::chrome_print("MAW_Koiter_2021.html", "MAW_Koiter_2021.pdf") 
+pagedown::chrome_print("MAW_Koiter_2021.html", "MAW_Koiter_2021.pdf", timeout = 120) 
 
 # NOT necessary here
 # Reduce size (prepress = 300 dpi, printer = 300 dpi, ebook = 150 dpi, screen = 72dpi)
