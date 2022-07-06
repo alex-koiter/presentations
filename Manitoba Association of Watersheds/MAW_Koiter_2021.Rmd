@@ -121,7 +121,7 @@ A big part of this is understanding and appreciating both the history and future
 ---
 # What is a riparian area?
 
-- Transitional zone between the aquatic part (the waterfilled basin of the lake or wetland) and the surrounding terrestrial (or upland) area  [(Cows and Fish 2009)](https://cowsandfish.org/wp-content/uploads/LakesandWetlandsRHAWorkbook2020.pdf)
+- Transitional zone between the aquatic part (the water filled basin of the lake or wetland) and the surrounding terrestrial (or upland) area  [(Cows and Fish 2009)](https://cowsandfish.org/wp-content/uploads/LakesandWetlandsRHAWorkbook2020.pdf)
 - "Wetter than dry” but “drier than wet” [(MB Ag)](https://www.manitoba.ca/water/groundwater/riparian_areas/index.html)
 - The strip of moisture-loving vegetation growing along the edge of a natural water body [(Hilliard & Reedyk 2020)](https://agriculture.canada.ca/en/agriculture-and-environment/soil-and-land/riparian-area-management)
 

@@ -3,7 +3,7 @@
   <head>
     <title>Riparian areas</title>
     <meta charset="utf-8" />
-    <script src="MAW_Koiter_2021_files/header-attrs-2.11/header-attrs.js"></script>
+    <script src="MAW_Koiter_2021_files/header-attrs-2.14/header-attrs.js"></script>
     <link rel="stylesheet" href="styles.css" type="text/css" />
     <link rel="stylesheet" href="global_styles.css" type="text/css" />
   </head>
@@ -92,7 +92,7 @@ A big part of this is understanding and appreciating both the history and future
 ---
 # What is a riparian area?
 
-- Transitional zone between the aquatic part (the waterfilled basin of the lake or wetland) and the surrounding terrestrial (or upland) area  [(Cows and Fish 2009)](https://cowsandfish.org/wp-content/uploads/LakesandWetlandsRHAWorkbook2020.pdf)
+- Transitional zone between the aquatic part (the water filled basin of the lake or wetland) and the surrounding terrestrial (or upland) area  [(Cows and Fish 2009)](https://cowsandfish.org/wp-content/uploads/LakesandWetlandsRHAWorkbook2020.pdf)
 - "Wetter than dry” but “drier than wet” [(MB Ag)](https://www.manitoba.ca/water/groundwater/riparian_areas/index.html)
 - The strip of moisture-loving vegetation growing along the edge of a natural water body [(Hilliard &amp; Reedyk 2020)](https://agriculture.canada.ca/en/agriculture-and-environment/soil-and-land/riparian-area-management)
 
@@ -553,7 +553,7 @@ A big part of this is understanding and appreciating both the history and future
 .small[
 Slides: &lt;https://github.com/alex-koiter/presentations&gt; ([PDF](https://raw.githubusercontent.com/alex-koiter/presentations/main/Manitoba%20Association%20of%20Watersheds/MAW_Koiter_2021.pdf))  
 Created with the R package [xaringan](https://github.com/yihui/xaringan), using [remark.js](https://remarkjs.com), [knitr](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com)&lt;br&gt;
-Icons from [Ionicons](https://ionic.io/ionicons); Compiled on 2021-12-06]]
+Icons from [Ionicons](https://ionic.io/ionicons); Compiled on 2022-07-06]]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
@@ -603,6 +603,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
