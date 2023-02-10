@@ -1,0 +1,372 @@
+---
+title: "Open and Reproducible Soil Science"
+subtitle: "With great data comes great responsibility!"
+author: "Alex Koiter"
+format: 
+  revealjs:
+    theme: [default, styles.scss]
+    width: 1200
+    slide-number: true
+    embed-resources: true
+---
+
+## Open and Reproducible Soil Science  {background-color="white" background-image="figs/title.jpg" background-size="cover"}
+
+:::{.white .shadow style="margin-top:70px"}
+### With great data comes great responsibility! {.white .shadow}
+
+**Dr. Alex Koiter**
+:::
+
+::: {style="position:absolute; bottom:0"}
+ `r icons::fontawesome("globe", )` [**alexkoiter.ca**](https://alexkoiter.ca){.white .shadow}<br> `r icons::fontawesome("twitter")` [**\@alex_koiter**](https://twitter.com/alex_koiter){.white .shadow}<br> `r icons::fontawesome("envelope")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca){.white .shadow}
+:::
+
+## Outline
+### From field/lab to dissemination and everything in between!
+![Artwork by [Allison Horst](https://allisonhorst.com/)](figs/environmental-data-science-r4ds-general.png)
+
+## Definitions
+
+### Reproducibility
+- Given the same data set the analyses can be reproduced
+
+### Replicability
+- A separate investigator conducted an independent study and came to the same conclusion as the
+original study
+
+## Reproducibility
+
+- Less about ensuring the correctness of the results
+- More about being transparent and understanding exactly what was done
+    - This is especially important in large and complex data sets
+    
+:::: {.columns}
+
+::: {.column width="50%"}
+::: {.callout-important}
+A study can be reproducible and still be wrong
+:::
+:::
+
+::: {.column width="50%"}
+
+![[Allison Horst](https://allisonhorst.com/)](figs/repro.jpeg)
+:::
+::::
+
+## Open data and science
+- Making the data set, methods, and interpretation:
+  - Available 
+  - Accessible
+  - Transparent
+  - Reproducible
+
+:::{.absolute top=100 right=0 width=65%}
+![The six core principles of Open Science; [Gallaher et al. 2020 Nat Ecol Evol](https://www.nature.com/articles/s41559-020-1109-6)](figs/6_principles.png)  
+:::
+
+## Computational reproducibility
+### Important because:
+- Allows us to evaluate the data, analyses, and models on which conclusions are drawn
+- Allows you to revisit your own work (e.g., incorporate a suggestion)
+
+### It is difficult to reproduce because:
+- Data is not made available/open
+- Method sections of papers often do not provide enough detail
+- Use of graphical programs (clicks and drop down menus)
+- Not making code available/open (R, Python, MATLAB)
+
+## Working with large data sets
+### Data aquisition
+- Documenting getting/downloading/importing data sets
+    - Always maintain the original data (unmodified)
+
+### Example
+:::: {.columns}
+
+::: {.column width="50%"}
+- Downloading weather data for a few different station over many years
+:::
+::: {.column width="50%"}
+![LaZerte & Albers 2018; [JOSS](https://joss.theoj.org/papers/10.21105/joss.00571)](figs/weathercan_logo.png){width=50%}
+:::
+::::
+
+## Working with large data sets
+### Data munging/wrangling
+:::: {.columns}
+
+::: {.column width="30%"}
+1. Formatting
+2. Merging
+3. Quality assurance
+    - NA's
+    - 0's
+    - Detection limits
+    - Outliers
+    - Typos/errors
+:::
+
+::: {.column width="70%"}
+![[Allison Horst](https://allisonhorst.com/)](figs/unruly_data.jpg)
+:::
+::::
+
+### Need to document every change you make
+
+## Data analysis
+### Analysis/figures
+
+- Data used
+- Analysis used (trial and error)
+- Parameters
+- Diagnostics
+- Figure creation process
+- Software versions
+
+### Hard to write papers if you don't <br/>keep track of this!
+
+:::{.absolute top=50 right=0 width=65%}
+![[Allison Horst](https://allisonhorst.com/)](figs/kmeans_1.jpg)
+:::
+
+## Open data and science
+:::: {.columns}
+
+::: {.column width="50%"}
+### Important because:
+- Improves global synthesis of knowledge
+- More robust and reliable science
+- Easier to build on existing work
+- Better collaboration
+- Improves collegiality
+- Promotes EDI
+- Community engagement
+:::
+::: {.column width="50%"}
+### It is difficult to be open because:
+- Can be expensive
+- Can be time consuming
+- Lack the skills 
+- Unsure of what might happen
+:::
+::::
+
+## Sharing is caring
+### How to make your data open
+- Where to host it
+- When to make it available
+- Removing sensitive data
+- Format
+- For how long
+- Raw or summarized data
+- Attribution
+
+:::{.absolute top=50 right=0 width=55%}
+![[FLUXNET data portal](https://fluxnet.org/about/regional-networks/)](figs/fluxnet.png)
+:::
+
+## Sharing is caring
+### How to make your science open
+- Open access publications or preprints
+- Open peer review
+- Detailed methods
+- Open source software
+- Make code available
+- Make date available
+- Study preregistration
+
+:::{.absolute top=50 right=0 width=55%}
+![[PLOS](https://plos.org/resource/open-peer-review/)](figs/plos.png)
+:::
+
+## Why is this not practiced?
+::: {.incremental}
+
+1. Don't know how
+2. Too busy
+3. It's internal work
+4. Worried about being copied
+5. Worried about mistakes
+6. Rigged the data
+:::
+
+## Why is this not practiced?
+
+::: {.incremental}
+1. Don't know how - **learn! lots of support and tools**
+2. Too busy - **often faster in the long run**
+3. It's internal work - **often a need to share**
+4. Worried about being copied - **in practice low risk**
+5. Worried about mistakes - **happens to everyone**
+6. Rigged the data - **you have bigger problems**
+:::
+
+:::{.absolute bottom=0 right=0 width=45%}
+![[Allison Horst](https://allisonhorst.com/)](figs/code_hero.jpg)
+:::
+
+## How can you achieve this?
+### Reproducible data analysis
+::: {.incremental}
+- Extensive notes
+  - What, when, with what
+- Programmatically
+  - Scripts, R, Python, MATLAB, etc.
+:::
+
+
+## How can you achieve this?
+### Reproducible data analysis
+
+- Extensive notes
+  - What, when, with what
+- Programmatically
+  - Scripts, R, Python, MATLAB, etc.
+- Version control
+  - git, [GitHub](https://github.com/), [GitLab](https://gitlab.com/)
+
+:::{.absolute bottom=200 right=0 width=55%}
+![[Allison Horst](https://allisonhorst.com/)](figs/git.png)
+:::
+
+
+## Recent scuccess story
+
+- Collaborating with Ehsan Zarrinabadi on soil erosion project
+- Creating figures with a large data set
+
+![](figs/Ehsan1.png)
+
+## Recent scuccess story
+
+- Ehsan identifies an issue where a site has samples where % sand + % silt + % clay $\neq$ 100 %
+    - Data is nonsensical
+- Requests my help to resolve
+- Because Ehsan has a reproducible work flow (R script) he sends me the data and script
+
+![](figs/Ehsan2.png){fig-align=center}
+
+## Recent scuccess story
+- Working with an AAFC collaborator (Dr. Sheng Li)
+- Asked to collect measurements and processes the data
+- I wanted to have a reproducible data analysis work flow as a deliverable 
+
+![[Quarto](https://quarto.org/)](figs/Sheng1.png)
+
+## Recent scuccess story
+- Loading in the data
+  - Formatting of the data was odd to accommodate field note taking
+  
+![](figs/Sheng2.png){fig-align=center}
+
+
+## Recent scuccess story
+- Calculations and output
+  - Very clear as to what was done
+  
+![](figs/Sheng3.png){fig-align=center}
+
+## Recent scuccess story
+- Reproducible
+  - Data
+  
+![](figs/Sheng4.png){fig-align=center}
+
+## Recent scuccess story
+- Reproducible
+  - Software versions
+  
+![](figs/Sheng5.png){fig-align=center} 
+
+## How can you achieve this?
+### Open data and science
+
+
+## How can you achieve this?
+### Open data and science
+
+- Open and free software
+
+::: {.incremental}
+
+- [GitHub](https://github.com/), [GitLab](https://gitlab.com/)
+- [Open Science framework](https://osf.io/)
+- [FAIRsharing.org](https://fairsharing.org/)
+- Journal supplementary materials
+- Check with your [library](https://libguides.lib.umanitoba.ca/oa-publishing)
+- Include an allocation in funding applications to support this
+- Look for training opportunities and support
+- Encourage it, support it, and/or try it!
+:::
+:::{.absolute bottom=250 right=0 width=55%}
+![[R OpenSci](https://ropensci.org/)](figs/ropen.png)
+:::
+
+## Recent scuccess story
+
+### Colour analysis 
+- Worked on several projects where the colour of soil and sediment needed to be characterized
+  - Also collaborated on several projects with the same goal
+- Methods of analysis were well established in the literature
+  - Math was a bit complicated and used lots of data
+  - MATLAB script was available (not free)
+- Developed an R script
+
+:::{.absolute bottom=0 right=0 width=45%}
+![Credit: Masoud](figs/field_spec.png)
+:::
+
+## Recent scuccess story
+
+### GitHub
+- Was emailing the script to collaborators
+- Got tired of emailing
+  - Posted to [GitHub](https://github.com/alex-koiter)
+- Changes are tracked through commits
+- Have added scripts to create figures
+- Most up to date version easily available
+- Has example data
+- Has a copyright [license](https://github.com/alex-koiter/Colour-analysis/blob/main/LICENSE)
+- Has a [DOI](https://zenodo.org/record/5123327#.Y-VmxBzMKCg) 
+- Easy for others to contribute via Pull requests
+- Can open issues (bugs)
+
+:::{.absolute bottom=200 right=0 width=55%}
+![[Colour-analysis repository](https://github.com/alex-koiter/Colour-analysis)](figs/alex_github.png)
+:::
+
+## Ongoing scuccess story
+### Wind erosion project
+- Remote sensing of soil surface properties
+- Involves lots of imagery and other large files
+    - Emailing not an option
+- Wanted a central repository for:
+  - Raw data
+  - Data analysis scripts
+  - Processed data (results)
+  - Publications
+- Good candidate to try out [OSF](https://osf.io)
+- Currently a private repository
+
+:::{.absolute bottom=20 right=0 width=50%}
+![](figs/osf.png)
+:::    
+
+## Closing thoughts
+
+### Being reproducible and open make science stronger
+
+- One size does not fit all
+  - Lots of different approaches and challenges
+- It is not all or nothing
+  - Anything you do is **awesome**
+- It takes time and effort to learn and implement
+  - Everybody has a different workload and priorities
+  - Great support and resources are available
+- It can make you feel vulnerable
+  - Mistakes happen
+  - Can only be fixed if found
+  - This is not a sign of weakness - hiding or not learning from them is
+
