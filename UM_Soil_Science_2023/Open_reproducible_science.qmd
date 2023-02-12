@@ -5,6 +5,7 @@ format:
     width: 1200
     slide-number: true
     embed-resources: true
+editor: source
 ---
 
 ## Open and Reproducible Soil Science {background-color="white" background-image="figs/title.jpg" background-size="cover"}
@@ -16,7 +17,7 @@ format:
 :::
 
 ::: {style="position:absolute; bottom:0"}
- `r icons::fontawesome("globe")` [**alexkoiter.ca**](https://alexkoiter.ca){.white .shadow}<br> `r icons::fontawesome("twitter")` [**\@alex_koiter**](https://twitter.com/alex_koiter){.white .shadow}<br> `r icons::fontawesome("envelope")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca){.white .shadow}<br> `r icons::fontawesome("github")` [**alex-koiter**](https://github.com/alex-koiter){.white .shadow}
+ `r icons::fontawesome("globe") |> icons::icon_style(fill = "white")` [**alexkoiter.ca**](https://alexkoiter.ca){.white .shadow}<br> `r icons::fontawesome("twitter") |> icons::icon_style(fill = "white")` [**\@alex_koiter**](https://twitter.com/alex_koiter){.white .shadow}<br> `r icons::fontawesome("mastodon") |> icons::icon_style(fill = "white")` [**\@alex_koiter\@sciencemastodon.com**](https://sciencemastodon.com/@Alex_Koiter){.white .shadow}<br> `r icons::fontawesome("envelope") |> icons::icon_style(fill = "white")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca){.white .shadow}<br> `r icons::fontawesome("github") |> icons::icon_style(fill = "white")` [**alex-koiter**](https://github.com/alex-koiter){.white .shadow}
 :::
 
 ::: {.absolute top="0" right="0" width="40%"}
@@ -30,6 +31,13 @@ format:
 ::: {.absolute top="500" right="0" width="40%"}
 ![](figs/iheartsoil-klingon.jpg){fig-align="right"}
 :::
+
+## Land acknowledgement
+
+-   As soil scientists we focus on the health and function of soils
+-   We work, learn, educate, and conduct research on traditional territories
+-   The land, including the soil, we appreciate so much also includes the history of its people
+-   Brandon University, and the surrounding area, are the traditional homelands of the Dakota, Anishinabek, Oji-Cree, Cree, Dene and Metis peoples
 
 ## Outline
 
@@ -175,7 +183,7 @@ A study can be reproducible and still be wrong
 :::
 :::
 
-## Sharing is caring
+## Sharing is caring `r icons::fontawesome("heart") |> icons::icon_style(fill = "red")`
 
 ### How to make your data open
 
@@ -191,7 +199,7 @@ A study can be reproducible and still be wrong
 ![[FLUXNET data portal](https://fluxnet.org/about/regional-networks/)](figs/fluxnet.png)
 :::
 
-## Sharing is caring
+## Sharing is caring `r icons::fontawesome("heart") |> icons::icon_style(fill = "red")`
 
 ### How to make your science open
 
@@ -213,24 +221,24 @@ A study can be reproducible and still be wrong
 1.  Don't know how
 2.  Too busy
 3.  It's internal work
-4.  Worried about being copied
-5.  Worried about mistakes
+4.  Worried about being copied/scooped
+5.  Worried about exposing mistakes
 6.  Rigged the data
 :::
 
 ## Why is this not practiced?
 
-::: incremental
-1.  Don't know how - **learn! lots of support and tools**
-2.  Too busy - **often faster in the long run**
-3.  It's internal work - **often a need to share**
-4.  Worried about being copied - **in practice low risk**
-5.  Worried about mistakes - **happens to everyone**
-6.  Rigged the data - **you have bigger problems**
-:::
-
 ::: {.absolute bottom="0" right="0" width="45%"}
 ![[Allison Horst](https://allisonhorst.com/)](figs/code_hero.jpg)
+:::
+
+::: incremental
+1.  Don't know how - **give it a try! lots of support and tools**
+2.  Too busy - **often faster in the long run**
+3.  It's internal work - **often a need to share**
+4.  Worried about being copied/scooped - **in practice low risk**
+5.  Worried about exposing mistakes - **happens to everyone**
+6.  Rigged the data - **you have bigger problems**
 :::
 
 ## How can you achieve this?
@@ -278,7 +286,7 @@ A study can be reproducible and still be wrong
 ## Recent scuccess story
 
 -   Working with an AAFC collaborator (Dr. Sheng Li)
--   Asked to collect measurements and processes the data
+-   Asked to collect measurements and process the data
 -   I wanted to have a reproducible data analysis work flow as a deliverable
 
 ![[Quarto](https://quarto.org/)](figs/Sheng1.png)
@@ -319,9 +327,8 @@ A study can be reproducible and still be wrong
 
 ### Open data and science
 
--   Open and free software
-
 ::: incremental
+-   Open and free software
 -   [GitHub](https://github.com/), [GitLab](https://gitlab.com/)
 -   [Open Science Framework](https://osf.io/)
 -   [FAIRsharing.org](https://fairsharing.org/)
@@ -333,7 +340,7 @@ A study can be reproducible and still be wrong
 :::
 
 ::: {.absolute bottom="250" right="0" width="55%"}
-![[R OpenSci](https://ropensci.org/)](figs/ropen.png)
+![[rOpenSci](https://ropensci.org/)](figs/ropen.png)
 :::
 
 ## Recent scuccess story
@@ -362,7 +369,7 @@ A study can be reproducible and still be wrong
 -   Have added scripts to create figures
 -   Most up to date version easily available
 -   Has example data
--   Has a copyright [license](https://github.com/alex-koiter/Colour-analysis/blob/main/LICENSE)
+-   Has an open copyright [license](https://github.com/alex-koiter/Colour-analysis/blob/main/LICENSE)
 -   Has a [DOI](https://zenodo.org/record/5123327#.Y-VmxBzMKCg)
 -   Easy for others to contribute via Pull requests
 -   Can open issues (bugs)
@@ -379,8 +386,8 @@ A study can be reproducible and still be wrong
 -   Involves lots of imagery and other large files
     -   Emailing not an option
 -   Wanted a central repository for:
-    -   Raw data
-    -   Data analysis scripts
+    -   Raw data (via Dropbox)
+    -   Data analysis scripts (GitHub later?)
     -   Processed data (results)
     -   Publications
 -   Good candidate to try out [OSF](https://osf.io)
@@ -397,7 +404,7 @@ A study can be reproducible and still be wrong
 -   One size does not fit all
     -   Lots of different approaches and challenges
 -   It is not all or nothing
-    -   Anything you do is **awesome**
+    -   Anything you do is **awesome** `r emo::ji("tada")`
 -   It takes time and effort to learn and implement
     -   Everybody has a different workload and priorities
     -   Great support and resources are available
@@ -414,12 +421,18 @@ A study can be reproducible and still be wrong
 
 ### Thank you
 
-::: {.absolute bottom="150" right="0" width="60%"}
+<!-- ::: {.absolute bottom="225" left="0" width="150%"} -->
+<!-- ![](figs/qr_code.svg) -->
+<!-- ::: -->
+![](figs/qr_code.svg){width=25%}
+
+
+::: {.absolute bottom="0" right="0" width="60%"}
 ![Nami the soil science cat](figs/cat.gif)
 :::
 
 ::: {style="position:absolute; bottom:10%"}
- `r icons::fontawesome("globe")` [**alexkoiter.ca**](https://alexkoiter.ca)<br> `r icons::fontawesome("twitter")` [**\@alex_koiter**](https://twitter.com/alex_koiter)<br> `r icons::fontawesome("envelope")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca)<br> `r icons::fontawesome("github")` [**alex-koiter**](https://github.com/alex-koiter)
+ `r icons::fontawesome("globe")` [**alexkoiter.ca**](https://alexkoiter.ca)<br> `r icons::fontawesome("twitter")` [**\@alex_koiter**](https://twitter.com/alex_koiter)<br> `r icons::fontawesome("mastodon")` [**\@alex_koiter\@sciencemastodon.com**](https://sciencemastodon.com/@Alex_Koiter)<br> `r icons::fontawesome("envelope")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca)<br> `r icons::fontawesome("github")` [**alex-koiter**](https://github.com/alex-koiter)
 :::
 
 [*Slides created with [Quarto](https://quarto.org)*<br>Updated `r Sys.Date()`]{.small .absolute bottom="0"}
