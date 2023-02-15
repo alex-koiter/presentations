@@ -355,7 +355,7 @@ A study can be reproducible and still be wrong
 -   Developed an R script
 
 ::: {.absolute bottom="0" right="0" width="45%"}
-![Credit: Masoud](figs/field_spec.png)
+![Credit: Masoud Goharrokhi](figs/field_spec.png)
 :::
 
 ## Recent scuccess story
