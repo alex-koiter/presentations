@@ -1,0 +1,460 @@
+---
+format: 
+  revealjs:
+    theme: [default, styles.scss]
+    width: 1200
+    slide-number: true
+    embed-resources: true
+editor: source
+---
+
+## Canada Research Chair in Agriculture and Environment {background-color="white" background-image="figs/title.jpg" background-size="cover"}
+
+::: {.white .shadow style="margin-top:70px"}
+### Finding the balance between agronomic and environmental outcomes {.white .shadow}
+
+**Dr. Alex Koiter**
+:::
+
+::::{.absolute bottom=0 left=0}
+:::{style="color:white"}
+{{< fa globe >}} [**alexkoiter.ca**](https://alexkoiter.ca){.white .shadow}   
+{{< fa brands twitter >}} [**\@alex_koiter**](https://twitter.com/alex_koiter){.white .shadow}  
+{{< fa brands mastodon >}} [**\@alex_koiter\@sciencemastodon.com**](https://sciencemastodon.com/@Alex_Koiter){.white .shadow}  
+{{< fa envelope >}} [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca){.white .shadow}  
+:::
+::::
+
+## Land acknowledgement
+
+-   As environmental scientists we focus on the health and function of the environment
+-   We work, learn, educate, and conduct research on traditional territories
+-   The land, including the soil, water, air, and plants and animals, we appreciate so much also includes the history of its people
+-   Agriculture is tied to colonialism and has contributed to the loss and degradation of land held by Indigenous peoples
+-   Brandon University, and the surrounding area, are the traditional homelands of the Dakota, Anishinabek, Oji-Cree, Cree, Dene and Metis peoples
+
+## What is the problem?
+- Globally, agriculture is a major source of food, fibre, and fuel
+- ~35% of the global land area ([Ritchie & Roser, 2013](https://ourworldindata.org/land-use))
+    - 7% of our total land area - 80% situated in the prairie region
+    - Cash receipts totalling more $90 billion ([Stats Can, 2022](https://www150.statcan.gc.ca/n1/daily-quotidien/230228/dq230228d-eng.htm))
+
+![[Proportion of agricultural land in Canada (AEI, 2011)](https://publications.gc.ca/collections/collection_2016/aac-aafc/A22-201-2016-eng.pdf)](figs/ag_extent.png){fig-align="center"}
+    
+## What is the problem?
+- Can agriculture support 8 billion people (and growing)?
+
+::: {.absolute bottom="10" width="65%"}
+![Total and per capita arable land area in the world [(Lal, 2006)](https://onlinelibrary.wiley.com/doi/abs/10.1002/jsfa.2626)](figs/per_capita.png){fig-align="left"}
+
+:::
+
+## What is the problem?
+####  Agriculture has an environmental footprint
+- Regionally and nationally
+
+::: {.absolute bottom="10" right="0" width="50%"}
+![Global Nature Fund names L. Winnipeg as the Threatened Lake of 2013. [(CBC 2013)](https://www.cbc.ca/news/canada/manitoba/lake-winnipeg-most-threatened-in-world-in-2013-1.1326764)](figs/L winnipeg.png){fig-align="left"}
+
+:::
+
+::: {.absolute bottom="10" left="0" width="45%"}
+![Influence of land rolling on wind erosion and crop growth [(Zarrinabadi et al., 2022)](https://www.sciencedirect.com/science/article/abs/pii/S0167198722001258)](figs/wind_erosion.jpg){fig-align="left"}
+
+:::
+
+## What is the problem?
+####  Agriculture has an environmental footprint
+- Also globally 
+
+::: {.absolute bottom="10" left="0" width="40%"}
+![Assessment of soil erosion rates in Russia [(Golosov et al., 2017)](https://link.springer.com/article/10.1007/s11368-018-2032-1)](figs/russia.png){fig-align="left"}
+
+:::
+
+::: {.absolute bottom="10" right="0" width="45%"}
+![Agriculture is a major threat to water security and biodiversity  [(Vorosmarty et al., 2010)](https://www.nature.com/articles/nature09440)](figs/threats.png){fig-align="left"}
+
+:::
+
+## What is the problem?
+#### Environmental conditions affect agriculture
+
+- Regionally and nationally
+
+::: {.absolute bottom="10" left="0" width="45%"}
+![[Koiter, 2022](https://github.com/alex-koiter/curiosity/tree/main/Weather/Brandon)](figs/Brandon water year precip 2021_2022.png){fig-align="left"}
+
+:::
+
+::: {.absolute bottom="10" right="0" width="45%"}
+![[Asante et al., 2021](https://www.brandonu.ca/rdi/files/2020/06/2020-05-22-Appendix-I-Excess-Moisture-Project-Overview.pdf)](figs/h2o_report.png){fig-align="right"}    
+
+:::
+
+## What is the problem?
+#### Environmental conditions affect agriculture
+
+- Also globally
+
+::: {.absolute bottom="10" left="0" width="45%"}
+![[Open access government, 2023](https://www.openaccessgovernment.org/effect-heat-and-drought-food-security-agricultural-production/151413/)](figs/drought.png){fig-align="left"}
+
+:::
+
+::: {.absolute bottom="300" left="25" width="40%"}
+![](figs/drought_inset.png){fig-align="left"}
+
+:::
+
+::: {.absolute bottom="10" right="0" width="55%"}
+![Impacts and economic costs of climate change on Mexican agriculture [(Estrada et al. 2022 2023)](https://www.openaccessgovernment.org/effect-heat-and-drought-food-security-agricultural-production/151413/)](figs/mexico.png)
+
+:::
+
+
+
+
+## What is the problem?
+> #### Environmental impacts [**from**]{style="text-decoration: underline;"} and [**on**]{style="text-decoration: underline;"} agriculture
+
+
+## What now?   
+#### My Approach
+
+::: {.column width="50%"}
+- Four interconnected spheres of the environment within the broader context of the many facets of agriculture
+- Multi- and inter-disciplinary research team
+
+:::
+
+::: {.absolute top="50" right="0" width="55%"}
+![](figs/venn.png){fig-align="right"}
+:::
+
+## My expertise
+
+#### Lithosphere
+
+- Soil erosion
+
+::: {.absolute bottom="0" left="0" width="50%"}
+![Brandon MB part of the [National Wind Erosion Research Network](https://winderosionnetwork.org/)](figs/Wind erosion.jpg)
+:::
+
+::: {.absolute bottom="300" right="0" width="35%"}
+![Using different methods to measure surface roughness](figs/3d scanner.jpg)
+:::
+
+::: {.absolute bottom="0" right="0" width="35%"}
+![Using different methods to measure surface roughness](figs/pin board.jpg)
+:::
+
+## My expertise
+
+#### Lithosphere
+
+- Microplastics
+
+
+::: {.absolute left=15% bottom=0}
+![Incubation study](figs/incubation.jpg)
+:::
+
+::: {.absolute left=30% bottom=0}
+![Sampling for ESN](figs/plastic_3.jpg){width=57%}
+:::
+
+::: {.absolute right=4.5% bottom=0}
+![Extraction of ESN](figs/plastic_4.jpg){width=71.25%}
+:::
+
+## My expertise
+
+#### Hydrosphere
+
+- Water quality
+
+::: {.absolute bottom="10" left="0" width="44.5%"}
+![Collecting suspended sediment in McCreary, MB](figs/wilson ck.jpg)
+
+:::
+
+::: {.absolute bottom="10" right="0" width="60%"}
+![Phosphorus loads in the Tobacco Creek](figs/TCMW_tp_load.png)
+:::
+
+## My expertise
+
+#### Hydrosphere
+
+- Water quantity
+
+::: {.absolute bottom="20" left="0" width="50%"}
+![Flooded field near Brandon, MB](figs/flooded field.jpg)
+
+:::
+
+::: {.absolute bottom="20" right="0" width="40%"}
+![](figs/h2o report 2.png)
+:::
+## My expertise
+
+#### Atmosphere
+
+- Soil GHG's
+
+::: {.absolute bottom="10" left="0" width="30%"}
+![Soil GHG flux chamber](figs/flux.png)
+
+:::
+
+::: {.absolute bottom="10" right="0" width="60%"}
+![Soil GHG flux under four different perennial grain treatments](figs/flux_plot.png)
+
+:::
+
+## My expertise
+
+#### Biosphere
+
+- Riparian vegetation management
+
+::: {.absolute bottom="10" left="0" width="50%"}
+![Comparison of potential phosphorus loss from riparian vegetation in ON and MB](figs/riparian.jpg)
+
+:::
+
+::: {.absolute bottom="10" right="0" width="50%"}
+![Impact of cattle grazing riparian areas](figs/riparian_2.jpg)
+
+:::
+
+## My expertise
+
+#### Community Service
+
+:::: {.columns}
+
+
+::: {.column width="50%"}
+### Editorial
+- Subject Editor: Journal of Soils and Sediments
+
+### Executive positions
+- Treasurer, International Association for Sediment Water Science
+- President, Manitoba Soil Science Society
+- President, Westman Naturalists
+
+:::
+
+::: {.column width="50%"}
+
+### Media
+- Brandon Sun
+- Crop, Soils, and Agronomy Society Newsletter
+- MB Cooperator
+- MB Beef & Forage Initiatives Newsletter
+
+:::
+
+::::
+
+## My expertise
+
+#### Funding success
+
+- \> $150,000 as principle applicant
+- \> $140,000 as principle investigator
+- \> $200,000 as collaborator
+
+### Range of agencies
+- Federal (NSERC)
+- Provincial (Sustainable Protein Manitoba)
+- Regional (Deerwood Soil & Water Managament Association)
+- Industry (MB Crop Alliance)
+- Internal (BURC)
+
+## Why CRC in Agriculture and Environment?
+
+
+> ####  Current related CRC's
+> - Out of ~2,000 [CRCs listed](https://www.chairs-chaires.gc.ca/chairholders-titulaires/index-eng.aspx) only 24 have agriculture as a keyword  
+> - 19 if only NSERC is considered
+
+
+- Agroecosystems and Development - [Marney Isaac](https://www.chairs-chaires.gc.ca/chairholders-titulaires/profile-eng.aspx?profileId=3185)
+- Agri-Food and Sustainable Agriculture - [Zoë Migicovsky](https://www.chairs-chaires.gc.ca/chairholders-titulaires/profile-eng.aspx?profileId=5581)
+- Sustainable Animal Protein - [Marie-Pierre Létourneau Montminy](https://www.chairs-chaires.gc.ca/chairholders-titulaires/profile-eng.aspx?profileId=4639)
+- Data Science for Sustainable Global Food Systems - [Navin Ramankutty](https://www.chairs-chaires.gc.ca/chairholders-titulaires/profile-eng.aspx?profileId=3389)
+
+> #### Uniqueness of Agriculture and Environment
+> Environmental impacts [**on**]{style="text-decoration: underline;"} and [**from**]{style="text-decoration: underline;"} agriculture
+
+
+## 5-year Plan
+### Objective 1: Agriculture and Climate
+
+1. Impact of extreme weather events on soil erosion and nutrient loss from agricultural watersheds 
+    - Collaboration with Drs. Goharrokhi (post-doc), Elliot (ECCC), Wilson (AAFC Brandon), Kumaragamage (U Winnipeg), and Lobb (U Manitoba)
+
+![Flooded farm fields ([Globe & Mail 2014](https://www.theglobeandmail.com/news/national/rural-manitoba-communities-bracing-for-flood-water-surge/article19501684/))](figs/flooded field2.jpg)
+
+## 5-year Plan
+### Objective 1: Agriculture and Climate
+
+2. Impact of climate change on freeze-thaw cycles and its implications for nutrient loss from soils and vegetation
+    - Collaboration with Dr. Macrae (U Waterloo)
+
+![Changes in freeze-thaw conditions ([EPA](https://www.epa.gov/climate-indicators/climate-change-indicators-freeze-thaw-conditions))](figs/freeze-thaw_figure3_2021.png)    
+
+## 5-year Plan
+### Objective 2: Agriculture and soil & water quality
+
+1. Effects of forage management on plant and soil phosphorus dynamics and implications for phosphorus loss
+    - Collaboration with Drs. Schiender (U Guelph), Macrae (U Waterloo), and Lobb (U Manitoba)
+
+![Cattle grazing at [MBFI](https://www.mbfi.ca/)](figs/grazing.jpg)
+
+## 5-year Plan
+### Objective 2: Agriculture and soil & water quality
+  
+2. The combined effects of environmental conditions and farm management on wind erosion risk
+   - Collaboration with Drs. Li (AAFC Fredericton), Glenn (AAFC Brandon), and Lychuk (AAFC Brandon)
+   - Partnership with the USDA wind erosion network
+
+![[National Wind Erosion Research Network](https://winderosionnetwork.org/)](figs/erosion map.png)
+
+## 5-year Plan
+### Objective 2: Agriculture and soil & water quality
+   
+3. Prevalence and distribution of microplastics in agricultural environments
+    - Collaboration with Drs. Hanson (U Manitoba), and Prosser (U of Guelph)
+
+![Quantitative literature survey on Microplastics [(Weber et al. 2020)](https://onlinelibrary.wiley.com/doi/10.1002/ldr.3676)](figs/plastic lit.jpg)
+  
+## 5-year Plan
+### Objective 3: Training of highly qualified personell (HQP)
+
+- Research priorities fit well with the MELS, Geography & Environment, and Environmental Science programs
+    - Lots of opportunities for graduate and undergraduate students
+- Provide funding/stipend for graduate students
+    - Attracts high quality candidates
+- Create research group manual as a tool to support EDI and promote research excellence
+    - Will use the [Faylab Lab Manual](https://thefaylab.github.io/lab-manual/) as a template
+- Acquisition of field and lab instrumentation
+    - Support training opportunities across campus
+- Rooted in open and reproducible science principles
+
+## 5-year Plan
+
+:::{.center style="margin-top:75px"}
+
+Year  | Stage
+:-----: | --------------
+1 | Develop projects as needed
+ 1 | Secure funding
+ 1-2 | Acquisition of equipment
+ 1-3 | Recruit students
+ 2-3 | Establish field sites
+ 2-3 | Collect data (field, lab, collaborators)
+ 4-5 |Analysis & Publication
+5 |Synthesis
+:::
+
+## Brandon University Strategic Research Plan
+### Research Principles
+1. Research Excellence
+- Creating an environment that brings together collaborators from across research disciplines and partners from various stakeholder groups
+- Strong training plan will attract quality students
+- Building additional research capacity through renovations and the acquisition of new analytical equipment
+    
+## Brandon University Strategic Research Plan
+### Research Principles
+2. Equity, Diversity, and Inclusion
+- Key part of my HQP training plan
+- These are the foundations of a successful research group
+    - Sharing of diverse views, opinions, ideas and experiences
+    - Creates a culture of research excellence, innovation, and creativity
+
+
+## Brandon University Strategic Research Plan
+#### Research Principles
+3. Responsible Conduct of Research
+    - Working within the principles of open and reproducible science promote research integrity
+
+
+![The six core principles of Open Science; [Gallaher et al. 2020 Nat Ecol Evol](https://www.nature.com/articles/s41559-020-1109-6)](figs/6_principles.png)
+  
+    
+## Brandon University Strategic Research Plan
+### Research Principles
+4. Transparency and impact
+- Reach a wide audience
+    - Kids (e.g., Enviro Expo, girl guides, 4H club)
+    - Community activities (e.g., SMART Day, Open Farm Day, CROPS-A-PALOOZA)
+    - Industry magazines, newsletters (e.g., Top Crop Manager, Grain News)
+    - Social media (e.g., Twitter, Mastodon)
+    - Media requests (e.g., Brandon Sun)
+
+## Brandon University Strategic Research Plan
+### Research Principles
+5. Indigenous Perspectives and Truth and Reconciliation
+- Agriculture in the Prairie region, and elsewhere, is tied to colonialism
+- Opportunities to reach out to local Indigenous communities and organizations (e.g., Waywayseecappo, Sioux Valley Dakota
+nations)
+    - Takes time to build meaningful and trusting relationships
+    - Incorporating Indigenous perspectives into my research
+    - Addressing concerns and exploring new ideas
+
+## Brandon University Strategic Research Plan
+### Research Themes    
+1. Climate, Environment, and Natural Resources 
+- Agriculture is a contributor to climate change but also susceptible to climate change
+- Agriculture has a large environmental footprint locally, nationally, and globally
+- Soils and the plants it supports are natural resources
+
+::: {.absolute bottom="475" right="0" width="20%"}
+![](figs/theme 1.png)
+
+:::
+
+## Brandon University Strategic Research Plan
+### Research Themes    
+2. Biotechnology, Genomics, and Life Sciences
+- Genetically modified plants may add to climate resiliency
+- Lots of interest in biofuels as a carbon-friendly alternative
+
+3. Rural, Indigenous, and Community Connected Engagement
+- Agri-environmental issues can impact the well-being of rural and Indigenous communities
+
+::: {.absolute bottom="450" right="0" width="20%"}
+![](figs/theme 2.png)
+
+:::
+
+::: {.absolute bottom="250" right="0" width="20%"}
+![](figs/theme 3.png)
+
+:::
+
+
+## Brandon University Mamaawiiatooshke aakihkiwiin Strategic Plan
+### Finest Regional University
+- BU primarily serves our regional population
+    - Students and community members have ties to the local agricultural setting
+- Research opportunities and learning activities are in our own back yard
+    - The lessons learned here are applicable to national and international 
+
+![](figs/Built.png){fig-align=center}
+
+## Brandon University Mamaawiiatooshke aakihkiwiin Strategic Plan
+
+### Be Agile
+- Broad scope, good collaborations, and regional setting allows us to quickly address new opportunities
+
+### Be Courageous
+- Lots of different opinions and ideas out there, this is an opportunity to be leaders
+
+### Be Inclusive
+- Listening to broad perspectives and being respectful to everyone supports creativity and research excellence
