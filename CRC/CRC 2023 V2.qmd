@@ -396,7 +396,8 @@ Year  | Stage
 ## Brandon University Strategic Research Plan
 #### Research Principles
 ### 3. Responsible Conduct of Research
-    - Working within the principles of open and reproducible science promote research integrity
+
+- Working within the principles of open and reproducible science promote research integrity
 
 
 ![The six core principles of Open Science; [Gallaher et al. 2020 Nat Ecol Evol](https://www.nature.com/articles/s41559-020-1109-6)](figs/6_principles.png)
@@ -448,7 +449,7 @@ nations)
 
 :::
 
-::: {.absolute bottom="250" right="0" width="20%"}
+::: {.absolute bottom="300" right="0" width="20%"}
 ![](figs/theme 3.png)
 
 :::
