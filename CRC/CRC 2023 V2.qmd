@@ -45,10 +45,8 @@ editor: source
 ## What is the problem?
 - Can agriculture support 8 billion people (and growing)?
 
-::: {.absolute bottom="10" width="65%"}
-![Total and per capita arable land area in the world [(Lal, 2006)](https://onlinelibrary.wiley.com/doi/abs/10.1002/jsfa.2626)](figs/per_capita.png){fig-align="left"}
 
-:::
+![Total and per capita arable land area in the world [(Lal, 2006)](https://onlinelibrary.wiley.com/doi/abs/10.1002/jsfa.2626)](figs/per_capita.png){fig-align="center"}
 
 ## What is the problem?
 ####  Agriculture has an environmental footprint
@@ -117,8 +115,10 @@ editor: source
 
 
 ## What is the problem?
-> #### Environmental impacts [**from**]{style="text-decoration: underline;"} and [**on**]{style="text-decoration: underline;"} agriculture
 
+:::{style="margin-top:180px; text-align: center; font-size: 160%"}
+#### Environmental impacts<br>[**from**]{style="text-decoration: underline;"} and [**on**]{style="text-decoration: underline;"}<br> Agriculture {style="color:#094218; line-height:1.3; border: 4px; border-style:solid;margin-left:250px; margin-right:250px; padding-top:30px; padding-bottom:30px"}
+:::
 
 ## What now?   
 #### My Approach
@@ -272,7 +272,7 @@ editor: source
 ### Range of agencies
 - Federal (NSERC)
 - Provincial (Sustainable Protein Manitoba)
-- Regional (Deerwood Soil & Water Managament Association)
+- Regional (Deerwood Soil & Water Management Association)
 - Industry (MB Crop Alliance)
 - Internal (BURC)
 
@@ -293,59 +293,60 @@ editor: source
 > Environmental impacts [**on**]{style="text-decoration: underline;"} and [**from**]{style="text-decoration: underline;"} agriculture
 
 
-## 5-year Plan
-### Objective 1: Agriculture and Climate
+## 5-year Plan 
 
-1. Impact of extreme weather events on soil erosion and nutrient loss from agricultural watersheds 
-    - Collaboration with Drs. Goharrokhi (post-doc), Elliot (ECCC), Wilson (AAFC Brandon), Kumaragamage (U Winnipeg), and Lobb (U Manitoba)
+#### Objective 1 - Agriculture and Climate
+
+### 1. Impact of extreme weather events on soil erosion and nutrient loss from agricultural watersheds 
+  - Collaboration with Drs. Goharrokhi (post-doc), Elliot (ECCC), Wilson (AAFC Brandon), Kumaragamage (U Winnipeg), and Lobb (U Manitoba)
 
 ![Flooded farm fields ([Globe & Mail 2014](https://www.theglobeandmail.com/news/national/rural-manitoba-communities-bracing-for-flood-water-surge/article19501684/))](figs/flooded field2.jpg)
 
 ## 5-year Plan
-### Objective 1: Agriculture and Climate
+#### Objective 1: Agriculture and Climate
 
-2. Impact of climate change on freeze-thaw cycles and its implications for nutrient loss from soils and vegetation
-    - Collaboration with Dr. Macrae (U Waterloo)
+### 2. Impact of climate change on freeze-thaw cycles and its implications for nutrient loss from soils and vegetation
+  - Collaboration with Dr. Macrae (U Waterloo)
 
 ![Changes in freeze-thaw conditions ([EPA](https://www.epa.gov/climate-indicators/climate-change-indicators-freeze-thaw-conditions))](figs/freeze-thaw_figure3_2021.png)    
 
 ## 5-year Plan
-### Objective 2: Agriculture and soil & water quality
+#### Objective 2: Agriculture and soil & water quality
 
-1. Effects of forage management on plant and soil phosphorus dynamics and implications for phosphorus loss
-    - Collaboration with Drs. Schiender (U Guelph), Macrae (U Waterloo), and Lobb (U Manitoba)
+### 1. Effects of forage management on plant and soil phosphorus dynamics and implications for phosphorus loss
+  - Collaboration with Drs. Schiender (U Guelph), Macrae (U Waterloo), and Lobb (U Manitoba)
 
 ![Cattle grazing at [MBFI](https://www.mbfi.ca/)](figs/grazing.jpg)
 
 ## 5-year Plan
-### Objective 2: Agriculture and soil & water quality
+#### Objective 2: Agriculture and soil & water quality
   
-2. The combined effects of environmental conditions and farm management on wind erosion risk
-   - Collaboration with Drs. Li (AAFC Fredericton), Glenn (AAFC Brandon), and Lychuk (AAFC Brandon)
-   - Partnership with the USDA wind erosion network
+### 2. The combined effects of environmental conditions and farm management on wind erosion risk
+  - Collaboration with Drs. Li (AAFC Fredericton), Glenn (AAFC Brandon), and Lychuk (AAFC Brandon)
+  - Partnership with the USDA wind erosion network
 
 ![[National Wind Erosion Research Network](https://winderosionnetwork.org/)](figs/erosion map.png)
 
 ## 5-year Plan
-### Objective 2: Agriculture and soil & water quality
+#### Objective 2: Agriculture and soil & water quality
    
-3. Prevalence and distribution of microplastics in agricultural environments
-    - Collaboration with Drs. Hanson (U Manitoba), and Prosser (U of Guelph)
+### 3. Prevalence and distribution of microplastics in agricultural environments
+  - Collaboration with Drs. Hanson (U Manitoba), and Prosser (U of Guelph)
 
 ![Quantitative literature survey on Microplastics [(Weber et al. 2020)](https://onlinelibrary.wiley.com/doi/10.1002/ldr.3676)](figs/plastic lit.jpg)
   
 ## 5-year Plan
-### Objective 3: Training of highly qualified personell (HQP)
+#### Objective 3: Training of highly qualified personell (HQP)
 
 - Research priorities fit well with the MELS, Geography & Environment, and Environmental Science programs
     - Lots of opportunities for graduate and undergraduate students
-- Provide funding/stipend for graduate students
-    - Attracts high quality candidates
-- Create research group manual as a tool to support EDI and promote research excellence
-    - Will use the [Faylab Lab Manual](https://thefaylab.github.io/lab-manual/) as a template
+- Create a dynamic and welcoming research group 
+    - Provide funding/stipend for graduate students
+    - Develop group manual as a tool to support EDI and promote research excellence ([Faylab Lab Manual](https://thefaylab.github.io/lab-manual/))
+
 
 ## 5-year Plan
-### Objective 3: Training of highly qualified personell (HQP)
+#### Objective 3: Training of highly qualified personell (HQP)
 
 - Acquisition of field and lab instrumentation
     - Support training opportunities across campus
@@ -378,14 +379,14 @@ Year  | Stage
 
 ## Brandon University Strategic Research Plan
 #### Research Principles
-1. Research Excellence
+### 1. Research Excellence
 - Creating an environment that brings together collaborators from across research disciplines and partners from various stakeholder groups
 - Strong training plan will attract quality students
 - Building additional research capacity through renovations and the acquisition of new analytical equipment
     
 ## Brandon University Strategic Research Plan
 #### Research Principles
-2. Equity, Diversity, and Inclusion
+### 2. Equity, Diversity, and Inclusion
 - Key part of my HQP training plan
 - These are the foundations of a successful research group
     - Sharing of diverse views, opinions, ideas and experiences
@@ -394,7 +395,7 @@ Year  | Stage
 
 ## Brandon University Strategic Research Plan
 #### Research Principles
-3. Responsible Conduct of Research
+### 3. Responsible Conduct of Research
     - Working within the principles of open and reproducible science promote research integrity
 
 
@@ -403,7 +404,7 @@ Year  | Stage
     
 ## Brandon University Strategic Research Plan
 #### Research Principles
-4. Transparency and impact
+### 4. Transparency and impact
 - Reach a wide audience
     - Kids (e.g., Enviro Expo, girl guides, 4H club)
     - Community activities (e.g., SMART Day, Open Farm Day, CROPS-A-PALOOZA)
@@ -413,7 +414,7 @@ Year  | Stage
 
 ## Brandon University Strategic Research Plan
 #### Research Principles
-5. Indigenous Perspectives and Truth and Reconciliation
+### 5. Indigenous Perspectives and Truth and Reconciliation
 - Agriculture in the Prairie region, and elsewhere, is tied to colonialism
 - Opportunities to reach out to local Indigenous communities and organizations (e.g., Waywayseecappo, Sioux Valley Dakota
 nations)
@@ -423,7 +424,7 @@ nations)
 
 ## Brandon University Strategic Research Plan
 #### Research Themes    
-1. Climate, Environment, and Natural Resources 
+### 1. Climate, Environment, and Natural Resources 
 - Agriculture is a contributor to climate change but also susceptible to climate change
 - Agriculture has a large environmental footprint locally, nationally, and globally
 - Soils and the plants it supports are natural resources
@@ -435,11 +436,11 @@ nations)
 
 ## Brandon University Strategic Research Plan
 #### Research Themes    
-2. Biotechnology, Genomics, and Life Sciences
+### 2. Biotechnology, Genomics, and Life Sciences
 - Genetically modified plants may add to climate resiliency
 - Lots of interest in biofuels as a carbon-friendly alternative
 
-3. Rural, Indigenous, and Community Connected Engagement
+### 3. Rural, Indigenous, and Community Connected Engagement
 - Agri-environmental issues can impact the well-being of rural and Indigenous communities
 
 ::: {.absolute bottom="450" right="0" width="20%"}
@@ -465,7 +466,7 @@ nations)
 ## Brandon University Mamaawiiatooshke aakihkiwiin Strategic Plan
 
 ### Be Agile
-- Broad scope, good collaborations, and regional setting allows us to quickly address new opportunities
+- Multi- and inter-disciplinary nature, good collaborations, and regional setting allows us to quickly address new opportunities
 
 ### Be Courageous
 - Lots of different opinions and ideas out there, this is an opportunity to be leaders
