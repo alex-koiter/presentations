@@ -11,7 +11,7 @@ editor: source
 ## Canada Research Chair in Agriculture and Environment {background-color="white" background-image="figs/title.jpg" background-size="cover"}
 
 ::: {.white .shadow style="margin-top:70px"}
-### Finding the balance between agronomic and environmental outcomes {.white .shadow}
+### Environmental impacts [**from**]{style="text-decoration: underline;"} and [**on**]{style="text-decoration: underline;"} agriculture {.white .shadow}
 
 **Dr. Alex Koiter**
 :::
@@ -19,6 +19,7 @@ editor: source
 ::::{.absolute bottom=0 left=0}
 :::{style="color:white"}
 {{< fa globe >}} [**alexkoiter.ca**](https://alexkoiter.ca){.white .shadow}   
+{{< fa brands github >}} [**alex-koiter**](https://github.com/alex-koiter){.white .shadow}  
 {{< fa brands twitter >}} [**\@alex_koiter**](https://twitter.com/alex_koiter){.white .shadow}  
 {{< fa brands mastodon >}} [**\@alex_koiter\@sciencemastodon.com**](https://sciencemastodon.com/@Alex_Koiter){.white .shadow}  
 {{< fa envelope >}} [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca){.white .shadow}  
@@ -205,7 +206,7 @@ editor: source
 - Soil GHG's
 
 ::: {.absolute bottom="10" left="0" width="30%"}
-![Soil GHG flux chamber](figs/flux.png)
+![Soil GHG flux chamber](figs/flux.jpg)
 
 :::
 
@@ -342,9 +343,22 @@ editor: source
     - Attracts high quality candidates
 - Create research group manual as a tool to support EDI and promote research excellence
     - Will use the [Faylab Lab Manual](https://thefaylab.github.io/lab-manual/) as a template
+
+## 5-year Plan
+### Objective 3: Training of highly qualified personell (HQP)
+
 - Acquisition of field and lab instrumentation
     - Support training opportunities across campus
 - Rooted in open and reproducible science principles
+
+::: {layout-ncol=2}
+
+![RTK GPS to map channel shape](figs/RTK.jpg)
+
+![Flying drones to survey farm field](figs/drone.jpg)
+
+:::
+
 
 ## 5-year Plan
 
@@ -363,14 +377,14 @@ Year  | Stage
 :::
 
 ## Brandon University Strategic Research Plan
-### Research Principles
+#### Research Principles
 1. Research Excellence
 - Creating an environment that brings together collaborators from across research disciplines and partners from various stakeholder groups
 - Strong training plan will attract quality students
 - Building additional research capacity through renovations and the acquisition of new analytical equipment
     
 ## Brandon University Strategic Research Plan
-### Research Principles
+#### Research Principles
 2. Equity, Diversity, and Inclusion
 - Key part of my HQP training plan
 - These are the foundations of a successful research group
@@ -388,7 +402,7 @@ Year  | Stage
   
     
 ## Brandon University Strategic Research Plan
-### Research Principles
+#### Research Principles
 4. Transparency and impact
 - Reach a wide audience
     - Kids (e.g., Enviro Expo, girl guides, 4H club)
@@ -398,7 +412,7 @@ Year  | Stage
     - Media requests (e.g., Brandon Sun)
 
 ## Brandon University Strategic Research Plan
-### Research Principles
+#### Research Principles
 5. Indigenous Perspectives and Truth and Reconciliation
 - Agriculture in the Prairie region, and elsewhere, is tied to colonialism
 - Opportunities to reach out to local Indigenous communities and organizations (e.g., Waywayseecappo, Sioux Valley Dakota
@@ -408,7 +422,7 @@ nations)
     - Addressing concerns and exploring new ideas
 
 ## Brandon University Strategic Research Plan
-### Research Themes    
+#### Research Themes    
 1. Climate, Environment, and Natural Resources 
 - Agriculture is a contributor to climate change but also susceptible to climate change
 - Agriculture has a large environmental footprint locally, nationally, and globally
@@ -420,7 +434,7 @@ nations)
 :::
 
 ## Brandon University Strategic Research Plan
-### Research Themes    
+#### Research Themes    
 2. Biotechnology, Genomics, and Life Sciences
 - Genetically modified plants may add to climate resiliency
 - Lots of interest in biofuels as a carbon-friendly alternative
@@ -440,7 +454,7 @@ nations)
 
 
 ## Brandon University Mamaawiiatooshke aakihkiwiin Strategic Plan
-### Finest Regional University
+#### Finest Regional University
 - BU primarily serves our regional population
     - Students and community members have ties to the local agricultural setting
 - Research opportunities and learning activities are in our own back yard
@@ -458,3 +472,26 @@ nations)
 
 ### Be Inclusive
 - Listening to broad perspectives and being respectful to everyone supports creativity and research excellence
+
+
+## Thank you
+
+::: {.absolute bottom="250" left="0" width="20%"}
+![](figs/CRC_QR)
+
+:::
+
+::: {.absolute bottom="100" right="0" width="60%"}
+![Nami the soil science cat](figs/cat.gif)
+:::
+
+
+::::{.absolute bottom=0 left=0}
+:::{style="color:black"}
+{{< fa globe >}} [**alexkoiter.ca**](https://alexkoiter.ca){.black}  
+{{< fa brands github >}} [**alex-koiter**](https://github.com/alex-koiter){.black}  
+{{< fa brands twitter >}} [**\@alex_koiter**](https://twitter.com/alex_koiter){.black}  
+{{< fa brands mastodon >}} [**\@alex_koiter\@sciencemastodon.com**](https://sciencemastodon.com/@Alex_Koiter){.black}  
+{{< fa envelope >}} [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca){.black}  
+:::
+::::
