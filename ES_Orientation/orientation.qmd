@@ -166,6 +166,6 @@ format:
 
 ![](harvest.jpg){width=100%}
 
-![](Env_QR.png){width=75% fig-align="center"}
+![](QR_code.svg){width=75% fig-align="center"}
 
 :::
