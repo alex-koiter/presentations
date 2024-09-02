@@ -1,0 +1,171 @@
+---
+format: 
+  revealjs:
+    width: 1200
+    embed-resources: true
+    theme: styles.scss
+    footer: "Environmental Science"
+    #auto-slide: 7000
+    loop: false
+---
+
+## Environmental Science {.nostretch}
+
+![](https://www.brandonu.ca/communications/files/Brandon-University-Horizontal-Logo-2-Colour-RGB.png){width=100% fig-align=right style="margin-top:130px;"}
+
+### 2024 Orientation {style="padding-top: 50px;"}
+
+
+## Environmental Science
+
+::::{.columns}
+:::{.column width="60%"}
+> Environmental Science is the interdisciplinary study of the environment, its functioning and its relationship to human activities.
+
+- Study terrestrial, aquatic and atmospheric systems and their interactions
+- Skills to address environmental problems
+:::
+:::{.column width="40%"}
+![Wilson Creek, McCreary MB](IMG_20220511_130149196.jpg){width=90%}
+:::
+::::
+
+## Environmental Science
+### Program not Department
+- Take courses across various departments
+  - [Biology, Geography, Geology, Chemistry, Applied Disaster and Emergency Studies]{style="font-size: 80%"}
+
+
+![Brandon Hills Esker](IMG_20190927_145857.jpg)
+
+## Environmental Science
+### Biology
+
+![Bird Cove, Churchill, MB](Copy of Bird Cove.jpg)
+
+## Environmental Science
+### Applied disaster management
+![Disaster management centre](ADES.jpg)
+
+## Environmental Science
+### Geology
+
+![Field School; Flin Flon, MB](geol.jpg)
+
+## Environmental Science
+### Geography
+::: {layout-ncol=2}
+
+![Brandon wind erosion monitoring site](Wind erosion site2.jpg)
+
+![Drone imaging of field](drone.jpg)
+:::
+## Environmental Science
+### Chemistry
+
+![Analytical Lab at BU](chem.jpg)
+
+## Environmental Science
+### Types of courses
+
+- Basic Sciences [(e.g. General biology and chemistry)]{style="font-size:80%"}
+- Applied Sciences [(e.g. Geomatics/GIS, soil science)]{style="font-size:80%"}
+
+![Soil textural analysis](IMG_20220202_123443068.jpg)
+
+## Environmental Science
+::::{.columns}
+
+:::{.column width=50%}
+### Types of courses
+- Requirements [(e.g., 1st year Biology and Chemistry)]{style="font-size:80%"}
+- Work experience / Advanced topics [(e.g., Interning with Environmental Consulting firms, Agriculture Canada, MB Agriculture, Independent research projects)]{style="font-size:80%"}
+
+:::
+
+:::{.column width=50%}
+![Riparian grazing project at MBFI](Riparian grazing.jpg)
+:::
+::::
+
+## Environmental Science
+::::{.columns}
+
+:::{.column width=50%}
+### Types of courses
+- Choose a specialty (Biology, Chemistry, etc.) and focus on courses in those areas
+- Liberal Arts and Indigenous Content
+- Electives
+
+:::
+
+:::{.column width=50%}
+![Soil profile near Elma MB](soil_profile.jpg)
+
+:::
+::::
+
+## Planning Your Degree
+
+### The Degree Planner
+ - [https://www.brandonu.ca/environmental-science/](https://www.brandonu.ca/environmental-science/)
+
+### Undergraduate Calendar
+  - [https://www.brandonu.ca/calendar/](https://www.brandonu.ca/calendar/)
+  
+### Registration Guide
+  - [https://www.brandonu.ca/registration/](https://www.brandonu.ca/registration/)
+
+## Planning Your Degree
+
+### The Program Coordinator
+ - [Dr. Alex Koiter](https://alexkoiter.ca/)
+ - [koitera@brandonu.ca](mailto:koitera@brandonu.ca)
+
+### Academic Advising
+  - [https://www.brandonu.ca/academic-advising/](https://www.brandonu.ca/academic-advising/)
+
+
+## Planning Your Degree
+
+### Tips
+  - Prerequisites 
+  - How often the course is normally offered
+      - 70:266 Environmental Ethics
+      - 18:451 Environmental Chemistry
+  - There are opportunities to take some course through other institutions remotely (Athabasca University), please check the [Course Transfer Database](https://webapp.brandonu.ca/pls/transfer/f?p=109:10)
+  
+### When in doubt, please ask
+  
+## Environmental Science
+::::{.columns}
+
+:::{.column width=50%}
+### Careers
+- Agricultural consulting
+- Environmental consulting
+- Government research
+- Non-profits/NGOs
+- Education (teaching/outreach)
+:::
+
+:::{.column width=50%}
+### Focus
+- Resource management
+- Climate change 
+- Watershed health
+- Contamination/Pollution
+- Planning/Policy
+:::
+::::
+
+## Environmental Science
+### Questions?
+
+::: {layout-ncol=2}
+
+![](harvest.jpg){width=100%}
+
+![](Env_QR.png){width=75% fig-align="center"}
+
+:::
