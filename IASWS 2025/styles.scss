@@ -7,14 +7,23 @@ $presentation-h1-text-shadow: 2px 2px #808080;
 $presentation-h3-font-size: 1em;
 
 $presentation-heading-text-shadow: 1px 1px #808080;
-$presentation-heading-color: #1f508c;
 
 $code-block-font-size: 0.75em;
-
 
 $presentation-heading-color: #094218;
 
 /*-- scss:rules --*/
+
+.quarto-title-author {
+  font-size: 1.5em; /* larger font size */
+  color: white;
+  text-shadow: 1px 1px #808080;
+}
+
+.subtitle {
+  font-size: 1.5em; /* larger font size */
+}
+
 .quarto-figure {
   margin-bottom:0;
 }
@@ -92,3 +101,4 @@ $presentation-heading-color: #094218;
   margin-top: 0.2em;
   margin-bottom: 0.1em;
 }
+
