@@ -1,0 +1,574 @@
+---
+title: Characterizing Sediment Source Variability
+subtitle: Landscape and Land Use Influences on Fingerprint Properties
+title-block-style: plain # This removes the default style
+title-slide-attributes:
+  data-background-image: figs/background.jpg
+  data-background-size: contain
+  data-background-opacity: "0.75"
+author: "Alex Koiter"
+affiliation-title: "Brandon University"
+  
+format: 
+  revealjs:
+    theme: [default, styles.scss]
+    width: 1200
+    slide-number: true
+    embed-resources: true
+editor: source
+---
+
+## Acknowledgements
+
+::: {.column width="30%"}
+### [**Coauthors**]{.underline}
+
+Maria Luna Miño\
+Taras Lychuk\
+Arnie Waddell\
+Alan Moulin
+:::
+
+::: {.column width="30%"}
+### [**Funding**]{.underline}
+
+![](figs/NSERC.png)
+:::
+
+::: {.column width="40%"}
+![](figs/trap2.jpg){fig-align="center"}
+:::
+
+::: {layout="[1,0.7,1.2]" layout-valign="center"}
+![](figs/BU.png)
+
+![](figs/UoM.svg)
+
+![](figs/AAFC.png)
+:::
+
+## Introduction
+
+::: {.column width="50%"}
+- Sediment fingerprinting links sources to downstream sediment
+    - Using soil/sediment properties as fingerprints (tracers)
+    - Provide an estimate of the relative contribution from each source
+- Used to understand watershed processes and guide management practices
+
+:::
+
+::: {.column width="50%"}
+![](figs/stream2.jpg){width=75% fig-align="right"}
+:::
+## Research question
+
+::: {.column width="50%"}
+
+- Characterizing the sources of sediment is an important step
+- Focus has been on:
+    - Novel fingerprints
+    - Fingerprint selection
+    
+- What about the sampling design?
+    - Logistics
+    - Cost
+    - Judgement
+    
+:::
+
+::: {.column width="50%"}
+![](figs/sampling.jpg){width=75% fig-align="right"}
+:::
+
+## Objectives
+
+::: {.column width="50%"}
+### Using a range of soil colour and geochemical properties across two contrasting land uses:
+
+1. Quantify the variability
+
+2. Characterize the spatial patterns
+
+3. Assess the the importance of terrain attributes
+
+:::
+
+::: {.column width="50%"}
+![](figs/stream.jpg){fig-align="right"}
+
+:::
+
+## Location
+
+```{r}
+library(tidyverse)
+library(rnaturalearth)
+library(sf)
+library(ggspatial)
+canada <- ne_states(country = "Canada", returnclass = "sf") %>%
+  st_transform(crs = 3348)
+
+locations2 <- data.frame(name = c("Center"), long = c(-99.989671), lat = c(50.742554)) %>%
+  st_as_sf(coords = c("long", "lat"),  crs = 4326) %>%
+  st_transform(crs = st_crs(4269))
+
+p1 <- ggplot() +
+  theme_bw() +
+  layer_spatial(canada, fill = "white") +
+  layer_spatial(locations2, shape = 23, colour = "red", fill = "red", size = 3) +
+  annotation_scale(location = "bl",
+                   height = unit(0.05, "cm")) +
+  annotation_north_arrow(location = "br", 
+                         height = unit(0.5, "cm"),
+                         width = unit(0.5, "cm")) +
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title = element_blank(),
+        plot.margin = unit(c(0,0,0,0), "mm"))
+```
+
+```{r}
+library(OpenStreetMap)
+
+ag_site <- data.frame(x = c(464124, 463318),
+                         y = c(5622932, 5622121)) %>% 
+  st_as_sf(coords = c("x", "y"), crs = 3158) %>% 
+  st_bbox() %>% 
+  st_as_sfc() %>%
+  st_transform(crs = "+proj=utm +zone=14 +ellps=GRS80 +towgs84=-0.991,1.9072,0.5129,-1.25033e-07,-4.6785e-08,-5.6529e-08,0 +units=m +no_defs +type=crs")
+
+forest_site <- data.frame(x = c(460822, 460189),
+                         y = c(5619887, 5619206)) %>% 
+  st_as_sf(coords = c("x", "y"), crs = 3158) %>% 
+  st_bbox() %>% 
+  st_as_sfc() %>%
+  st_transform(crs = "+proj=utm +zone=14 +ellps=GRS80 +towgs84=-0.991,1.9072,0.5129,-1.25033e-07,-4.6785e-08,-5.6529e-08,0 +units=m +no_defs +type=crs")
+
+map <- openmap(c(50.85, -99.75), c( 50.65, -99.4), zoom = NULL,
+                  type = "esri-imagery", mergeTiles = TRUE) 
+
+sa_map2 <- openproj(map, projection = "+proj=utm +zone=14 +ellps=GRS80 +towgs84=-0.991,1.9072,0.5129,-1.25033e-07,-4.6785e-08,-5.6529e-08,0 +units=m +no_defs +type=crs")
+
+sites <- data.frame(sites = c("Agriculture", "Forest"), lat = c(5622932, 5619815.26), long = c(463709.63, 460608.90))
+
+p2 <- OpenStreetMap::autoplot.OpenStreetMap(sa_map2) +
+  theme_void() +
+  geom_sf(data = ag_site, fill = NA, colour = "red", lwd = 1, inherit.aes = FALSE) +
+  geom_sf(data = forest_site, fill = NA, colour = "red", lwd = 1, inherit.aes = FALSE) +
+  ggrepel::geom_label_repel(data = sites, 
+            aes(long, lat, label = sites), 
+            size = 3, colour = "black",
+            nudge_y = 3,
+            min.segment.length = 0)
+
+```
+
+```{r}
+
+library(patchwork)
+
+p1 + p2
+```
+
+## Sampling
+
+-   Surface soil
+-   49 points at 100m spacing
+
+```{r}
+library(terra)
+for_data <- read_csv(here::here("./IASWS_2025/data/forest_terrain_data.csv"), show_col_types = FALSE) |>
+  select("x", "y", "ca", "elevation")|>
+  rast() 
+crs(x = for_data, warn=FALSE) <- "epsg:26914"
+
+ag_data <- read_csv(here::here("./IASWS_2025/data/ag_terrain_data.csv"), show_col_types = FALSE) |>
+  select("x", "y", "ca", "elevation")|>
+  rast() 
+crs(x = ag_data, warn=FALSE) <- "epsg:26914"
+
+coords <- read_csv(here::here("./IASWS_2025/data/coords.csv"), show_col_types = FALSE) %>% 
+  st_as_sf(coords = c("long", "lat"),  crs = 4326) %>%
+  st_transform(crs = 26914)
+
+f1 <- ggplot() +
+  tidyterra::geom_spatraster(data = for_data, aes(fill = elevation)) +
+  scale_fill_viridis_c(name = "Elevation (m)", option = "inferno") +
+  geom_sf(data = filter(coords, site == "Forest")) +
+  theme_bw(base_size = 12) +
+  theme(axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = "bottom") +
+  scale_y_continuous(expand = c(0,0)) +
+  scale_x_continuous(expand = c(0,0)) +
+  ggspatial::annotation_scale(location = "bl") +
+  ggspatial::annotation_north_arrow(location = "br") +
+  labs(title = "Forest")
+
+a1 <- ggplot() +
+  tidyterra::geom_spatraster(data = ag_data, aes(fill = elevation)) +
+  scale_fill_viridis_c(name = "Elevation (m)", option = "inferno") +
+  geom_sf(data = filter(coords, site == "Agriculture")) +
+  theme_bw(base_size = 12) +
+  theme(axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = "bottom") +
+  scale_y_continuous(expand = c(0,0)) +
+  scale_x_continuous(expand = c(0,0)) +
+  ggspatial::annotation_scale(location = "bl") +
+  ggspatial::annotation_north_arrow(location = "br") +
+  labs(title = "Agriculture")
+
+a1+f1
+
+```
+
+## Lab analysis
+
+::: {.column width="50%"}
+-   Sieved to \< 63 um
+-   Geochemistry
+    -   Aqua-regia
+    -   51 geochemical elements
+-   Spectral reflectance
+    -   FieldSpecPro
+    -   15 colour coefficients
+:::
+
+::: {.column width="50%"}
+**Based on previous work (Luna Miño et al. 2024)**
+
+-   Ca, Co, Cs, Fe, Li, La, Nb, Ni, Rb, and Sr
+
+-   *a\*, b\**, *h\*, and x*
+
+![](figs/field_spec.png){fig-align="center"}
+:::
+
+## Univariate analysis
+
+::: {.column width="50%"}
+-   Mean
+-   Standard deviation
+-   Skewness
+-   Coefficient of variation
+:::
+
+::: {.column width="50%"}
+```{r}
+#| fig-width: 6
+#| fig-height: 6
+uni_data <- read_csv(here::here("./IASWS_2025/data/soil_data.csv"), show_col_types = FALSE) |>
+  filter(element %in% c("Ca", "Fe", "a_col", "c_col")) |>
+  mutate(element = fct_recode(element, "a*" = "a_col", "c*"= "c_col"))
+
+u1 <- ggplot(data = uni_data, aes(x = site, y = value, fill = site))+
+  #geom_histogram() +
+  #geom_density() +
+  geom_violin() +
+  theme_bw() +
+  theme(legend.position = "none",
+        axis.title.x = element_blank(),
+        aspect.ratio = 1) +
+  labs(y = "Value / Concentration") +
+  scale_fill_manual(values = c("Forest" = "darkgreen", "Agriculture" = "goldenrod")) +
+  facet_wrap(~element, scales = "free")
+u1
+
+```
+:::
+
+## Univariate analysis
+
+::: {.column width="50%"}
+
+### Overall
+
+-   **Colour** properties and the **agricultural** land use
+    -   Exhibited [lower variability]{.underline} and [more symmetrical]{.underline} data
+-   Forested site has a more complex topography and geomorphic setting (floodplain)
+    -   Greater variability in SOM and grain size
+-   Colour properties make ideal fingerprints
+-   Differences between sites makes direct comparisons a bit tricky
+    -   Transformations?
+    
+:::
+
+::: {.column width="50%"}
+```{r}
+#| fig-width: 6
+#| fig-height: 6
+
+u1
+```
+:::
+
+## Geospatial analysis
+
+::: {.column width="30%"}
+-   Spatial autocorrelation
+    -   Semivariograms
+-   Interpolation and mapping
+    -   Kriging
+    
+:::
+
+::: {.column width="70%"}
+
+```{r}
+#| fig-align: left
+
+a2 <- ggplot() +
+  tidyterra::geom_spatraster(data = ag_data, aes(fill = ca)) +
+  scale_fill_viridis_c(name = "Ca", breaks = seq(2, 9, 1)) +
+  geom_sf(data = filter(coords, site == "Agriculture")) +
+  theme_bw(base_size = 12) +
+  theme(axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = "bottom") +
+  scale_y_continuous(expand = c(0,0)) +
+  scale_x_continuous(expand = c(0,0)) +
+  ggspatial::annotation_scale(location = "bl") +
+  ggspatial::annotation_north_arrow(location = "br") 
+
+f2 <- ggplot() +
+  tidyterra::geom_spatraster(data = for_data, aes(fill = ca)) +
+  scale_fill_viridis_c(name = "Ca", breaks = seq(1, 4, 1)) +
+  geom_sf(data = filter(coords, site == "Forest")) +
+  theme_bw(base_size = 12) +
+  theme(axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = "bottom") +
+  scale_y_continuous(expand = c(0,0)) +
+  scale_x_continuous(expand = c(0,0)) +
+  ggspatial::annotation_scale(location = "bl") +
+  ggspatial::annotation_north_arrow(location = "br")
+
+a1 + a2
+
+```
+
+Nugget = 0.0\
+Sill = 7.2\
+Range = 580m\
+Spatial Class = Strong
+:::
+
+## Geospatial analysis
+
+::: {.column width="30%"}
+-   Spatial autocorrelation
+    -   Semivariograms
+-   Interpolation and mapping
+    -   Kriging
+:::
+
+::: {.column width="70%"}
+```{r}
+
+f1 + f2
+```
+
+Nugget = 1.6\
+Sill = 2.7\
+Range = 269m\
+Spatial Class = Moderate
+:::
+
+## Geospatial analysis
+
+::: {.column width="40%"}
+### Semivariogram interpretation
+
+-   Small nugget reflects low measurement or sampling error
+-   Small sill indicates low overall variance
+-   Small range indicate spatial correlation persists over short distances
+:::
+
+::: {.column width="60%"}
+
+
+![](figs/Ca_Ag_Semi.png){width=85%}
+
+![](figs/Ca_For_Semi.png){width=85%}
+
+:::
+
+## Geospatial analysis
+
+::: {.column width="50%"}
+
+### Spatial autocorrelation
+-   Soil properties at the **agricultural site** exhibited **stronger** spatial autocorrelation
+    -   6 soil properties at the forested site exhibited **no** spatial autocorrelation
+- Soil properties presented patterns that [roughly matches]{.underline} the topography
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| fig-width: 6
+#| fig-height: 6
+
+f3 <- ggplot() +
+  tidyterra::geom_spatraster(data = for_data, aes(fill = elevation)) +
+  scale_fill_viridis_c(name = "Elevation (m)", option = "inferno") +
+  theme_bw(base_size = 12) +
+  theme(axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = "none") +
+  scale_y_continuous(expand = c(0,0)) +
+  scale_x_continuous(expand = c(0,0)) +
+  labs(title = "Forest")
+
+a3 <- ggplot() +
+  tidyterra::geom_spatraster(data = ag_data, aes(fill = elevation)) +
+  scale_fill_viridis_c(name = "Elevation (m)", option = "inferno") +
+  theme_bw(base_size = 12) +
+  theme(axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = "none") +
+  scale_y_continuous(expand = c(0,0)) +
+  scale_x_continuous(expand = c(0,0)) +
+  labs(title = "Agriculture")
+
+a4 <- ggplot() +
+  tidyterra::geom_spatraster(data = ag_data, aes(fill = ca)) +
+  scale_fill_viridis_c(name = "Ca", breaks = seq(2, 9, 1)) +
+  theme_bw(base_size = 12) +
+  theme(axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = "none") +
+  scale_y_continuous(expand = c(0,0)) +
+  scale_x_continuous(expand = c(0,0)) 
+
+f4 <- ggplot() +
+  tidyterra::geom_spatraster(data = for_data, aes(fill = ca)) +
+  scale_fill_viridis_c(name = "Ca", breaks = seq(1, 4, 1)) +
+  theme_bw(base_size = 12) +
+  theme(axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = "none") +
+  scale_y_continuous(expand = c(0,0)) +
+  scale_x_continuous(expand = c(0,0))
+
+(a3 + f3)/(a4 + f4)
+
+```
+
+:::
+
+
+## Terrain analysis
+
+::: {.column width="40%"}
+-   Terrain attributes
+    -   System for Automated Geoscientific Analyses (SAGA)
+    -   Random Forest Regression
+
+1.  Plan curvature
+2.  Profile curvature
+3.  SAGA wetness index
+4.  Catchment area
+5.  Relative slope position
+6.  Vertical channel network distance
+:::
+
+::: {.column width="60%"}
+![](figs/RF summary.png){fig-align="center"}
+:::
+
+## Terrain analysis
+
+::: {.column width="40%"}
+-   Elevation was ranked as the most important predictor
+    - SAGA Wetness Index
+    - Relative Slope Position
+- Patterns linked to hydrologic properties and processes
+- Terrain attributes can be used to guide sampling and interpret data
+    
+:::
+
+::: {.column width="60%"}
+![](figs/RF summary.png){fig-align="center"}
+:::
+
+## Conclusions
+
+::: {.column width="50%"}
+- Agricultural site:
+
+    - Gently sloping terrain
+
+    - Lower variability
+
+    - Approximately normal data distributions
+
+    - Moderate to strong spatial autocorrelation
+    
+![](figs/sampling2.jpg){fig-align="center" width=75%}    
+:::
+
+::: {.column width="50%"}
+
+- Forested site:
+
+    - Complex terrain
+
+    - Higher variability 
+
+    - Data often non-normal
+
+    - Fewer properties with spatial autocorrelation
+    
+![](figs/sampling3_crop.jpg){fig-align="center" width=75%}     
+    
+:::
+
+## Conclusions
+
+-  Topographic effects evident in many soil property patterns
+-  Top terrain predictors: elevation, SAGA Wetness Index, and relative slope position
+    -  Terrain–soil relationships were inconsistent in strength and direction
+- Terrain-driven spatial patterns can inform more targeted soil sampling
+
+![](figs/sampling4_crop.jpg){fig-align="center"}     
+
+## Characterizing Sediment Source Variability
+
+### Landscape and Land Use Influences on Fingerprint Properties
+
+::: {.absolute bottom="50" left="600" width="150%"}
+
+[**Want to learn more?**]{style="color:#094218;"}
+
+![](figs/qr.svg)
+
+:::
+
+<!-- code <- qrcode::qr_code("https://github.com/alex-koiter/presentations/tree/main/IASWS_2025") -->
+
+<!-- qrcode::generate_svg(code, filename = here::here("./IASWS_2025/figs/qr.svg")) -->
+
+<!-- **Want to learn more? ** -->
+
+<!-- ![](figs/qr.svg){width=25%} -->
+
+
+
+
+::: {style="position:absolute; bottom:20%"}
+ `r icons::fontawesome("globe")` [**alexkoiter.ca**](https://alexkoiter.ca)<br> `r icons::fontawesome("envelope")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca)<br> `r icons::fontawesome("github")` [**alex-koiter**](https://github.com/alex-koiter)<br> `r fontawesome::fa("bluesky", fill = "black")` [**alex-koiter**](https://bsky.app/profile/alex-koiter.bsky.social)<br> `r icons::fontawesome("mastodon")` [**\@alex_koiter\@sciencemastodon.com**](https://sciencemastodon.com/@Alex_Koiter)<br> `r icons::fontawesome("twitter")` [**\@alex_koiter**](https://twitter.com/alex_koiter)
+:::
+
+[*Slides created with [Quarto](https://quarto.org)*<br>Updated `r Sys.Date()`]{.small .absolute bottom="50"}
+
