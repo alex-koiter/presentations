@@ -177,13 +177,19 @@ p1 + p2
 
 ```{r}
 library(terra)
-for_data <- read_csv(here::here("./IASWS_2025/data/forest_terrain_data.csv"), show_col_types = FALSE) |>
-  select("x", "y", "ca", "elevation")|>
+# read_csv(here::here("./IASWS_2025/data/forest_terrain_data.csv"), show_col_types = FALSE) |>
+#   select("x", "y", "ca", "elevation")|>
+#   write_csv(here::here("./IASWS_2025/data/for_data.csv"))
+  
+for_data <- read_csv(here::here("./IASWS_2025/data/for_data.csv"), show_col_types = FALSE) |>
   rast() 
 crs(x = for_data, warn=FALSE) <- "epsg:26914"
 
-ag_data <- read_csv(here::here("./IASWS_2025/data/ag_terrain_data.csv"), show_col_types = FALSE) |>
-  select("x", "y", "ca", "elevation")|>
+# ag_data <- read_csv(here::here("./IASWS_2025/data/ag_terrain_data.csv"), show_col_types = FALSE) |>
+#   select("x", "y", "ca", "elevation")|>
+#   write_csv(here::here("./IASWS_2025/data/ag_data.csv"))
+
+ag_data <- read_csv(here::here("./IASWS_2025/data/ag_data.csv"), show_col_types = FALSE) |>  
   rast() 
 crs(x = ag_data, warn=FALSE) <- "epsg:26914"
 
