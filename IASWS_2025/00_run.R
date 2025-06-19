@@ -7,7 +7,7 @@ pagedown::chrome_print("./IASWS_2025/IASWS_2025.html",
 
 
 
-# system(glue::glue("gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 ",
-#                   "-dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH ",
-#                   "-sOutputFile='intro_to_rmarkdown_sm.pdf' ",
-#                   "'intro_to_rmarkdown.pdf'"))
+system(glue::glue("gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 ",
+                  "-dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH ",
+                  "-sOutputFile='./IASWS_2025/IASWS_2025_sm.pdf' ",
+                  "'./IASWS_2025/IASWS_2025.pdf'"))
