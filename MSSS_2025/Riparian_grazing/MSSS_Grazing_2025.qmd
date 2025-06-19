@@ -1,6 +1,5 @@
 ---
-title: Riparian Grazing
-subtitle: Impacts on sources of P
+title: Effects of Riparian Grazing on Distinct Phosphorus Sources
 title-block-style: plain # This removes the default style
 title-slide-attributes:
   data-background-image: figs/background.jpg
@@ -51,12 +50,89 @@ Tamaragh Malone
 library(tidyverse)
 ```
 
+## Riparian areas
+
+- Important ecological areas
+    - Nesting habitat
+    - Transportation cooridors
+    - Refuge for benficial plants  and insects
+
+- Hydrologically important
+  - Bank stabilization
+  - Water temperature regulation
+  - Reduce flooding risk
+
+## Riparian areas
+
+- Part of the farm
+    - Account for 5 to 10% of the farm area
+    - Important source of forage
+  
+## Riparian areas as filters
+- Riparian areas are maintained to intercept and store nutrients
+    - BMP to improve water quality
+    - Ability to retain nutrients declines over time
+    - Most P loading occurs during the spring snowmelt
+    
+## Riparian areas as filters
+### Typical prairie riparian area during the snowmelt period
+- Frozen soils and dead and dormant vegetation
+    - Filtering capacity is not not very good during the most critical period
+
+## Research objectives
+
+### Can we use riparian cattle grazing to reduce the risk of P loss?
+
+1. Assess the distribution of P in two directions
+
+Vertical: Biomass, Litter, Organic layer, Ah (0-10)
+Longitudinal: Upper, mid, lower 
+
+2. Quantify the net change in P following grazing
+
+## Location
+
+### Four riparian areas at the [MBFI](https://www.mbfi.ca/) research farm
+- South-western Manitoba
 
 
+## Treatments
+- Each riparian area subdivided in four plots
+1. Control
+2. Grazing
+3. High-density grazing
+4. Mowing
 
-## Riparian Grazing
+- Fall grazing
+    - Drier soils (less compaction)
+    - Limit disturbance to active nests
+    - Extending the gazing season
+    - Remove vegetation prior to winter
 
-### Impacts on sources of P
+## Sampling
+
+Sample collection 
+- Pre- and post-grazing
+- Biomass and litter
+    - 0.25 m^2^ quadrate
+- Organic and Ah
+    - Soil probe
+    
+Sample analysis
+- Dried and homogenized
+- Wieghed
+- Water extraction
+- Molybdate–ascorbic acid method
+
+Experiment conducted over three consecutive years
+
+## Vertical profile of P
+
+- Biomass and litter are large sources of P
+- Can be harvested to remove P 
+
+## Effects of Riparian Grazing on Distinct Phosphorus Sources
+
 
 ::: {.absolute bottom="50" left="600" width="150%"}
 
@@ -66,13 +142,13 @@ library(tidyverse)
 
 :::
 
-<!-- code <- qrcode::qr_code("https://github.com/alex-koiter/presentations/tree/main/IASWS_2025") -->
+<!-- code <- qrcode::qr_code("https://github.com/alex-koiter/presentations/tree/main/MSSS_2025/Riparian_grazing") -->
 
-<!-- qrcode::generate_svg(code, filename = here::here("./IASWS_2025/figs/qr.svg")) -->
+<!-- qrcode::generate_svg(code, filename = here::here("./MSSS_2025/Riparian_grazing/figs/qr.svg")) -->
 
-<!-- **Want to learn more? ** -->
+**Want to learn more? **
 
-<!-- ![](figs/qr.svg){width=25%} -->
+![](figs/qr.svg){width=25%}
 
 
 

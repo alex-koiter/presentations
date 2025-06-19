@@ -1,12 +1,14 @@
-## Characterizing Sediment Source Variability
+## Effects of Riparian Grazing on Distinct Phosphorus Sources
 
-### Landscape and Land Use Influences on Fingerprint Properties
-
-*Tuesday, July 01, 2025*  
-[International Association for Sediment Water Science](https://www.ufz.de/iasws/)
-16th International Symposium on the Interactions between Sediments and Water
+*July 20-25, 2025*  
+[Soils for our Future 2025 Conference](https://site.pheedloop.com/event/EVEYHOPOMAGWN/home)
+A Gathering of Global to Local Perspectives
 
 
-[**View presentation**](https://alex-koiter.github.io/presentations/IASWS_2025/IASWS_2025.html)
+[**View presentation**](http://alexkoiter.ca/presentations/MSSS_2025/Riparian_grazing/MSSS_Grazing_2025.html)
 
-[**Preview Paper**](https://alexkoiter.ca/spatial-variability-soil-manuscript/)
+[**Publication**](https://alexkoiter.ca/spatial-variability-soil-manuscript/)
+
+[**Source code for analysis and manuscript**](https://github.com/alex-koiter/riparian-grazing-manuscript)
+
+[**Data repository**](https://doi.org/10.5061/dryad.nzs7h4526)
