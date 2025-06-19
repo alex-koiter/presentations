@@ -573,7 +573,7 @@ f4 <- ggplot() +
 
 
 ::: {style="position:absolute; bottom:20%"}
- `r icons::fontawesome("globe")` [**alexkoiter.ca**](https://alexkoiter.ca)<br> `r icons::fontawesome("envelope")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca)<br> `r icons::fontawesome("github")` [**alex-koiter**](https://github.com/alex-koiter)<br> `r fontawesome::fa("bluesky", fill = "black")` [**alex-koiter**](https://bsky.app/profile/alex-koiter.bsky.social)<br> `r icons::fontawesome("mastodon")` [**\@Alex_Koiter\@sciencemastodon.com**](https://mstdn.ca/@Alex_Koiter)<br> `r icons::fontawesome("twitter")` [**\@alex_koiter**](https://twitter.com/alex_koiter)
+ `r icons::fontawesome("globe")` [**alexkoiter.ca**](https://alexkoiter.ca)<br> `r icons::fontawesome("envelope")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca)<br> `r icons::fontawesome("github")` [**alex-koiter**](https://github.com/alex-koiter)<br> `r fontawesome::fa("bluesky", fill = "black")` [**alex-koiter**](https://bsky.app/profile/alex-koiter.bsky.social)<br> `r icons::fontawesome("mastodon")` [**\@Alex_Koiter\@mstdn.ca**](https://mstdn.ca/@Alex_Koiter)<br> `r icons::fontawesome("twitter")` [**\@alex_koiter**](https://twitter.com/alex_koiter)
 :::
 
 [*Slides created with [Quarto](https://quarto.org)*<br>Updated `r Sys.Date()`]{.small .absolute bottom="50"}
