@@ -3,7 +3,8 @@
 pagedown::chrome_print("./IASWS_2025/IASWS_2025.html",
                        output = "./IASWS_2025/IASWS_2025.pdf",
                        options = list(printBackground = TRUE),
-                       extra_args = "--font-render-hinting=none")
+                       extra_args = "--font-render-hinting=none",
+                       timeout = 60)
 
 
 
