@@ -2,7 +2,7 @@
 title: Effects of Riparian Grazing on Distinct Phosphorus Sources
 title-block-style: plain # This removes the default style
 title-slide-attributes:
-  data-background-image: figs/background.jpg
+  data-background-image: figs/background_crop.jpg
   data-background-size: contain
   data-background-opacity: "0.75"
 author: "Alex Koiter"
@@ -51,111 +51,218 @@ library(tidyverse)
 ```
 
 ## Riparian areas
-
+::: {.column width="50%"}
 - Important ecological areas
     - Nesting habitat
     - Transportation cooridors
     - Refuge for benficial plants  and insects
+    
+![](figs/eggs.jpg){width=48%}
+:::
+
+::: {.column width="50%"}
 
 - Hydrologically important
   - Bank stabilization
   - Water temperature regulation
   - Reduce flooding risk
+  
+
+
+![](figs/corridor.png)   
+
+:::
 
 ## Riparian areas
-
+::: {.column width="50%"}
 - Part of the farm
     - Account for 5 to 10% of the farm area
     - Important source of forage
-  
-## Riparian areas as filters
+    
+![[Cows and Fish Program](https://cowsandfish.org/wp-content/uploads/2017/04/greenzone3rd.pdf)](figs/riparian grazing.png){width=45%}
+:::
+
+::: {.column width="50%"}
 - Riparian areas are maintained to intercept and store nutrients
     - BMP to improve water quality
-    - Ability to retain nutrients declines over time
-    - Most P loading occurs during the spring snowmelt
+
+![[Stewart et al. 2010](https://publications.gc.ca/site/eng/387724/publication.html)](figs/Buffer_man.png){width=40%}   
+:::
     
 ## Riparian areas as filters
 ### Typical prairie riparian area during the snowmelt period
+- Most P loading occurs during the spring snowmelt
 - Frozen soils and dead and dormant vegetation
     - Filtering capacity is not not very good during the most critical period
+- Vegetation can be a source of P
+    
+::: {layout-ncol=2}
+
+![](figs/frozen2.jpg)
+
+![Lobb](figs/frozen1.jpg)
+
+:::
 
 ## Research objectives
+
+
+::: {.column width="70%"}
 
 ### Can we use riparian cattle grazing to reduce the risk of P loss?
 
 1. Assess the distribution of P in two directions
 
-Vertical: Biomass, Litter, Organic layer, Ah (0-10)
-Longitudinal: Upper, mid, lower 
+**Vertical**
+
+- Biomass, Litter, Organic layer, Ah (0-10)
+
+**Longitudinal**
+
+- Upper, mid, lower 
 
 2. Quantify the net change in P following grazing
+:::
 
+::: {.column width="30%"}
+![](figs/bio_litter.jpg)
+:::
 ## Location
 
 ### Four riparian areas at the [MBFI](https://www.mbfi.ca/) research farm
 - South-western Manitoba
 
+![[Koiter & Malone 2025](http://doi.org/10.1002/jeq2.70012)](figs/Figure 1.png)
 
 ## Treatments
-- Each riparian area subdivided in four plots
-1. Control
-2. Grazing
-3. High-density grazing
-4. Mowing
+::: {.column width="50%"}
+
+1.  Control
+2.  Grazing
+3.  High-density grazing
+4.  Mowing
 
 - Fall grazing
-    - Drier soils (less compaction)
-    - Limit disturbance to active nests
-    - Extending the gazing season
-    - Remove vegetation prior to winter
+    - Drier soils
+    - Protect habitat
+    - Extending gazing season
+    - Remove P prior to winter
+    
+:::
+
+::: {.column width="50%"}
+![](figs/grazing1.jpg)
+:::
 
 ## Sampling
-
-Sample collection 
+::: {.column width="50%"}
+### Sample collection 
 - Pre- and post-grazing
 - Biomass and litter
     - 0.25 m^2^ quadrate
 - Organic and Ah
     - Soil probe
     
-Sample analysis
-- Dried and homogenized
+### Sample analysis
 - Wieghed
+- Dried and homogenized
 - Water extraction
 - Molybdate–ascorbic acid method
 
-Experiment conducted over three consecutive years
+:::
 
-## Vertical profile of P
+::: {.column width="50%"}
+
+![](figs/sampling1.jpg){width=75%}
+
+![](figs/sampling2.jpg){width=75%}
+:::
+## Distribution of P
 
 - Biomass and litter are large sources of P
-- Can be harvested to remove P 
+
+![[Koiter & Malone 2025](http://doi.org/10.1002/jeq2.70012)](figs/Figure 2.png)
+
+## Biomass
+
+- High density grazing and mowing reduced the amount of P
+- More P removed in lower slope locations
+
+![[Koiter & Malone 2025](http://doi.org/10.1002/jeq2.70012)](figs/Figure 3.png)
+
+## Litter
+- No treatment effect
+- High variability 
+
+![[Koiter & Malone 2025](http://doi.org/10.1002/jeq2.70012)](figs/Figure 4.png)
+
+## Organic layer
+- No treatment effect
+- High variability 
+
+![[Koiter & Malone 2025](http://doi.org/10.1002/jeq2.70012)](figs/Figure 5.png)
+
+## Ah
+
+- No treatment effect
+- High variability 
+
+![[Koiter & Malone 2025](http://doi.org/10.1002/jeq2.70012)](figs/Figure 6.png)
+
+## Variabilty
+
+::: {.column width="50%"}
+- Variabilty is high
+  - Above and below ground
+  - Even in the control plots
+  - Makes detecting small changes difficult
+
+![](figs/species.jpg) 
+:::
+
+::: {.column width="50%"}
+
+- Hotspots
+  - Manure/urine
+  - Plant species
+  - Biophysical processes 
+
+![](figs/manure.jpg)  
+:::  
+  
+## Conclusions
+
+- Fall riparian grazing reduced the amount of biomass P
+    - Reduced risk of P loss during snowmelt
+
+- Variability is high
+  - Sampling design needs to accomdate this
+
+![](figs/cow_crop2.jpg){fig-align="center"}  
+
 
 ## Effects of Riparian Grazing on Distinct Phosphorus Sources
 
 
-::: {.absolute bottom="50" left="600" width="150%"}
+::: {.absolute bottom="100" left="600" width="150%"}
 
 [**Want to learn more?**]{style="color:#094218;"}
 
-<!-- ![](figs/qr.svg) -->
+![](figs/qr.svg)
 
 :::
+```{r, eval=FALSE}
 
-<!-- code <- qrcode::qr_code("https://github.com/alex-koiter/presentations/tree/main/MSSS_2025/Riparian_grazing") -->
+code <- qrcode::qr_code("https://github.com/alex-koiter/presentations/tree/main/MSSS_2025/Riparian_grazing")
 
-<!-- qrcode::generate_svg(code, filename = here::here("./MSSS_2025/Riparian_grazing/figs/qr.svg")) -->
+qrcode::generate_svg(code, filename = here::here("./MSSS_2025/Riparian_grazing/figs/qr.svg"))
 
-**Want to learn more? **
-
-![](figs/qr.svg){width=25%}
-
+```
 
 
 
 ::: {style="position:absolute; bottom:20%"}
- `r icons::fontawesome("globe")` [**alexkoiter.ca**](https://alexkoiter.ca)<br> `r icons::fontawesome("envelope")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca)<br> `r icons::fontawesome("github")` [**alex-koiter**](https://github.com/alex-koiter)<br> `r fontawesome::fa("bluesky", fill = "black")` [**alex-koiter**](https://bsky.app/profile/alex-koiter.bsky.social)<br> `r icons::fontawesome("mastodon")` [**\@alex_koiter\@sciencemastodon.com**](https://sciencemastodon.com/@Alex_Koiter)<br> `r icons::fontawesome("twitter")` [**\@alex_koiter**](https://twitter.com/alex_koiter)
+ `r icons::fontawesome("globe")` [**alexkoiter.ca**](https://alexkoiter.ca)<br> `r icons::fontawesome("envelope")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca)<br> `r icons::fontawesome("github")` [**alex-koiter**](https://github.com/alex-koiter)<br> `r fontawesome::fa("bluesky", fill = "black")` [**alex-koiter**](https://bsky.app/profile/alex-koiter.bsky.social)<br> `r icons::fontawesome("mastodon")` [**\@alex_koiter\@smstdn.ca**](https://mstdn.ca/@Alex_Koiter)<br> `r icons::fontawesome("linkedin")` [**Alex-Koiter**](https://www.linkedin.com/in/alex-koiter-43b04b2a8/)<br> `r icons::fontawesome("twitter")` [**\@alex_koiter**](https://twitter.com/alex_koiter)
 :::
 
 [*Slides created with [Quarto](https://quarto.org)*<br>Updated `r Sys.Date()`]{.small .absolute bottom="50"}
-
