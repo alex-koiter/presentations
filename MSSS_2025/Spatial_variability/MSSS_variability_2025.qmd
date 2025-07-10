@@ -36,7 +36,7 @@ Alan Moulin
 :::
 
 ::: {.column width="40%"}
-![](figs/trap2.jpg){fig-align="center"}
+![](figs/field3.jpg){fig-align="center"}
 :::
 
 ::: {layout="[1,0.7,1.2]" layout-valign="center"}
@@ -59,28 +59,40 @@ Alan Moulin
 :::
 
 ::: {.column width="50%"}
-![](figs/stream2.jpg){width=75% fig-align="right"}
+![](figs/Soil sampling.jpg){width=75% fig-align="right"}
 :::
-## Research question
+## Characterizing soil properties
 
 ::: {.column width="50%"}
 
-- Characterizing soil properties
 - Focus has been on:
     - Agronomically important nutrients (N, P, K, Ca, S)
     - Pedological and weathering processes
     - Soil surveying and mapping
     - Pollution/contamination issues
-    
-- What about the sampling design?
-    - Logistics
-    - Cost
-    - Judgement
-    
+
 :::
 
 ::: {.column width="50%"}
-![](figs/sampling.jpg){width=75% fig-align="right"}
+![](figs/field2.jpg){width=75% fig-align="right"}
+:::
+
+## Research questions
+
+### 1. How do soil geochemical and colour properties vary across different land uses?
+
+:::{.spacer}
+
+:::
+
+### 2. Which terrain attributes best explain the spatial patterns of these soil properties?
+
+::: {layout-ncol=2}
+
+![](figs/sampling2.jpg)
+
+![](figs/sampling3_crop.jpg)
+
 :::
 
 ## Objectives
@@ -97,7 +109,7 @@ Alan Moulin
 :::
 
 ::: {.column width="50%"}
-![](figs/stream.jpg){fig-align="right"}
+![](figs/stream2.jpg){fig-align="right"}
 
 :::
 
@@ -547,27 +559,25 @@ f4 <- ggplot() +
 
 ### Understanding the Spatial Distribution of Soil Geochemical and Colour Properties
 
-::: {.absolute bottom="50" left="600" width="150%"}
+::: {.absolute bottom="100" left="600" width="150%"}
 
 [**Want to learn more?**]{style="color:#094218;"}
 
 ![](figs/qr.svg)
 
 :::
+```{r, eval=FALSE}
 
-<!-- code <- qrcode::qr_code("https://github.com/alex-koiter/presentations/tree/main/IASWS_2025") -->
+code <- qrcode::qr_code("https://github.com/alex-koiter/presentations/tree/main/MSSS_2025/Spatial_variability")
 
-<!-- qrcode::generate_svg(code, filename = here::here("./IASWS_2025/figs/qr.svg")) -->
+qrcode::generate_svg(code, filename = here::here("./MSSS_2025/Spatial_variability/figs/qr.svg"))
 
-<!-- **Want to learn more? ** -->
-
-<!-- ![](figs/qr.svg){width=25%} -->
-
+```
 
 
 
 ::: {style="position:absolute; bottom:20%"}
- `r icons::fontawesome("globe")` [**alexkoiter.ca**](https://alexkoiter.ca)<br> `r icons::fontawesome("envelope")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca)<br> `r icons::fontawesome("github")` [**alex-koiter**](https://github.com/alex-koiter)<br> `r fontawesome::fa("bluesky", fill = "black")` [**alex-koiter**](https://bsky.app/profile/alex-koiter.bsky.social)<br> `r icons::fontawesome("mastodon")` [**\@alex_koiter\@sciencemastodon.com**](https://sciencemastodon.com/@Alex_Koiter)<br> `r icons::fontawesome("twitter")` [**\@alex_koiter**](https://twitter.com/alex_koiter)
+ `r icons::fontawesome("globe")` [**alexkoiter.ca**](https://alexkoiter.ca)<br> `r icons::fontawesome("envelope")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca)<br> `r icons::fontawesome("github")` [**alex-koiter**](https://github.com/alex-koiter)<br> `r fontawesome::fa("bluesky", fill = "black")` [**alex-koiter**](https://bsky.app/profile/alex-koiter.bsky.social)<br> `r icons::fontawesome("mastodon")` [**\@alex_koiter\@smstdn.ca**](https://mstdn.ca/@Alex_Koiter)<br> `r icons::fontawesome("linkedin")` [**Alex-Koiter**](https://www.linkedin.com/in/alex-koiter-43b04b2a8/)<br> `r icons::fontawesome("twitter")` [**\@alex_koiter**](https://twitter.com/alex_koiter)
 :::
 
 [*Slides created with [Quarto](https://quarto.org)*<br>Updated `r Sys.Date()`]{.small .absolute bottom="50"}
