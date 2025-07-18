@@ -1,6 +1,7 @@
 ## Effects of Riparian Grazing on Distinct Phosphorus Sources
 
 *July 20-25, 2025*
+
 [Soils For Our Future 2025 Conference: A Gathering of Global to Local Perspectives](https://soilsforourfuture.ca/)
 
 Phosphorus – Balancing Plant Nutrition and Water Quality *Tuesday, July 2, 2025* 
@@ -11,7 +12,7 @@ CSSS/IUSS SCIENTIFIC BREAKOUT SESSION
 
 [**Publication**](http://doi.org/10.1002/jeq2.70012)
 
-[Article notebook including links to computations](https://alexkoiter.ca/spatial-variability-soil-manuscript/)
+[**Article notebook including links to computations**](https://alexkoiter.ca/spatial-variability-soil-manuscript/)
 
 [**Source code for analysis and manuscript**](https://github.com/alex-koiter/riparian-grazing-manuscript)
 
