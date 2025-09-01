@@ -13,7 +13,7 @@ format:
 
 ![](https://www.brandonu.ca/communications/files/Brandon-University-Horizontal-Logo-2-Colour-RGB.png){width=100% fig-align=right style="margin-top:130px;"}
 
-### 2024 Orientation {style="padding-top: 50px;"}
+### 2025 Orientation {style="padding-top: 50px;"}
 
 
 ## Environmental Science
@@ -144,7 +144,7 @@ format:
 ### Careers
 - Agricultural consulting
 - Environmental consulting
-- Government research
+- Government policy/research
 - Non-profits/NGOs
 - Education (teaching/outreach)
 :::
@@ -156,6 +156,8 @@ format:
 - Watershed health
 - Contamination/Pollution
 - Planning/Policy
+- Environmental Assessement 
+- GIS & remote sensing
 :::
 ::::
 
