@@ -68,7 +68,7 @@ library(tidyhydat)
 
 **Hi!** This is in *italics*
 
-A [link](https://cran.r-project.org/) to R
+A [link](https://alexkoiter.ca/) to my website
 
 ```
 :::
@@ -424,7 +424,7 @@ quarto::quarto_render("Exercise 1 dev.qmd", execute_params = list(show_answers =
 
 ## Scientific publishing{.nostretch}
 - Quarto manuscripts: text, data, analysis, code etc all in one place!
-- Recent publication on [riparian phosphorus](https://alexkoiter.ca/riparian-grazing-manuscript/)
+- Recent publication on riparian phosphorus [Website](https://alexkoiter.ca/riparian-grazing-manuscript/) [GitHub](https://github.com/alex-koiter/riparian-grazing-manuscript)
 
 ![](figs/manuscript.png){width=50%}
 
@@ -433,7 +433,6 @@ quarto::quarto_render("Exercise 1 dev.qmd", execute_params = list(show_answers =
 
 ### Online References
 
-- RStudio > Help > **Markdown** Quick Reference
 - **Quarto**
   - [Quarto Documentation](https://quarto.org)
   - [Openscapes' Quarto Tutorial](https://openscapes.github.io/quarto-website-tutorial/)
