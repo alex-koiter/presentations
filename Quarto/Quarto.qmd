@@ -458,7 +458,7 @@ quarto::quarto_render("Exercise 1 dev.qmd", execute_params = list(show_answers =
 :::
 ```{r, eval=FALSE}
 
-code <- qrcode::qr_code("http://alexkoiter.ca/presentations/Quarto.html")
+code <- qrcode::qr_code("http://alexkoiter.ca/presentations/Quarto/Quarto.html")
 
 qrcode::generate_svg(code, filename = here::here("./Quarto/figs/qr.svg"))
 
