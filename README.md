@@ -2,7 +2,7 @@
 
 - [Building teaching materials with Quarto](http://alexkoiter.ca/presentations/Quarto/Quarto.html)
 
--[Effects of Riparian Grazing on Distinct Phosphorus Sources](http://alexkoiter.ca/presentations/MSSS_2025/Riparian_grazing/MSSS_Grazing_2025.html)
+- [Effects of Riparian Grazing on Distinct Phosphorus Sources](http://alexkoiter.ca/presentations/MSSS_2025/Riparian_grazing/MSSS_Grazing_2025.html)
 
 - [Characterizing Sediment Source Variability](https://alexkoiter.ca/presentations/IASWS_2025/IASWS_2025.html)
 
