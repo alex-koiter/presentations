@@ -1,8 +1,10 @@
 ## Building teaching materials with Quarto
 
-*November 20, 2025*
+*November 20, 2025* at 9:38 (Central Standard, UTC-6) 
 
 This short presentation (22 minutes) is part of the Take22 series hosted by the [Centre for Teaching, Learning, and Technology](https://www.brandonu.ca/ctlt/) at Brandon University.
+
+Everyone is welcome to join via the [Zoom presentation](https://brandonu-ca.zoom.us/j/98708795899)
 
 
 

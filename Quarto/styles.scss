@@ -14,6 +14,14 @@ $presentation-heading-color: #094218;
 
 /*-- scss:rules --*/
 
+.output {
+  border-width: 1pt;
+  border-color: black;
+  border-style: solid;
+  box-shadow: 5pt 5pt gray;
+  padding: 10px;
+}
+
 .quarto-title-author {
   font-size: 1.5em; /* larger font size */
   color: black;

@@ -153,7 +153,10 @@ ggplot(data = mtcars, aes(x = disp, y = mpg)) +
   - docx
   - pptx
 
+# Examples of what is possible with Quarto
+
 ## Lectures - Standard
+- Text and images
 ```{md, eval = FALSE, echo = TRUE}
 ## Lectures - Standard
 ::::{columns}
@@ -171,6 +174,7 @@ ggplot(data = mtcars, aes(x = disp, y = mpg)) +
 
 ## Lectures - Standard
 
+:::{.output}
 ::::{columns}
 :::{.column}
 - Heating and cooling of air columns cause horizontal pressure variations 
@@ -182,10 +186,13 @@ ggplot(data = mtcars, aes(x = disp, y = mpg)) +
 ![](./figs/pressure.png)
 :::
 :::: 
+:::
+
 
 ## Lectures - Math and equations
+- Great for including equations and Greek letters
 ```{md, eval = FALSE, echo = TRUE}
-## Lectures - Math and equations
+
 - Stream bed sediment generally mobilize at flow velocities that exceed a critical shear stress $(\tau_{cr})$
 
 ::::{.columns}
@@ -202,11 +209,10 @@ $\Theta_{cr}$  = Shields parameter
 :::
 ::::
 
-- Many streams are considered hydrodynamically rough and the Shields parameter is approximately 0.06 
 ```
 
 ## Lectures - Math and equations
-
+:::{.output}
 - Stream bed sediment generally mobilize at flow velocities that exceed a critical shear stress $(\tau_{cr})$
 
 ::::{.columns}
@@ -222,32 +228,27 @@ $D$ = grain diameter
 $\Theta_{cr}$  = Shields parameter  
 :::
 ::::
-
-- Many streams are considered hydrodynamically rough and the Shields parameter is approximately 0.06 
-
-
+:::
 
 ## Lectures - Real data
+- Download and visualize public data
 ```{md, eval = FALSE, echo = TRUE}
-## Lectures - Real data
-### Wilsons Creek Daily Flow
-
 qd <- hy_daily_flows(station_number = "05LJ801") %>%
   mutate(dayofyear = yday(Date), Year = year(Date)) %>%
   mutate(dayofyear_formatted = as.Date(dayofyear - 1, origin = "2016-01-01")) %>%
   filter(Year < 1977, Year >1972)
 
-    ggplot(data = qd, aes(x = dayofyear_formatted, y = Value)) +
-    geom_line() +
-    scale_x_date(date_labels = "%b") +
-    labs(y = bquote("Discharge ("*m^3*s^-1*")"), x = "Day of year") +
-    theme_minimal()+
-    facet_wrap(~Year, scales = "free_y")
-
+ggplot(data = qd, aes(x = dayofyear_formatted, y = Value)) +
+  geom_line() +
+  scale_x_date(date_labels = "%b") +
+  labs(y = bquote("Discharge ("*m^3*s^-1*")"), x = "Day of year") +
+  theme_minimal()+
+  facet_wrap(~Year, scales = "free_y")
 ```
 
 ## Lectures - Real data
-### Wilsons Creek Daily Flow
+
+:::{.output}
 ```{r, fig.cap = "Water Survey of Canada"}
 
 qd <- hy_daily_flows(station_number = "05LJ801") %>%
@@ -264,21 +265,19 @@ qd <- hy_daily_flows(station_number = "05LJ801") %>%
 
 ```
 
+:::
 
 ## Lectures - Custom figures
+- I can create my own custom figures
 ```{md, eval = FALSE, echo = TRUE}
-## Lectures - Custom figures
-### Stokes law
 - $u_s = \frac{\rho_p-\rho_fgr^2}{18\mu}$
 
-temp <- data.frame (size = seq(0.001, 1, 0.001))
-
-temp3 <- data.frame (value = c(40, 0.5, 40, 0.5, 40, 0.5), size = c(0.001, 0.001, 0.01, 0.01, 0.4, 0.4), label = c("Clay", "Clay", "Silt", "Silt", "Sand", "Sand"), fluid = c("air", "water", "air", "water", "air", "water"))
-
-temp2 <- temp %>%
+temp2 <- data.frame (size = seq(0.001, 1, 0.001)) %>%
   mutate(air = ((size/1000/2)^2)*2.96e8) %>%
   mutate(water = ((size/1000/2)^2)*3702222) %>%
   gather(key = fluid, value = value, air:water)
+
+temp3 <- data.frame (value = c(40, 0.5, 40, 0.5, 40, 0.5), size = c(0.001, 0.001, 0.01, 0.01, 0.4, 0.4), label = c("Clay", "Clay", "Silt", "Silt", "Sand", "Sand"), fluid = c("air", "water", "air", "water", "air", "water"))
 
 ggplot(temp2, aes(x = size, y = value)) +
   geom_line() +
@@ -294,8 +293,7 @@ ggplot(temp2, aes(x = size, y = value)) +
 ```
 
 ## Lectures - Custom figures
-
-### Stokes law
+:::{.output}
 - $u_s = \frac{\rho_p-\rho_fgr^2}{18\mu}$
     
     
@@ -322,9 +320,12 @@ ggplot(temp2, aes(x = size, y = value)) +
   facet_wrap(~fluid, scales="free_y" )
 
 ```
+:::
 
 ## Assignments
-- Keep real world data sets up to date
+- Creating and keeping real world data sets up to date
+  - Included in the same `qmd` file as the instructions and questions
+      - But the student never see this!
 
 ```{md, eval = FALSE, echo = TRUE}
 df <- hy_daily_flows(station_number = "05MH001", start_date = "2014-06-30") %>%
@@ -342,7 +343,9 @@ df <- hy_daily_flows(station_number = "05MH001", start_date = "2014-06-30") %>%
 ```
 
 ## Assignments
-- Export data in a more student friendly form
+- Easily export data in a more student friendly form
+  - Excel, csv, shp
+  - Included in the same `qmd` file as the instructions and questions
 
 ```{md, eval = FALSE, echo = TRUE}
 df %>%
@@ -358,18 +361,16 @@ df %>%
 ```{r, eval = TRUE, echo = TRUE}
 reg_depth <- 10
 slope <- 12.5
-water <- 1.5
-cohesion <- 1300
-friction <- 15
-reg_dens <- 2250
-water_dens <- 1000
-gravity <- 9.8  
+ 
 ```
+
+<br>
 
 ```{md, eval = TRUE, echo = TRUE}
 Consider a $`r reg_depth` ~m$ thick mass of regolith sitting on top of a bedrock surface with a slope of $`r slope`^{\circ}$.
 ```
 
+<br>
 
 Consider a $`r reg_depth` ~m$ thick mass of regolith sitting on top of a bedrock surface with a slope of $`r slope`^{\circ}$.
 
@@ -407,31 +408,56 @@ quarto::quarto_render("Exercise 1 dev.qmd", execute_params = list(show_answers =
 quarto::quarto_render("Exercise 1 dev.qmd", execute_params = list(show_answers = "no"), output_file = "Exercise-1.pdf")
 ```
 
+<br>
+
+:::{.output}
 ![](figs/Q10_answer.png)
 
-## R Tutorials
-- Has table of contents
-- Easy to cut-and-paste
+:::
 
+## Teaching R
+::::{.columns}
+:::{.column width="35%"}
+- Assignments in html format
+  - Has table of contents
+  - Easy to cut-and-paste
+
+:::
+
+:::{.column width="65%"}
+:::{.output}
 ![](figs/R_tutorial.png)
+:::
+:::
+::::
 
-## Tour booklets
+## Teaching R
+Can easily create
+
+## Tour booklet
 - MB Soil Science [2024 summer tour](https://raw.githubusercontent.com/alex-koiter/2024-MSSS-Tour/main/Booklet.pdf)
 - Created the maps within the same document
 - Integrates nicely with [GitHub](https://github.com/alex-koiter/2024-MSSS-Tour/tree/main)
 
-![](figs/texture_map.png){width=40%}
+![Soil Texture of tour area](figs/texture_map.png){width=40%}
 
 ## Scientific publishing{.nostretch}
-- Quarto manuscripts: text, data, analysis, code etc all in one place!
-- Recent publication on riparian phosphorus [Website](https://alexkoiter.ca/riparian-grazing-manuscript/) [GitHub](https://github.com/alex-koiter/riparian-grazing-manuscript)
+::::{.columns}
+:::{.column width="45%"}
+- Quarto manuscripts: text, data, analysis, code, etc all in one place!
+- Recent publication on riparian phosphorus 
+  - [Website](https://alexkoiter.ca/riparian-grazing-manuscript/)
+  - [GitHub](https://github.com/alex-koiter/riparian-grazing-manuscript)
 
-![](figs/manuscript.png){width=50%}
+:::  
+:::{.column width="55%"}
+:::{.output}
+![](figs/manuscript.png){fig-align=center}
+:::
+:::
+::::
 
 ## Resources  {.nostretch}
-
-
-### Online References
 
 - **Quarto**
   - [Quarto Documentation](https://quarto.org)
@@ -439,11 +465,11 @@ quarto::quarto_render("Exercise 1 dev.qmd", execute_params = list(show_answers =
   - [Posit's Welcome to Quarto Workshop!](https://www.youtube.com/watch?v=yvi5uXQMvu4) [(video)]{.small}
   - [We don't talk about Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/)  [(blog post)]{.small}
   - [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/) [(blog)]{.small}
+  - [Intro to Quarto workshop](https://github.com/steffilazerte/intro_to_quarto) [(Borrowed ideas for this presentation **Thanks!**)]{.small}
 - **R Markdown**
   - [R Markdown Documentation](https://rmarkdown.rstudio.com/)
   - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)  [(online book)]{.small}
-  - RStudio > Help > Cheat Sheets > R Markdown Cheat Sheet
-  - RStudio > Help > Cheat Sheets > R Markdown Reference Guide
+
 
 
 ## Building teaching materials with Quarto
@@ -457,7 +483,7 @@ quarto::quarto_render("Exercise 1 dev.qmd", execute_params = list(show_answers =
 :::
 ```{r, eval=FALSE}
 
-code <- qrcode::qr_code("http://alexkoiter.ca/presentations/Quarto/Quarto.html")
+code <- qrcode::qr_code("https://github.com/alex-koiter/presentations/tree/main/Quarto")
 
 qrcode::generate_svg(code, filename = here::here("./Quarto/figs/qr.svg"))
 
