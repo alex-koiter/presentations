@@ -7,6 +7,10 @@ format:
     embed-resources: true
 editor: source
 ---
+```{r, echo=FALSE}
+
+```
+
 
 ## Open and Reproducible Soil Science {background-color="white" background-image="figs/title.jpg" background-size="cover"}
 
@@ -267,14 +271,14 @@ A study can be reproducible and still be wrong
 ![[Allison Horst](https://allisonhorst.com/)](figs/git.png)
 :::
 
-## Recent scuccess story
+## Success story
 
 -   Collaborating with Ehsan Zarrinabadi on soil erosion project
 -   Creating figures with a large data set
 
 ![](figs/Ehsan1.png)
 
-## Recent scuccess story
+## Success story
 
 -   Ehsan identifies an issue where a site has samples where % sand + % silt + % clay $\neq$ 100 %
     -   Data is nonsensical
@@ -283,7 +287,7 @@ A study can be reproducible and still be wrong
 
 ![](figs/Ehsan2.png){fig-align="center"}
 
-## Recent scuccess story
+## Success story
 
 -   Working with an AAFC collaborator (Dr. Sheng Li)
 -   Asked to collect measurements and process the data
@@ -291,28 +295,28 @@ A study can be reproducible and still be wrong
 
 ![[Quarto](https://quarto.org/)](figs/Sheng1.png)
 
-## Recent scuccess story
+## Success story
 
 -   Loading in the data
     -   Formatting of the data was odd to accommodate field note taking
 
 ![](figs/Sheng2.png){fig-align="center"}
 
-## Recent scuccess story
+## Success story
 
 -   Calculations and output
     -   Very clear as to what was done
 
 ![](figs/Sheng3.png){fig-align="center"}
 
-## Recent scuccess story
+## Success story
 
 -   Reproducible
     -   Data
 
 ![](figs/Sheng4.png){fig-align="center"}
 
-## Recent scuccess story
+## Success story
 
 -   Reproducible
     -   Software versions
@@ -343,7 +347,7 @@ A study can be reproducible and still be wrong
 ![[rOpenSci](https://ropensci.org/)](figs/ropen.png)
 :::
 
-## Recent scuccess story
+## Success story
 
 ### Colour analysis
 
@@ -358,7 +362,7 @@ A study can be reproducible and still be wrong
 ![Credit: Masoud Goharrokhi](figs/field_spec.png)
 :::
 
-## Recent scuccess story
+## Success story
 
 ### Soil colour
 
@@ -378,7 +382,7 @@ A study can be reproducible and still be wrong
 ![[Colour-analysis repository](https://github.com/alex-koiter/Colour-analysis)](figs/alex_github.png)
 :::
 
-## Ongoing scuccess story
+## Ongoing success story
 
 ### Wind erosion project
 
@@ -424,15 +428,15 @@ A study can be reproducible and still be wrong
 <!-- ::: {.absolute bottom="225" left="0" width="150%"} -->
 <!-- ![](figs/qr_code.svg) -->
 <!-- ::: -->
-![](figs/qr_code.svg){width=25%}
+![](figs/qr_code.svg){width=22%}
 
 
 ::: {.absolute bottom="0" right="0" width="60%"}
-![Nami the soil science cat](figs/cat.gif)
+![Nami the soil science cat](figs/cat2.gif)
 :::
 
 ::: {style="position:absolute; bottom:10%"}
- `r icons::fontawesome("globe")` [**alexkoiter.ca**](https://alexkoiter.ca)<br> `r icons::fontawesome("twitter")` [**\@alex_koiter**](https://twitter.com/alex_koiter)<br> `r icons::fontawesome("mastodon")` [**\@alex_koiter\@sciencemastodon.com**](https://sciencemastodon.com/@Alex_Koiter)<br> `r icons::fontawesome("envelope")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca)<br> `r icons::fontawesome("github")` [**alex-koiter**](https://github.com/alex-koiter)
+ `r icons::fontawesome("globe")` [**alexkoiter.ca**](https://alexkoiter.ca)<br> `r icons::fontawesome("envelope")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca)<br> `r icons::fontawesome("github")` [**alex-koiter**](https://github.com/alex-koiter)<br> `r fontawesome::fa("bluesky", fill = "black")` [**alex-koiter**](https://bsky.app/profile/alex-koiter.bsky.social)<br> `r icons::fontawesome("mastodon")` [**\@Alex_Koiter\@mstdn.ca**](https://mstdn.ca/@Alex_Koiter)<br> `r icons::fontawesome("twitter")` [**\@alex_koiter**](https://twitter.com/alex_koiter)
 :::
 
 [*Slides created with [Quarto](https://quarto.org)*<br>Updated `r Sys.Date()`]{.small .absolute bottom="0"}

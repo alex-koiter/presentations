@@ -1,7 +1,6 @@
 ## Open and Reproducible Soil Science
 
-*Tuesday, February 14th, 2023*  
-University of Manitoba, Department of Soil Science
+This presentation was originally developed for the University of Manitoba Department of Soil Science seminar series in February 2023. Since then, I have made minor revisions and now regularly give this presentation to the Brandon University [Department of Geography](https://www.brandonu.ca/geography/)’s Introduction to Geographic Research Methods class (38:279).
 
 [**View presentation**](https://alex-koiter.github.io/presentations/UM_Soil_Science_2023/Open_reproducible_science.html)
 
