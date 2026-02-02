@@ -1,0 +1,48 @@
+<section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
+
+  $if(workshop)$
+  <p class="absolute" style="top:0">$workshop$</p>
+  $endif$
+
+  $if(caption)$
+  <p style="position:absolute;top:0;right:0;color:grey;font-size:60%;text-align:right">$caption$</p>
+  $endif$
+
+  <div style="height:700px">
+  <h1 class="title" style="padding-top: 80px">$title$</h1>
+  $if(subtitle)$
+  <h3 class="subtitle" style="padding-top:5px;"><strong>$subtitle$</strong></h3>
+  $endif$
+  </div>
+
+  $if(author-alex)$
+    <p style="font-size:70%; position:absolute;bottom:5%;left:0;">
+    <i class="fa-brands fa-github"></i> <a href="https://github.com/alex-koiter">alex-koiter</a><br>
+    <i class="fa-solid fa-globe"></i> <a href="https://alexkoiter.ca/">alexkoiter.ca</a>
+  </p>
+  $endif$
+
+  <div style="position:absolute; left:35%; bottom:5%; width:17%">
+    <img src="figs/qr2.svg" alt="QR code">
+  </div>
+  <div class="small" style="position:absolute; left:51%; bottom:15%">
+  <a href="https://docs.ropensci.org/mbquartR/">Visit the mbquartR website</a>
+  </div>
+  
+  
+  $for(author)$
+  <p class="author">$author$</p>
+  $endfor$
+
+  $for(institute)$
+  <p class="institute">$institute$</p>
+  $endfor$
+
+
+  $if(date)$
+  <p class="date">
+    Created with Quarto<br>Compiled $date$
+  </p>
+  $endif$
+  
+</section>
