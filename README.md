@@ -1,5 +1,7 @@
 # Links to recent presentations
 
+- [mbquartR: An R Package for Working with Manitoba Quarter Sections](http://alexkoiter.ca/presentations/mbquartR/mbquartR.html) 
+
 - [Building teaching materials with Quarto](http://alexkoiter.ca/presentations/Quarto/Quarto.html)
 
 - [Effects of Riparian Grazing on Distinct Phosphorus Sources](http://alexkoiter.ca/presentations/MSSS_2025/Riparian_grazing/MSSS_Grazing_2025.html)

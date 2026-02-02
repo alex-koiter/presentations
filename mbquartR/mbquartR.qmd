@@ -393,7 +393,7 @@ map_quarter(x = c("NE-11-33-29W1", "SW-20-2-1W1"), map.type = "Esri.WorldImagery
 
 ::: {.fragment}
 
-- Once accepted, online code was transfered to rOpenSci
+- Once accepted, online code was transferred to rOpenSci
 - I retain authorship and ownership
   - rOpenSci continues to provide support
 :::

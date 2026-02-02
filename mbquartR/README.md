@@ -3,12 +3,15 @@
 *Feb 5-6, 2026* Winnipeg, Manitoba, Canada
 
 [Manitoba Soil Science Society](https://mbsoils.ca/)
+
 [69th Annual General Meeting and Conference](https://mbsoils.ca/Events/annual-general-meeting-2/)
+
 **Theme:** Soil Health Strategies for Manitoba Soils
 
 
 
 [**View presentation**](http://alexkoiter.ca/presentations/mbquartR/mbquartR.html)
+
 [**Visit `mbquartR` website**](https://docs.ropensci.org/mbquartR)
 
 ## Abstract
