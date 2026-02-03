@@ -423,7 +423,7 @@ map_quarter(x = c("NE-11-33-29W1", "SW-20-2-1W1"), map.type = "Esri.WorldImagery
 ## Want to contribute?
 ::::{.columns}
 :::{.column}
-- Open an issue on the GitHub repository
+- Open an issue on the [mbquartR repository](https://github.com/ropensci/mbquartR)
   - Report a bug
   - Request a feature
   - Ask a question
