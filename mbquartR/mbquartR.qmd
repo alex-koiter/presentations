@@ -1,5 +1,5 @@
 ---
-title: "mbquartR:<br>An R Package for Working<br> with Manitoba Quarter<br> Sections"
+title: "mbquartR: An R Package for Working with Manitoba Quarter Sections"
 title-slide-attributes:
   data-background-image: figs/mbquartR_hex.png
   data-background-size: "20%"
@@ -95,6 +95,8 @@ ESRI imagery
 - Online resources do exist to locate to help find them
   - Fee based
   - No batch processing
+  - Do not provide coordinates
+  - Can not search by coordinates
 :::
 :::{.column width="40%"}
 ![](./figs/masc.png){width="70%"}
@@ -143,7 +145,11 @@ There must be an R package for this, right?
 
 2. Which turned into a series of functions
 
+::: {.fragment}
+
 3. Ultimately into an R package
+
+:::
 :::
 :::{.column width="40%"}
 ![](./figs/code.png){fig-align="center"}
@@ -398,9 +404,43 @@ map_quarter(x = c("NE-11-33-29W1", "SW-20-2-1W1"), map.type = "Esri.WorldImagery
   - rOpenSci continues to provide support
 :::
 
-## `mbquartR`: Finding MB quarter sections made easier!
 
-::: {.absolute bottom="100" left="475" width="150%"}
+
+## Want to contribute?
+::::{.columns}
+:::{.column}
+- Open an issue on the [mbquartR repository](https://github.com/ropensci/mbquartR)
+  - Report a bug
+  - Request a feature
+  - Ask a question
+
+:::
+:::{.column}
+![](figs/issue.png)
+:::
+::::
+
+## Want to contribute?
+::::{.columns}
+:::{.column}
+- Open an issue on the GitHub repository
+  - Report a bug
+  - Request a feature
+  - Ask a question
+- Read the [contributing guide](https://docs.ropensci.org/mbquartR/CONTRIBUTING.html)
+  - Bug fixes
+  - Feature implementation
+:::
+:::{.column}
+![](figs/contributions.png)
+:::
+::::
+
+
+
+## mbquartR: Finding MB quarter sections made easier!
+
+::: {.absolute bottom="100" left="475" style="display: flex; flex-direction: column; align-items: center;"}
 
 [**Want to learn more?**]{style="color:#094218;"}
 
@@ -422,8 +462,11 @@ qrcode::generate_svg(code2, filename = here::here("./mbquartR/figs/qr2.svg"))
 
 ![](./figs/mbquartR_hex.png){.absolute  bottom="150" right="50px" width="250px"}
 
+    
 ::: {style="position:absolute; bottom:20%"}
- `r icons::fontawesome("globe")` [**alexkoiter.ca**](https://alexkoiter.ca)<br> `r icons::fontawesome("envelope")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca)<br> `r icons::fontawesome("github")` [**alex-koiter**](https://github.com/alex-koiter)<br> `r fontawesome::fa("bluesky", fill = "black")` [**alex-koiter**](https://bsky.app/profile/alex-koiter.bsky.social)<br> `r icons::fontawesome("mastodon")` [**\@alex_koiter\@mstdn.ca**](https://mstdn.ca/@Alex_Koiter)<br> `r icons::fontawesome("linkedin")` [**Alex-Koiter**](https://www.linkedin.com/in/alex-koiter-43b04b2a8/)<br> `r icons::fontawesome("twitter")` [**\@alex_koiter**](https://twitter.com/alex_koiter)
+
+ `r icons::fontawesome("globe")` [**alexkoiter.ca**](https://alexkoiter.ca)<br> `r icons::fontawesome("envelope")` [**koitera\@brandonu.ca**](mailto:koitera@brandonu.ca)<br> `r icons::fontawesome("github")` [**alex-koiter**](https://github.com/alex-koiter)<br> {{< fa brands bluesky >}} [**alex-koiter**](https://bsky.app/profile/alex-koiter.bsky.social)<br> `r icons::fontawesome("mastodon")` [**\@alex_koiter\@mstdn.ca**](https://mstdn.ca/@Alex_Koiter)<br> `r icons::fontawesome("linkedin")` [**Alex-Koiter**](https://www.linkedin.com/in/alex-koiter-43b04b2a8/)<br> `r icons::fontawesome("twitter")` [**\@alex_koiter**](https://twitter.com/alex_koiter)
+
 :::
 
 [*Slides created with [Quarto](https://quarto.org)*<br>Updated `r Sys.Date()`]{.small .absolute bottom="50"}
