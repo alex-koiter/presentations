@@ -5,7 +5,7 @@ format:
     embed-resources: true
     theme: styles.scss
     footer: "Environmental Science"
-    #auto-slide: 7000
+    # auto-slide: 7000
     loop: false
 ---
 
@@ -13,7 +13,7 @@ format:
 
 ![](https://www.brandonu.ca/communications/files/Brandon-University-Horizontal-Logo-2-Colour-RGB.png){width=100% fig-align=right style="margin-top:130px;"}
 
-### 2025 Orientation {style="padding-top: 50px;"}
+### 2026 Orientation {style="padding-top: 50px;"}
 
 
 ## Environmental Science
@@ -94,7 +94,7 @@ format:
 :::{.column width=50%}
 ### Types of courses
 - Choose a specialty (Biology, Chemistry, etc.) and focus on courses in those areas
-- Liberal Arts and Indigenous Content
+- Multidisciplinary Education and Indigenous Content
 - Electives
 
 :::
@@ -132,7 +132,7 @@ format:
   - Prerequisites 
   - How often the course is normally offered
       - 70:266 Environmental Ethics
-      - 18:451 Environmental Chemistry
+      - 18:214 Environmental Chemistry
   - There are opportunities to take some course through other institutions remotely (Athabasca University), please check the [Course Transfer Database](https://webapp.brandonu.ca/pls/transfer/f?p=109:10)
   
 ### When in doubt, please ask
@@ -147,6 +147,8 @@ format:
 - Government policy/research
 - Non-profits/NGOs
 - Education (teaching/outreach)
+- Industry (sustainability)
+- Environmental remediation & compliance
 :::
 
 :::{.column width=50%}
@@ -156,7 +158,7 @@ format:
 - Watershed health
 - Contamination/Pollution
 - Planning/Policy
-- Environmental Assessement 
+- Environmental assessment 
 - GIS & remote sensing
 :::
 ::::
