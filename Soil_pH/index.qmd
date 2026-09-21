@@ -590,7 +590,7 @@ p2 +p1
 
 ```{r, eval=FALSE}
 
-code <- qrcode::qr_code("https://github.com/alex-koiter/presentations/Soil_pH")
+code <- qrcode::qr_code("http://alexkoiter.ca/presentations/Soil_pH")
 
 qrcode::generate_svg(code, filename = here::here("./figs/L08/qr.svg"))
 
